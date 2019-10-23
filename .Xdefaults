@@ -1,0 +1,7 @@
+! xrdb ~/.Xdefaults
+
+xterm*faceName:SauceCodePro Nerd Font:antialias=True:size=14
+xterm*faceNameDoublesize:YouYuan:size=16
+
+XTerm*background:black
+XTerm*foreground:lightgreen

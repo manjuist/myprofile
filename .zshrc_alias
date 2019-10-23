@@ -1,0 +1,28 @@
+export CDPATH=.:~:~/Desktop:~/Code
+
+alias -s {js,ts,jsx,tsx,json,html,xml,css,scss,vue}=vim
+
+alias ly="cd ~/Code/official_site_static"
+alias h5="cd ~/Code/official_site_h5"
+alias wx="cd ~/Code/wxapp-huazhu"
+alias pc="cd ~/Code/pc-huazhu"
+alias cl="cd ~/Code/lvyue-cli"
+alias eb="cd ~/Code/ows_eb"
+
+alias c="clear"
+alias rm="rm -i"
+alias mv="mv -i"
+alias l="ls -1AF"
+alias ll="ls -lhAF"
+alias vim="nvim"
+alias vi="nvim"
+
+alias ga="git add"
+alias gb='echo "$(git branch)"'
+alias gba='echo "$(git branch -a)"'
+alias gc="git commit"
+alias gco="git checkout"
+alias gd="git diff"
+alias glog='git log --date=format:"%y/%m/%d %H:%M" --pretty="%C(yellow)%h %<(10)%C(red)%ad %<(10)%C(blue)%cn %C(reset)%s"'
+alias gm="git merge"
+alias gs="git status"

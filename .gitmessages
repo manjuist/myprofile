@@ -1,0 +1,11 @@
+
+# head: <type>(<scope>): <subject>
+#
+# body: why how thought side-effect etc.
+#
+# footer:
+# - BREAKING CHANGE
+# - ISSUES CLOSED
+#
+
+# type feat/fix/docs/style(code format)/refactor/test/chore(build,dependence,etc.)
