@@ -25,7 +25,9 @@ alias c="clear"
 alias vi="nvim"
 
 # git
-alias glog='git log --date=format:"%y/%m/%d %H:%M" --pretty="%C(yellow)%h %<(10)%C(red)%ad %<(10)%C(blue)%cn %C(reset)%s"'
+alias glog='git log \
+  --date=format:"%m/%d-%H:%M" \
+  --pretty="%C(yellow)%h %<(12,trunc)%C(red)%ad %<(12,trunc)%C(blue)%cn %C(reset)%s"'
 alias gba='echo "$(git branch -a)"'
 alias gb='echo "$(git branch)"'
 alias gco="git checkout"
