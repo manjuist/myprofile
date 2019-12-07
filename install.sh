@@ -102,6 +102,7 @@ syncRepo        "$REPO_PATH" \
 
 createSymlinks  "$REPO_PATH" \
                 "$HOME" \
+                ".agignore" \
                 ".gitmessages" \
                 ".zshrc" \
                 ".zshrc_alias"

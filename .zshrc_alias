@@ -1,4 +1,5 @@
 alias -s {js,ts,jsx,tsx,json,html,xml,css,scss,vue}=vim
+alias ag='ag --path-to-ignore ~/.agignore'
 
 # dir
 export CDPATH=.:~:~/Desktop:~/Code
