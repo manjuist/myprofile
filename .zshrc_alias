@@ -1,28 +1,15 @@
-alias -s {js,ts,jsx,tsx,json,html,xml,css,scss,vue}=vim
-alias ag='ag --path-to-ignore ~/.agignore'
-
 # dir
 export CDPATH=.:~:~/Desktop:~/Code
 
-alias ly="cd ~/Code/official_site_static"
-alias h5="cd ~/Code/official_site_h5"
-alias wx="cd ~/Code/wxapp-huazhu"
-alias cms="cd ~/Code/cms_backend"
-alias mb="cd ~/Code/mall_backend"
-alias lg="cd ~/Code/lvyue_login"
-alias ml="cd ~/Code/points_mall"
-alias pc="cd ~/Code/pc-huazhu"
-alias cl="cd ~/Code/lvyue-cli"
-alias eb="cd ~/Code/ows_eb"
-
 # sys
+alias -s {js,ts,jsx,tsx,json,html,xml,css,scss,vue}=vim
+alias ag='ag --path-to-ignore ~/.agignore'
 alias ll="ls -lhAF"
 alias l="ls -1AF"
 alias rm="rm -i"
 alias mv="mv -i"
-alias vim="nvim"
 alias c="clear"
-alias vi="nvim"
+alias vi="vim"
 
 # git
 alias glog='git log \
@@ -30,6 +17,7 @@ alias glog='git log \
   --pretty="%C(yellow)%h %<(12,trunc)%C(red)%ad %<(12,trunc)%C(blue)%cn %C(reset)%s"'
 alias gba='echo "$(git branch -a)"'
 alias gb='echo "$(git branch)"'
+alias gca="git commit -a"
 alias gco="git checkout"
 alias gs="git status"
 alias gc="git commit"
