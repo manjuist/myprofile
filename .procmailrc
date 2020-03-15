@@ -1,0 +1,6 @@
+MAILDIR=$HOME/Mail/
+DEFAULT=$MAILDIR/inbox
+VERBOSE=off
+
+:0:
+inbox/

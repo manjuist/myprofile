@@ -1,0 +1,26 @@
+
+# 通用设定
+set use_from=yes
+set envelope_from=yes
+set move=yes    #移动已读邮件
+set include #回复的时候调用原文
+set charset="utf-8"
+auto_view text/html   #自动显示HTML
+ 
+# 发送者账号
+set realname="17343007827"
+set from="17343007827@189.cn"
+
+# 分类邮箱
+set mbox_type = Maildir #Mail box type
+set folder = "$HOME/Mail"
+set spoolfile = "$HOME/Mail/inbox" #INBOX
+set mbox="$HOME/Mail/seen"  #Seen box
+set record="$HOME/Mail/sent"  #Sent box
+set postponed="$HOME/Mail/draft"  #Draft box
+ 
+# 关联程序（需要自己用which命令确定一下）
+set editor="vim -nw"
+set sendmail="/usr/local/bin/msmtp"
+
+#macro index,pager I '<shell-escape> fetchmail --ssl -vk<enter>'
