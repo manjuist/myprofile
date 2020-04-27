@@ -3,4 +3,4 @@
   email = dewei.ma@lvyuetravel.com
 
 [core]
-  editor = nvim
+  editor = vim

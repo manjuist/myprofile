@@ -60,3 +60,11 @@ load-nvmrc() {
 }
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
+
+source /Users/deve/Library/Preferences/org.dystroy.broot/launcher/bash/br
+export HOMEBREW_NO_AUTO_UPDATE=true
+
+export PUB_HOSTED_URL=https://pub.flutter-io.cn
+export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
+export PATH=/Users/deve/Code/flutter/bin:$PATH
+export ANDROID_HOME=/Users/deve/Code/android-sdk-macosx

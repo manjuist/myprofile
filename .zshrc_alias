@@ -1,26 +1,25 @@
 # dir
-export CDPATH=.:~:~/Desktop:~/Code
-
-# sys
+CDPATH=~/Code
 alias -s {js,ts,jsx,tsx,json,html,xml,css,scss,vue}=vim
+# sys
+alias vi='vim'
+alias rm='rm -i'
+alias mv='mv -i'
 alias ag='ag --path-to-ignore ~/.agignore'
-alias ll="ls -lhAF"
-alias l="ls -1AF"
-alias rm="rm -i"
-alias mv="mv -i"
-alias c="clear"
-alias vi="vim"
-
+alias c='clear'
+alias l1='ls -1AF'
+alias ,l='ls -lAF | less'
+alias ,c='cd ~/Code'
 # git
-alias glog='git log \
+alias ga='git add'
+alias gb='echo "$(git branch)"'
+alias gc='git commit'
+alias gd='git diff'
+alias gs='git status'
+
+alias gba='echo "$(git branch -a)"'
+alias gca='git commit -a'
+alias gco='git checkout'
+alias glg='git log \
   --date=format:"%m/%d-%H:%M" \
   --pretty="%C(yellow)%h %<(12,trunc)%C(red)%ad %<(12,trunc)%C(blue)%cn %C(reset)%s"'
-alias gba='echo "$(git branch -a)"'
-alias gb='echo "$(git branch)"'
-alias gca="git commit -a"
-alias gco="git checkout"
-alias gs="git status"
-alias gc="git commit"
-alias gm="git merge"
-alias gd="git diff"
-alias ga="git add"
