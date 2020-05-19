@@ -66,5 +66,6 @@ export HOMEBREW_NO_AUTO_UPDATE=true
 
 export PUB_HOSTED_URL=https://pub.flutter-io.cn
 export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
-export PATH=/Users/deve/Code/flutter/bin:$PATH
 export ANDROID_HOME=/Users/deve/Code/android-sdk-macosx
+export JAVA_HOME=/Users/deve/jdk_11_0_2/Contents/Home
+export PATH=$JAVA_HOME/bin:/Users/deve/Code/flutter/bin:$PATH

@@ -1,8 +1,8 @@
 # dir
 CDPATH=~/Code
-alias -s {js,ts,jsx,tsx,json,html,xml,css,scss,vue}=vim
+alias -s {js,ts,jsx,tsx,json,html,xml,css,scss,vue}=nvim
 # sys
-alias vi='vim'
+alias vi='nvim'
 alias rm='rm -i'
 alias mv='mv -i'
 alias ag='ag --path-to-ignore ~/.agignore'
