@@ -42,26 +42,32 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-autoload -U add-zsh-hook
-load-nvmrc() {
-  local node_version="$(nvm version)"
-  local nvmrc_path="$(nvm_find_nvmrc)"
+hasNvm=$(type nvm > /dev/null 2>&1 && echo "nvm")
 
-  if [ -n "$nvmrc_path" ]; then
-    local nvmrc_node_version=$(nvm version "$(cat "${nvmrc_path}")")
+if [ "$hasNvm" = nvm ]; then
+	autoload -U add-zsh-hook
+	load-nvmrc() {
+	  local node_version="$(nvm version)"
+	  local nvmrc_path="$(nvm_find_nvmrc)"
 
-    if [ "$nvmrc_node_version" != "N/A" ] && [ "$nvmrc_node_version" != "$node_version" ]; then
-      nvm use
-    fi
-  elif [ "$node_version" != "$(nvm version default)" ]; then
-    echo "Reverting to nvm default version"
-    nvm use default
-  fi
-}
-add-zsh-hook chpwd load-nvmrc
-load-nvmrc
+	  if [ -n "$nvmrc_path" ]; then
+	    local nvmrc_node_version=$(nvm version "$(cat "${nvmrc_path}")")
 
-source /Users/deve/Library/Preferences/org.dystroy.broot/launcher/bash/br
+	    if [ "$nvmrc_node_version" != "N/A" ] && [ "$nvmrc_node_version" != "$node_version" ]; then
+	      nvm use
+	    fi
+	  elif [ "$node_version" != "$(nvm version default)" ]; then
+	    echo "Reverting to nvm default version"
+	    nvm use default
+	  fi
+	}
+	add-zsh-hook chpwd load-nvmrc
+	load-nvmrc
+fi
+
+if [[ "$(uname)" =~ Darwin ]];then
+  source /Users/deve/Library/Preferences/org.dystroy.broot/launcher/bash/br
+fi
 export HOMEBREW_NO_AUTO_UPDATE=true
 
 export PUB_HOSTED_URL=https://pub.flutter-io.cn
