@@ -27,20 +27,20 @@ error() {
 
 debug() {
     if [ "$is_debug" -eq "1" ] && [ "$ret" -gt "1" ]; then
-        msg "$FUNCNAME/$BASH_LINENO"
+        msg "${FUNCNAME[1]}/${BASH_LINENO[1]}"
     fi
 }
 
 backup(){
-    now=`date +%Y%m%d_%s`
+  now=$(date +%Y%m%d_%s)
     mv "$1" "$1.$now"
     debug
 }
 
 exiseBackup(){
-    for i in $@; do
+    for i in "$@"; do
         if [ -e "$i" ]; then
-            backup $i
+            backup "$i"
         fi
     done
     ret="$?"
@@ -79,7 +79,7 @@ createSymlinks() {
     [ $index -eq 1 ] && local source_path=$linkName
     [ $index -eq 2 ] && local target_path=$linkName
     [ $index -ge 3 ] && lnif "$source_path/$linkName" "$target_path/$linkName"
-    index=$(($index+1))
+    index=$((index + 1))
   done
   ret="$?"
   success "Link complete!"
@@ -87,8 +87,8 @@ createSymlinks() {
 }
 
 hasCommand(){
-	for m in $@; do
-		type $m>/dev/null 2>&1 || error "\"$m\" was not installed! Dependence \"$*\""
+	for m in "$@"; do
+		type "$m">/dev/null 2>&1 || error "\"$m\" was not installed! Dependence \"$*\""
 	done
 }
 
