@@ -1,6 +1,5 @@
 # dir
-CDPATH=~/Code
-alias -s {js,ts,jsx,tsx,json,html,xml,css,scss,vue}=nvim
+CDPATH=~/Desktop/Code
 # sys
 alias vi='nvim'
 alias rm='rm -i'
@@ -8,7 +7,7 @@ alias mv='mv -i'
 alias ag='ag --path-to-ignore ~/.agignore'
 alias c='clear'
 alias l1='ls -1AF'
-alias ,l='ls -lAF | less'
+alias ,l='ls -lAF'
 alias ,c='cd ~/Code'
 # git
 alias ga='git add'
@@ -18,7 +17,6 @@ alias gd='git diff'
 alias gs='git status'
 
 alias gba='echo "$(git branch -a)"'
-alias gca='git commit -a'
 alias gco='git checkout'
 alias glg='git log \
   --date=format:"%m/%d-%H:%M" \
