@@ -6,6 +6,7 @@
 # footer:
 # - BREAKING CHANGE
 # - ISSUES CLOSED
-#
 
-# type feat/fix/docs/style(code format)/refactor/test/chore(build,dependence,etc.)
+# type:
+# feat / fix / docs / style(code format) /
+# refactor / test / chore(build,dependence,etc.)
