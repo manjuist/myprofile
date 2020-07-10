@@ -105,4 +105,9 @@ createSymlinks  "$REPO_PATH" \
                 ".agignore" \
                 ".gitmessages" \
                 ".zshrc" \
-                ".zshrc_alias"
+                ".zshrc_alias" \
+                ".tmux.conf" \
+                ".tern-config" \
+                ".muttrc" \
+                ".msmtprc" \
+                ".procmailrc"
