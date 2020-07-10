@@ -65,9 +65,6 @@ if [ "$hasNvm" = nvm ]; then
 	load-nvmrc
 fi
 
-if [[ "$(uname)" =~ Darwin ]];then
-  source /Users/deve/Library/Preferences/org.dystroy.broot/launcher/bash/br
-fi
 export HOMEBREW_NO_AUTO_UPDATE=true
 export PUB_HOSTED_URL=https://pub.flutter-io.cn
 export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
