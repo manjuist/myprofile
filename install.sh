@@ -103,12 +103,16 @@ syncRepo        "$REPO_PATH" \
 createSymlinks  "$REPO_PATH" \
                 "$HOME" \
                 ".agignore" \
+                ".editorconfig" \
+                ".fetchmailrc" \
                 ".gitconfig" \
                 ".gitmessages" \
-                ".zshrc" \
-                ".zshrc_alias" \
-                ".tmux.conf" \
-                ".tern-config" \
-                ".muttrc" \
                 ".msmtprc" \
-                ".procmailrc"
+                ".muttrc" \
+                ".procmailrc" \
+                ".profile" \
+                ".tern-config" \
+                ".tmux.conf" \
+                ".xprofile" \
+                ".zshrc" \
+                ".zshrc_alias"
