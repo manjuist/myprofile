@@ -1,12 +1,8 @@
 # Path to your oh-my-zsh installation.
 system="$(uname -s)"
 username="$(whoami)"
-if [ $system = 'Darwin' ]
-then
-    export ZSH=/Users/$username/.oh-my-zsh
-else
-    export ZSH=/home/$username/.oh-my-zsh
-fi
+
+export ZSH=$HOME/.oh-my-zsh
 
 ZSH_THEME="avit"
 
