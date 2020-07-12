@@ -8,7 +8,7 @@ else
     export ZSH=/home/$username/.oh-my-zsh
 fi
 
-ZSH_THEME="robbyrussell"
+ZSH_THEME="avit"
 
 # Uncomment the following line to change how often to auto-update (in days).
 export UPDATE_ZSH_DAYS=26
