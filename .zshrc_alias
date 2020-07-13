@@ -10,14 +10,8 @@ alias l1='ls -1AF'
 alias ,l='ls -lAF'
 alias ,c='cd ~/Code'
 # git
-alias ga='git add'
-alias gb='echo "$(git branch)"'
-alias gc='git commit'
-alias gd='git diff'
-alias gs='git status'
-
-alias gba='echo "$(git branch -a)"'
-alias gco='git checkout'
-alias glg='git log \
+alias ,gb='echo "$(git branch)"'
+alias ,gba='echo "$(git branch -a)"'
+alias ,glg='git log \
   --date=format:"%m/%d-%H:%M" \
   --pretty="%C(yellow)%h %<(12,trunc)%C(red)%ad %<(12,trunc)%C(blue)%cn %C(reset)%s"'
