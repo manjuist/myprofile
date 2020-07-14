@@ -1,7 +1,7 @@
 # dir
 CDPATH=~/Desktop/Code
 # sys
-alias vi='nvim'
+alias vi='vim'
 alias rm='rm -i'
 alias mv='mv -i'
 alias ag='ag --path-to-ignore ~/.agignore'
