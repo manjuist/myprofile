@@ -1,15 +1,13 @@
+alias -s {md,js,ts,jsx,tsx,json,html,xml,css,scss,vue}=vim
+
 # dir
-CDPATH=~/Desktop/Code
+alias ,c='cd ~/Code'
 # sys
-alias vi='vim'
 alias rm='rm -i'
-alias mv='mv -i'
 alias ag='ag --path-to-ignore ~/.agignore'
 alias c='clear'
-alias l1='ls -1AF'
-alias ,l='ls -lAF'
-alias ,c='cd ~/Code'
 # git
+alias ,gc1='git clone --depth 1'
 alias ,gb='echo "$(git branch)"'
 alias ,gba='echo "$(git branch -a)"'
 alias ,glg='git log \

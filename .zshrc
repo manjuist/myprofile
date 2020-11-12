@@ -1,44 +1,25 @@
-# Path to your oh-my-zsh installation.
 system="$(uname -s)"
 username="$(whoami)"
+hasNvm=$(type nvm > /dev/null 2>&1 && echo "nvm")
 
 export ZSH=$HOME/.oh-my-zsh
+export UPDATE_ZSH_DAYS=26
+export LANG=en_US.UTF-8
+export FZF_DEFAULT_OPTS="--height 40% --layout=reverse --preview '(highlight -O ansi {} || cat {}) 2> /dev/null | head -500'"
+export NVM_DIR="$HOME/.nvm"
 
 ZSH_THEME="avit"
-
-# Uncomment the following line to change how often to auto-update (in days).
-export UPDATE_ZSH_DAYS=26
-
-# Uncomment the following line to enable command auto-correction.
 ENABLE_CORRECTION="true"
-
-# Uncomment the following line to display red dots whilst waiting for completion.
 COMPLETION_WAITING_DOTS="true"
 
-
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
 plugins=(git brew gulp man npm osx tmux python sudo yarn)
 
 source $ZSH/oh-my-zsh.sh
-
-# User configuration
-# You may need to manually set your language environment
-export LANG=en_US.UTF-8
-
 [ -f ~/.zshrc_alias ] && source ~/.zshrc_alias
-
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-export FZF_DEFAULT_OPTS="--height 40% --layout=reverse --preview '(highlight -O ansi {} || cat {}) 2> /dev/null | head -500'"
-
-export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-hasNvm=$(type nvm > /dev/null 2>&1 && echo "nvm")
 
 if [ "$hasNvm" = nvm ]; then
 	autoload -U add-zsh-hook
@@ -60,12 +41,3 @@ if [ "$hasNvm" = nvm ]; then
 	add-zsh-hook chpwd load-nvmrc
 	load-nvmrc
 fi
-
-export HOMEBREW_NO_AUTO_UPDATE=true
-export PUB_HOSTED_URL=https://pub.flutter-io.cn
-export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
-export ANDROID_HOME=/Users/deve/Code/android-sdk-macosx
-export JAVA_HOME=/Users/deve/jdk_11_0_2/Contents/Home
-export PATH=$JAVA_HOME/bin:/Users/deve/Code/flutter/bin:$PATH
-export PATH=/usr/local/opt/sphinx-doc/bin:$PATH
-export PATH=$HOME/.cargo/bin:$PATH
