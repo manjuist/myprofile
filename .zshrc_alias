@@ -2,14 +2,25 @@ alias -s {md,js,ts,jsx,tsx,json,html,xml,css,scss,vue}=vim
 
 # dir
 alias ,c='cd ~/Code'
+alias ,i='cd ~/ipalfish'
+
 # sys
-alias rm='rm -i'
-alias ag='ag --path-to-ignore ~/.agignore'
 alias c='clear'
+alias rm='rm -i'
+alias rmf='rm -rf'
+alias ag='ag --path-to-ignore ~/.agignore'
+
 # git
-alias ,gc1='git clone --depth 1'
-alias ,gb='echo "$(git branch)"'
-alias ,gba='echo "$(git branch -a)"'
-alias ,glg='git log \
+alias gs='git status --short'
+alias gsa='git status'
+alias ga='git add'
+alias gaa='git add .'
+alias gc='git commit'
+alias gca='git commit -a'
+alias gm='git merge'
+alias gmt='git mergetool'
+alias gb='echo "$(git branch)"'
+alias gba='echo "$(git branch -a)"'
+alias glg='git log \
   --date=format:"%m/%d-%H:%M" \
   --pretty="%C(yellow)%h %<(12,trunc)%C(red)%ad %<(12,trunc)%C(blue)%cn %C(reset)%s"'
