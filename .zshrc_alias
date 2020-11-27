@@ -5,11 +5,13 @@ alias ,c='cd ~/Code'
 alias ,i='cd ~/ipalfish'
 
 # sys
+
 alias rm='rm -i'
 alias rmf='rm -rf'
 alias ag='ag --path-to-ignore ~/.agignore'
 alias c='clear'
 alias l1='ls -1AF'
+
 
 # git
 alias gs='git status --short'
