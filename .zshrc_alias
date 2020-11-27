@@ -1,17 +1,31 @@
+alias -s {md,js,ts,jsx,tsx,json,html,xml,css,scss,vue}=vim
+
 # dir
-CDPATH=~/Desktop/Code
+alias ,c='cd ~/Code'
+alias ,i='cd ~/ipalfish'
+
 # sys
-alias vi='vim'
 alias rm='rm -i'
-alias mv='mv -i'
+alias rmf='rm -rf'
 alias ag='ag --path-to-ignore ~/.agignore'
 alias c='clear'
 alias l1='ls -1AF'
-alias ,l='ls -lAF'
-alias ,c='cd ~/Code'
+
 # git
-alias ,gb='echo "$(git branch)"'
-alias ,gba='echo "$(git branch -a)"'
-alias ,glg='git log \
+alias gs='git status --short'
+alias ga='git add'
+alias gaa='git add .'
+alias gc='git commit'
+alias gca='git commit -a'
+alias gm='git merge'
+alias gmt='git mergetool'
+alias gb='echo "$(git branch)"'
+alias gba='echo "$(git branch -a)"'
+alias gd='git diff'
+alias gdt='git difftool'
+alias gf='git fetch origin'
+alias glg='git log \
   --date=format:"%m/%d-%H:%M" \
   --pretty="%C(yellow)%h %<(12,trunc)%C(red)%ad %<(12,trunc)%C(blue)%cn %C(reset)%s"'
+
+alias yarn='yarn --registry https://npm.pri.ibanyu.com/'

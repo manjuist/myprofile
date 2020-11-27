@@ -61,11 +61,36 @@ if [ "$hasNvm" = nvm ]; then
 	load-nvmrc
 fi
 
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
 export HOMEBREW_NO_AUTO_UPDATE=true
-export PUB_HOSTED_URL=https://pub.flutter-io.cn
-export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
-export ANDROID_HOME=/Users/deve/Code/android-sdk-macosx
-export JAVA_HOME=/Users/deve/jdk_11_0_2/Contents/Home
-export PATH=$JAVA_HOME/bin:/Users/deve/Code/flutter/bin:$PATH
 export PATH=/usr/local/opt/sphinx-doc/bin:$PATH
 export PATH=$HOME/.cargo/bin:$PATH
+
+source /Users/deve/.config/broot/launcher/bash/br
+
+# Add environment variable COCOS_CONSOLE_ROOT for cocos2d-x
+export COCOS_CONSOLE_ROOT="/Users/deve/Code/cocos2d-x-4.0/tools/cocos2d-console/bin"
+export PATH=$COCOS_CONSOLE_ROOT:$PATH
+
+# Add environment variable COCOS_X_ROOT for cocos2d-x
+export COCOS_X_ROOT="/Users/deve/Code"
+export PATH=$COCOS_X_ROOT:$PATH
+
+# Add environment variable COCOS_TEMPLATES_ROOT for cocos2d-x
+export COCOS_TEMPLATES_ROOT="/Users/deve/Code/cocos2d-x-4.0/templates"
+export PATH=$COCOS_TEMPLATES_ROOT:$PATH
+
+# Add environment variable COCOS_CONSOLE_ROOT for cocos2d-x
+export COCOS_CONSOLE_ROOT="/Users/deve/Code/cocos2d-x-4.0/tools/cocos2d-console/bin"
+export PATH=$COCOS_CONSOLE_ROOT:$PATH
+
+# Add environment variable COCOS_X_ROOT for cocos2d-x
+export COCOS_X_ROOT="/Users/deve/Code"
+export PATH=$COCOS_X_ROOT:$PATH
+
+# Add environment variable COCOS_TEMPLATES_ROOT for cocos2d-x
+export COCOS_TEMPLATES_ROOT="/Users/deve/Code/cocos2d-x-4.0/templates"
+export PATH=$COCOS_TEMPLATES_ROOT:$PATH
+
+
