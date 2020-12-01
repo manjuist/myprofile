@@ -5,6 +5,8 @@
 # date: 2020-11-12
 # ------
 
+set -e
+
 dir=~/ipalfish
 custom_dir=$1
 cur_dir=$dir
@@ -29,7 +31,7 @@ for i in $list;do
   ind=$((ind+1))
 done
 
-read -p 'select number:' -n 1 selectNum
+read -p 'select number:' -n 2 selectNum
 
 selected="${quen[selectNum]}"
 if [[ -d "${selected}" ]];then

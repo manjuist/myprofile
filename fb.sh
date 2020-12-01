@@ -5,6 +5,8 @@
 # date: 2020-11-12
 # ------
 
+set -e
+
 cd "$(pwd)"
 
 yarn pre-release && git commit -am 'prerelease' && git push && yarn release
