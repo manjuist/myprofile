@@ -14,6 +14,7 @@ alias l1='ls -1AF'
 
 
 # git
+alias ,grh!='git reset --hard HEAD'
 alias gs='git status --short'
 alias ga='git add'
 alias gaa='git add .'
