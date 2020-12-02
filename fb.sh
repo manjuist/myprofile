@@ -9,4 +9,4 @@ set -e
 
 cd "$(pwd)"
 
-yarn pre-release && git commit -am 'prerelease' && git push && yarn release
+yarn pre-release && git commit --no-verify -am 'chore: pre-release' && git push && yarn release
