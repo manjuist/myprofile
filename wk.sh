@@ -27,7 +27,7 @@ list="$(ls -1 | awk '{print NR")"$1}')"
 ind=1
 for i in $list;do
   echo $i
-  quen[ind]="${i:2}"
+  quen[ind]="${i#*)}"
   ind=$((ind+1))
 done
 

@@ -6,6 +6,7 @@ alias ,i='cd ~/ipalfish'
 
 # sys
 
+alias et='exit'
 alias rm='rm -i'
 alias rmf='rm -rf'
 alias ag='ag --path-to-ignore ~/.agignore'
