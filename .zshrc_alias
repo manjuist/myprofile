@@ -7,18 +7,18 @@ alias ,i='cd ~/ipalfish'
 # sys
 
 alias et='exit'
-alias rm='rm -i'
-alias rmf='rm -rf'
-alias ag='ag --path-to-ignore ~/.agignore'
 alias c='clear'
-alias l1='ls -1AF'
+alias rm='rm -i'
+alias l='ls -1AF'
+alias rmf='rm -rf'
+alias hs='history'
 
 
 # git
 alias ,grh!='git reset --hard HEAD'
 alias gs='git status --short'
 alias ga='git add'
-alias gaa='git add .'
+alias gaa='git add -A'
 alias gc='git commit'
 alias gca='git commit -a'
 alias gm='git merge'
@@ -33,3 +33,4 @@ alias glg='git log \
   --pretty="%C(yellow)%h %<(12,trunc)%C(red)%ad %<(12,trunc)%C(blue)%cn %C(reset)%s"'
 
 alias yarn='yarn --registry https://npm.pri.ibanyu.com/'
+alias cyarn='yarn --registry https://registry.npm.taobao.org/'
