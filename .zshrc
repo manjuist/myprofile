@@ -50,10 +50,9 @@ export JAVA_HOME=/Users/deve/jdk_11_0_2/Contents/Home
 export PATH=$JAVA_HOME/bin:/Users/deve/Code/flutter/bin:$PATH
 export PATH=/usr/local/opt/sphinx-doc/bin:$PATH
 export PATH=$HOME/.cargo/bin:$PATH
+export PATH=$HOME/.local/bin:$PATH
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
-source /Users/deve/.config/broot/launcher/bash/br
 
 # Add environment variable COCOS_CONSOLE_ROOT for cocos2d-x
 export COCOS_CONSOLE_ROOT="/Users/deve/Code/cocos2d-x-4.0/tools/cocos2d-console/bin"
