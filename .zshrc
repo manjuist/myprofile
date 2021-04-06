@@ -51,6 +51,7 @@ export PATH=$JAVA_HOME/bin:/Users/deve/Code/flutter/bin:$PATH
 export PATH=/usr/local/opt/sphinx-doc/bin:$PATH
 export PATH=$HOME/.cargo/bin:$PATH
 export PATH=$HOME/.local/bin:$PATH
+export PATH=/opt/homebrew/bin:$PATH
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
