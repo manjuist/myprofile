@@ -3,7 +3,9 @@
   email = dewei.ma@lvyuetravel.com
 
 [core]
-  editor = vim
+	editor = nvim
 
 [commit]
   template=~/.gitmessages
+[merge]
+	tool = diffmerge
