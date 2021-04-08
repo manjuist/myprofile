@@ -1,4 +1,4 @@
-alias -s {md,js,ts,jsx,tsx,json,html,xml,css,scss,vue}=vim
+alias -s {md,js,ts,jsx,tsx,json,html,xml,css,scss,vue}=nvim
 
 # dir
 alias ,c='cd ~/Code'
