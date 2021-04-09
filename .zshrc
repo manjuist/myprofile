@@ -45,8 +45,6 @@ ZSH_THEME="avit"
 ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
 
-plugins=(git brew gulp man npm osx tmux python sudo yarn)
-
 source $ZSH/oh-my-zsh.sh
 [ -f ~/.zshrc_alias ] && source ~/.zshrc_alias
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
@@ -80,3 +78,5 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 # tabtab source for electron-forge package
 # uninstall by removing these lines or running `tabtab uninstall electron-forge`
 [[ -f /Users/dewei.ma/.npm/_npx/6913fdfd1ea7a741/node_modules/tabtab/.completions/electron-forge.zsh ]] && . /Users/dewei.ma/.npm/_npx/6913fdfd1ea7a741/node_modules/tabtab/.completions/electron-forge.zsh
+
+plugins=(git brew gulp man npm osx tmux python sudo yarn)
