@@ -7,7 +7,7 @@
 
 set -e
 
-dir=~/ipalfish
+dir=~/Code
 custom_dir=$1
 cur_dir=$dir
 
@@ -36,7 +36,7 @@ read -p 'select number:' -n 2 selectNum
 selected="${quen[selectNum]}"
 if [[ -d "${selected}" ]];then
   echo ${dir}/${selected}
-  vi "${dir}/${selected}"
+  nvim "${dir}/${selected}"
 fi
 
 clear
