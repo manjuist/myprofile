@@ -9,3 +9,12 @@
   template=~/.gitmessages
 [merge]
 	tool = diffmerge
+[diff]
+	tool = diffmerge
+[mergetool "diffmerge"]
+	path = /Applications/DiffMerge.app/Contents/MacOS/DiffMerge
+	trustExitCode = true
+[difftool "diffmerge"]
+	path = /Applications/DiffMerge.app/Contents/MacOS/DiffMerge
+[difftool]
+	prompt = false
