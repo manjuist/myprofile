@@ -7,7 +7,7 @@
 
 set -e
 
-dir=~/ipalfish
+dir=~/Code
 custom_dir=$1
 cur_dir=$dir
 
