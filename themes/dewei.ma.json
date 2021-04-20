@@ -44,7 +44,7 @@
   },
   "Non-ASCII Anti Aliased" : true,
   "Sync Title" : false,
-  "Badge Font" : "Helvetica-Bold",
+  "Badge Font" : "SauceCodeProNerdFontComplete-Regular",
   "Disable Window Resizing" : true,
   "Description" : "Default",
   "Close Sessions On End" : true,
@@ -320,7 +320,7 @@
   "Name" : "dewei.ma",
   "Blinking Cursor" : false,
   "Guid" : "95CA100B-F1E7-4F52-8617-ECC81AC1DE52",
-  "Badge Max Width" : 0.28999999999999998,
+  "Badge Max Width" : 0.080000000000000002,
   "Idle Code" : 0,
   "Ansi 10 Color" : {
     "Red Component" : 0.66574931144714355,
@@ -344,7 +344,7 @@
     "Green Component" : 0.28100395202636719
   },
   "Ambiguous Double Width" : false,
-  "Badge Max Height" : 0.080000000000000002,
+  "Badge Max Height" : 0.070000000000000007,
   "Background Image Mode" : 0,
   "Cursor Type" : 2,
   "Ansi 0 Color" : {
