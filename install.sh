@@ -6,7 +6,7 @@ set -o pipefail
 readonly APP_NAME="myprofile"
 
 [ -z "$REPO_PATH" ] && REPO_PATH="$HOME/.$APP_NAME"
-[ -z "$REPO_URI" ] && REPO_URI="https://github.com/manjuist/$APP_NAME.git"
+[ -z "$REPO_URI" ] && REPO_URI="https://github.com/mdvis/$APP_NAME.git"
 
 is_debug="0"
 
