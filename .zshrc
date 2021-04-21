@@ -38,9 +38,7 @@ export PATH=$COCOS_X_ROOT:$PATH
 export COCOS_TEMPLATES_ROOT="/Users/deve/Code/cocos2d-x-4.0/templates"
 export PATH=$COCOS_TEMPLATES_ROOT:$PATH
 
-# proxy
-export http_proxy=http://127.0.0.1:1087
-export https_proxy=$http_proxy
+export NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node/
 
 system="$(uname -s)"
 username="$(whoami)"
