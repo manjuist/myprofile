@@ -7,7 +7,6 @@ alias ,d='cd ~/.dvim'
 alias ,md='cd ~/.myprofile/dvim'
 
 # sys
-
 alias et='exit'
 alias c='clear'
 alias rm='rm -i'
@@ -42,6 +41,7 @@ alias glg='git log \
   --date=format:"%m/%d-%H:%M" \
   --pretty="%C(yellow)%h %<(12,trunc)%C(red)%ad %<(12,trunc)%C(blue)%cn %C(reset)%s"'
 
+# npm
 alias cyarn='yarn --registry https://registry.npm.taobao.org/'
 alias cnpm='npm --registry https://registry.npm.taobao.org/'
 
@@ -49,3 +49,6 @@ alias cnpm='npm --registry https://registry.npm.taobao.org/'
 alias sp='export http_proxy=http://127.0.0.1:1087 \
 	export https_proxy=http://127.0.0.1:1087'
 alias unsp='unset http_proxy https_proxy'
+
+# tmux
+alias tka='tmux kill-session -a'
