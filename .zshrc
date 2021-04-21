@@ -49,7 +49,7 @@ ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
 
 source $ZSH/oh-my-zsh.sh
-[ -f ~/.zshrc_alias ] && source ~/.zshrc_alias
+[ -f ~/.zshrc.alias ] && source ~/.zshrc.alias
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

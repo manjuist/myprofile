@@ -95,7 +95,7 @@ hasCommand(){
 hasCommand      zsh
 
 exiseBackup     "$HOME/.zshrc" \
-                "$HOME/.zshrc_alias"
+                "$HOME/.zshrc.alias"
 
 syncRepo        "$REPO_PATH" \
                 "$REPO_URI"
@@ -115,4 +115,4 @@ createSymlinks  "$REPO_PATH" \
                 ".tmux.conf" \
                 ".xprofile" \
                 ".zshrc" \
-                ".zshrc_alias"
+                ".zshrc.alias"
