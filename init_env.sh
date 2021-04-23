@@ -15,10 +15,24 @@ runCommand(){
     eval $cmd install $other_args
 }
 
+brewSource(){
+    cmd=$1
+    args=$*
+    other_args=${args#* }
+
+    eval brew install --build-from-source $other_args
+}
+
 hasCommand node || ./setup/nvm-install.sh
 hasCommand pip || python ./setup/get-pip.py
 hasCommand brew || ./setup/homebrew_cn_install.sh
 hasCommand pip && pip install --user pynvim neovim
 
-runCommand brew ag ctags
-runCommand pip yapf isort flake8 pylint autopep8
+# brewSource shellcheck
+
+runCommand brew ag \
+    ctags ccls uncrustify tidy-html5 swiftlint \
+    yamllint shfmt swiftformat shellcheck
+
+runCommand pip yapf \
+    isort flake8 pylint autopep8 proselint vim-vint
