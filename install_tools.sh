@@ -12,12 +12,9 @@ lnif() {
 }
 
 createSymlinks() {
-  local index=1
-
-  for linkName in "$@"
-  do
-    lnif "$TOOL_PATH/$linkName" "/usr/local/bin/${linkName%.sh}"
-  done
+    for linkName in "$@"; do
+        lnif "$TOOL_PATH/$linkName" "/usr/local/bin/${linkName%.sh}"
+    done
 }
 
-createSymlinks $(ls "${TOOL_PATH}")
+createSymlinks "$(ls "${TOOL_PATH}")"

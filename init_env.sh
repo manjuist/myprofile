@@ -4,7 +4,7 @@ set -e
 set -o pipefail
 
 hasCommand() {
-    type $1 >/dev/null 2>&1
+    type "$1" >/dev/null 2>&1
 }
 
 runCommand() {
@@ -12,7 +12,7 @@ runCommand() {
     args=$*
     other_args=${args#* }
 
-    eval $cmd install $other_args
+    eval "$cmd" install "$other_args"
 }
 
 brewSource() {
@@ -20,7 +20,7 @@ brewSource() {
     args=$*
     other_args=${args#* }
 
-    eval brew install --build-from-source $other_args
+    eval brew install --build-from-source "$other_args"
 }
 
 hasCommand node || ./setup/nvm-install.sh
