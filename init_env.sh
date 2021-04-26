@@ -3,11 +3,11 @@
 set -e
 set -o pipefail
 
-hasCommand(){
-    type $1>/dev/null 2>&1
+hasCommand() {
+    type $1 >/dev/null 2>&1
 }
 
-runCommand(){
+runCommand() {
     cmd=$1
     args=$*
     other_args=${args#* }
@@ -15,7 +15,7 @@ runCommand(){
     eval $cmd install $other_args
 }
 
-brewSource(){
+brewSource() {
     cmd=$1
     args=$*
     other_args=${args#* }
@@ -33,6 +33,6 @@ hasCommand pip && pip install --user pynvim neovim
 runCommand pip yapf \
     isort flake8 pylint autopep8 proselint vim-vint
 
-runCommand brew the_silver_searcher\
+runCommand brew the_silver_searcher \
     ctags ccls uncrustify tidy-html5 yamllint \
     shfmt swiftformat swiftlint shellcheck
