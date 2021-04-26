@@ -31,7 +31,7 @@ hasCommand pip && pip install --user pynvim neovim
 # brewSource shellcheck
 
 runCommand pip yapf \
-    isort flake8 pylint autopep8 proselint vim-vint
+    isort flake8 pylint autopep8 vim-vint
 
 runCommand brew the_silver_searcher \
     ctags ccls uncrustify tidy-html5 yamllint \
