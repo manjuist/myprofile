@@ -18,3 +18,5 @@
 	path = /Applications/DiffMerge.app/Contents/MacOS/DiffMerge
 [difftool]
 	prompt = false
+[pull]
+	rebase = true

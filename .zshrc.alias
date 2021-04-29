@@ -45,6 +45,8 @@ alias glg='git log \
 # npm
 alias cyarn='yarn --registry https://registry.npm.taobao.org/'
 alias cnpm='npm --registry https://registry.npm.taobao.org/'
+alias wyarn='yarn --registry http://npm-registry.lan'
+alias wnpm='npm --registry http://npm-registry.lan'
 
 # proxy
 alias sp='export http_proxy=http://127.0.0.1:1087 \
