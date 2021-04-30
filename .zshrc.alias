@@ -50,10 +50,11 @@ alias wnpm='npm --registry http://npm-registry.lan'
 
 # proxy
 alias sp='export http_proxy=http://127.0.0.1:1087 \
-	export https_proxy=http://127.0.0.1:1087'
+  export https_proxy=http://127.0.0.1:1087'
 alias unsp='unset http_proxy https_proxy'
+
 alias lsp='export http_proxy=http://127.0.0.1:49919 \
-	export https_proxy=http://127.0.0.1:49919'
+  export https_proxy=http://127.0.0.1:49919'
 alias lunsp='unset http_proxy https_proxy'
 
 # tmux
