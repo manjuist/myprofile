@@ -57,5 +57,9 @@ alias lsp='export http_proxy=http://127.0.0.1:49919 \
   export https_proxy=http://127.0.0.1:49919'
 alias lunsp='unset http_proxy https_proxy'
 
+alias wsp='export http_proxy=http://127.0.0.1:1080 \
+  export https_proxy=http://127.0.0.1:1080'
+alias wunsp='unset http_proxy https_proxy'
+
 # tmux
 alias tka='tmux kill-session -a'
