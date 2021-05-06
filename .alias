@@ -1,12 +1,13 @@
+# defalut
 alias -s {md,js,ts,jsx,tsx,json,html,xml,css,scss,vue}=nvim
 
-# dir
+# Dir
 alias ,c='cd ~/Code'
 alias ,m='cd ~/.myprofile'
 alias ,d='cd ~/.dvim'
 alias ,md='cd ~/.myprofile/dvim'
 
-# sys
+# Profile
 alias et='exit'
 alias c='clear'
 alias rm='rm -i'
@@ -19,7 +20,7 @@ alias la='ls -AF'
 alias ll='ls -lAFh'
 
 
-# git
+# Git
 alias grh='git reset --hard HEAD'
 alias ga='git add'
 alias gaa='git add -A'
@@ -42,24 +43,28 @@ alias glg='git log \
   --date=format:"%m/%d-%H:%M" \
   --pretty="%C(yellow)%h %<(12,trunc)%C(red)%ad %<(12,trunc)%C(blue)%cn %C(reset)%s"'
 
-# npm
+# Npm
 alias cyarn='yarn --registry https://registry.npm.taobao.org/'
 alias cnpm='npm --registry https://registry.npm.taobao.org/'
 alias wyarn='yarn --registry http://npm-registry.lan'
 alias wnpm='npm --registry http://npm-registry.lan'
 
-# proxy
+# Proxy
+#
+# OS X
 alias sp='export http_proxy=http://127.0.0.1:1087 \
   export https_proxy=http://127.0.0.1:1087'
 alias unsp='unset http_proxy https_proxy'
 
+# lantern
 alias lsp='export http_proxy=http://127.0.0.1:49919 \
   export https_proxy=http://127.0.0.1:49919'
 alias lunsp='unset http_proxy https_proxy'
 
+# wls
 alias wsp='export http_proxy=http://127.0.0.1:1080 \
   export https_proxy=http://127.0.0.1:1080'
 alias wunsp='unset http_proxy https_proxy'
 
-# tmux
+# Tmux
 alias tka='tmux kill-session -a'

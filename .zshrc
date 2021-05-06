@@ -18,7 +18,7 @@ plugins=(git brew gulp man npm osx tmux python sudo yarn)
     export ZSH_THEME="avit"
 
     source $ZSH/oh-my-zsh.sh
-    [ -f ~/.zshrc.alias ] && source ~/.zshrc.alias
+    [ -f ~/.alias ] && source ~/.alias
     [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
     test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
