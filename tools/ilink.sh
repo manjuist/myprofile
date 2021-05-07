@@ -9,7 +9,8 @@ set -e
 
 name=@WLH
 curUser=$(whoami)
-linkPath="/Users/${curUser}/.config/yarn/link/${name}"
+version=$(node --version)
+linkPath="/Users/${curUser}/.nvm/versions/node/${version}/lib/node_modules/${name}"
 currentDir=$(pwd)
 packagePath="${currentDir}/node_modules/${name}"
 
@@ -17,14 +18,14 @@ link() {
     [[ ! -e $linkPath ]] && echo "No package! Can not find '${linkPath}'" && exit 1
 
     if [[ -d $linkPath ]]; then
-        linkList=$(ls $linkPath)
-        select i in $linkList;do
+        linkList=$(ls "${linkPath}")
+        select i in $linkList; do
             break
         done
 
-        if [[ ! -z ${i} ]];then
+        if [[ -n ${i} ]]; then
             echo "${name}/${i}"
-            yarn link "${name}/${i}" && echo 'Link success'
+            npm link "${name}/${i}" && echo 'Link success'
         fi
 
     fi
@@ -36,15 +37,15 @@ unlink() {
 
     packageList=$(ls -l ${packagePath} | grep ^l | awk '{print $9}')
 
-    if [[ ${#packageList[@]} -ge 0 ]] && [[ ! -z ${packageList[0]} ]];then
+    if [[ ${#packageList[@]} -ge 0 ]] && [[ ! -z ${packageList[0]} ]]; then
 
-        select m in $packageList;do
+        select m in $packageList; do
             break
         done
 
-        if [[ ! -z ${m} ]];then
+        if [[ ! -z ${m} ]]; then
             echo "${name}/${m}"
-            yarn unlink "${name}/${m}" && echo 'Unlink success'
+            npm unlink "${name}/${m}" && echo 'Unlink success'
         fi
 
     else
@@ -57,18 +58,18 @@ unlink() {
 handlerList=("link" "unlink")
 
 echo 'What do you want?'
-select n in ${handlerList[@]};do
+select n in ${handlerList[@]}; do
     break
 done
 
 case $n in
-    link)
-        link
-        ;;
-    unlink)
-        unlink
-        ;;
-    *)
-        echo 'Are you ok?'
-        ;;
+link)
+    link
+    ;;
+unlink)
+    unlink
+    ;;
+*)
+    echo 'Are you ok?'
+    ;;
 esac
