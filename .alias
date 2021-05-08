@@ -42,6 +42,7 @@ alias gba='echo "$(git branch -a)"'
 alias glg='git log \
   --date=format:"%m/%d-%H:%M" \
   --pretty="%C(yellow)%h %<(12,trunc)%C(red)%ad %<(12,trunc)%C(blue)%cn %C(reset)%s"'
+alias gl5='glg -5'
 
 # Npm
 alias cyarn='yarn --registry https://registry.npm.taobao.org/'
