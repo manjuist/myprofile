@@ -6,7 +6,23 @@
 # footer:
 # - BREAKING CHANGE
 # - ISSUES CLOSED
-
+#
 # type:
 # feat / fix / docs / style(code format) /
 # refactor / test / chore(build,dependence,etc.)
+#
+# :rocket:               火箭      = 部署
+# :gear:                 齿轮      = 配置
+# :fire_engine:          消防车    = 补丁
+# :hammer:               锤子      = 重构
+# :bug:                  虫子      = bug
+# :heavy_plus_sign:      加号      = 依赖
+# :heavy_minus_sign:     减号      = 依赖
+# :book:                 书本      = 文档
+# :tada:                 庆祝      = init
+# :construction:         施工      = 开发中
+# :globe_with_meridians: 全球      = 国际化
+# :arrow_up:             上箭头    = 升级
+# :arrow_down:           下箭头    = 降级
+# :wrench:               扳手      = 修改
+# :package:              包裹      = 打包
