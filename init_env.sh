@@ -4,7 +4,9 @@ set -e
 set -o pipefail
 
 hasCommand() {
-    type "$1" >/dev/null 2>&1
+    for m in "$@"; do
+        type "$m" >/dev/null 2>&1 || error "\"$m\" was not installed! Dependence \"$*\""
+    done
 }
 
 runCommand() {
