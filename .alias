@@ -5,7 +5,6 @@ alias -s {md,js,ts,jsx,tsx,json,html,xml,css,scss,vue}=nvim
 alias ,c='cd ~/Code'
 alias ,m='cd ~/.myprofile'
 alias ,d='cd ~/.dvim'
-alias ,md='cd ~/.myprofile/dvim'
 
 # Profile
 alias et='exit'
