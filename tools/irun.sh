@@ -5,10 +5,11 @@
 # date: 2020-11-12
 # ------
 
+set -e
+set -o pipefail
+
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
-
-set -e
 
 handlerText() {
     begin=0

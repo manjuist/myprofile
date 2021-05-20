@@ -6,6 +6,7 @@
 # ------
 
 set -e
+set -o pipefail
 
 name=@WLH
 curUser=$(whoami)

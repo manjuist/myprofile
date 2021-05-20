@@ -6,6 +6,7 @@
 # ------
 
 set -e
+set -o pipefail
 
 dir=~/Code
 custom_dir=$1

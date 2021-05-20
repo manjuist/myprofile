@@ -17,4 +17,4 @@ createSymlinks() {
     done
 }
 
-createSymlinks "$(ls "${TOOL_PATH}")"
+createSymlinks $(ls "${TOOL_PATH}")
