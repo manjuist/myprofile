@@ -35,15 +35,15 @@ unlink() {
 
     [[ ! -e $packagePath ]] && echo "No package! Can not find '${packagePath}'" && exit 1
 
-    packageList=$(ls -l ${packagePath} | grep ^l | awk '{print $9}')
+    packageList=$(ls -l "${packagePath}" | grep ^l | awk '{print $9}')
 
-    if [[ ${#packageList[@]} -ge 0 ]] && [[ ! -z ${packageList[0]} ]]; then
+    if [[ ${#packageList[@]} -ge 0 ]] && [[ -n ${packageList[0]} ]]; then
 
         select m in $packageList; do
             break
         done
 
-        if [[ ! -z ${m} ]]; then
+        if [[ -n ${m} ]]; then
             echo "${name}/${m}"
             npm unlink "${name}/${m}" && echo 'Unlink success'
         fi
@@ -58,7 +58,7 @@ unlink() {
 handlerList=("link" "unlink")
 
 echo 'What do you want?'
-select n in ${handlerList[@]}; do
+select n in "${handlerList[@]}"; do
     break
 done
 
