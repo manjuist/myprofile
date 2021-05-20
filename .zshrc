@@ -1,9 +1,8 @@
 export LANG=en_US.UTF-8
 export PATH=/opt/homebrew/bin:$PATH
 
-export FZF_DEFAULT_COMMAND="fd -H --exclude={.git,.idea,.vscode,.sass-cache,node_modules,build} --type f"
-export FZF_DEFAULT_OPTS="--height 60% --border --preview '(highlight -O ansi {} || cat {}) 2> /dev/null | head -50'"
-#export FZF_COMPLETION_TRIGGER='~~'
+export FZF_DEFAULT_COMMAND="fd -H -t f -t d --exclude={.git,.idea,.vscode,.sass-cache,node_modules,build}"
+export FZF_DEFAULT_OPTS="--height 40% --border --preview '(highlight -O ansi {} || cat {}) 2> /dev/null | head -50'"
 
 
 plugins=(git brew gulp man npm osx tmux python sudo yarn)
