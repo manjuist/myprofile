@@ -1,6 +1,3 @@
-# defalut
-alias -s {md,js,ts,jsx,tsx,json,html,xml,css,scss,vue}=nvim
-
 # Dir
 alias ,c='cd ~/Code'
 alias ,m='cd ~/.myprofile'
@@ -67,3 +64,7 @@ alias wsp='export http_proxy=http://127.0.0.1:1080 \
 
 # Tmux
 alias tka='tmux kill-session -a'
+
+# FZF
+alias cdf='cd $(find * -type d | fzf)'
+alias vif='vim $(fzf)'

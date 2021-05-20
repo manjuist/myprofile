@@ -23,4 +23,4 @@ hasCommand brew || ./setup/homebrew_cn_install.sh
 
 runCommand brew the_silver_searcher make cmake \
     ctags ccls uncrustify tidy-html5 yamllint \
-    shfmt swiftformat swiftlint shellcheck
+    shfmt swiftformat swiftlint shellcheck fd highlight

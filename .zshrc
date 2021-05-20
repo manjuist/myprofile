@@ -1,15 +1,10 @@
-#system="$(uname -s)"
-#username="$(whoami)"
-
 export LANG=en_US.UTF-8
-export HOMEBREW_NO_AUTO_UPDATE=true
-
 export PATH=/opt/homebrew/bin:$PATH
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
-# tabtab source for electron-forge package
-# uninstall by removing these lines or running `tabtab uninstall electron-forge`
-[[ -f /Users/dewei.ma/.npm/_npx/6913fdfd1ea7a741/node_modules/tabtab/.completions/electron-forge.zsh ]] && . /Users/dewei.ma/.npm/_npx/6913fdfd1ea7a741/node_modules/tabtab/.completions/electron-forge.zsh
+export FZF_DEFAULT_COMMAND="fd -H --exclude={.git,.idea,.vscode,.sass-cache,node_modules,build} --type f"
+export FZF_DEFAULT_OPTS="--height 60% --border --preview '(highlight -O ansi {} || cat {}) 2> /dev/null | head -50'"
+#export FZF_COMPLETION_TRIGGER='~~'
+
 
 plugins=(git brew gulp man npm osx tmux python sudo yarn)
 # zsh {
@@ -19,9 +14,6 @@ plugins=(git brew gulp man npm osx tmux python sudo yarn)
 
     source $ZSH/oh-my-zsh.sh
     [ -f ~/.alias ] && source ~/.alias
-    [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-    test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 # }
 
 # nvm {
