@@ -17,7 +17,7 @@ if [[ -d "${custom_dir}" ]]; then
 fi
 
 cd "${cur_dir}"
-list="$(ls)"
+list="$(find . -type d -maxdepth 1 | sort)"
 
 select selected in $list; do
     break

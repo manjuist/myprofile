@@ -38,7 +38,7 @@ if [[ -d "${custom_dir}" ]]; then
 fi
 
 cd "${cur_dir}"
-list="$(ls)"
+list="$(find . -type d -maxdepth 1 | sort)"
 
 select selected in $list; do
     break
@@ -48,7 +48,7 @@ if [[ -d "${selected}" ]]; then
     cd "${dir}/${selected}"
     handlerText ./package.json
     select m in "${scriptsLs[@]}"; do
-        nvm use
+        [ -f .nvmrc ] && nvm use
         npm run "$m"
         break
     done
