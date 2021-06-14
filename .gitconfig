@@ -9,6 +9,7 @@
   template=~/.gitmessages
 [merge]
 	tool = diffmerge
+	ff = true
 [diff]
 	tool = diffmerge
 [mergetool "diffmerge"]
@@ -19,4 +20,5 @@
 [difftool]
 	prompt = false
 [pull]
-	rebase = true
+	rebase = false
+	ff = false
