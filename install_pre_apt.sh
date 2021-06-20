@@ -18,9 +18,7 @@ runCommand() {
 }
 
 hasCommand node || ./setup/nvm-install.sh
-hasCommand pip || python ./setup/get-pip.py
+hasCommand pip || hasConnand python3 && python ./setup/get-pip.py
 hasCommand apt && runCommand apt fd-find silversearcher-ag universal-ctags \
-    make cmake uncrustify tidy-html5 yamllint \
-    shfmt swiftformat swiftlint shellcheck jedi \
-    highlight gcc
+    make cmake uncrustify tidy yamllint shellcheck highlight gcc rofi i3
 
