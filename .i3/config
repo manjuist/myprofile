@@ -133,7 +133,8 @@ mode "resize" {
 bar {
 	i3bar_command i3bar
 	status_command i3status
-	position bottom
+	#position bottom
+	position top
 	bindsym button4 nop
 	bindsym button5 nop
 	strip_workspace_numbers yes
