@@ -17,6 +17,11 @@ bindsym $mod+Shift+q kill
 #bindsym $mod+d exec --no-startup-id dmenu_run -l 20
 bindsym $mod+d exec --no-startup-id rofi -show run
 
+bindsym $mod+F1 exec --no-startup-id thunar
+bindsym $mod+F2 exec --no-startup-id google-chrome
+bindsym $mod+F3 exec --no-startup-id /opt/cisco/anyconnect/bin/vpnui
+bindsym $mod+F4 exec --no-startup-id xfce4-settings-manager
+
 bindsym $mod+h focus left
 bindsym $mod+j focus down
 bindsym $mod+k focus up
@@ -76,11 +81,13 @@ bindsym $mod+Shift+7 move container to workspace $ws7; workspace $ws7
 bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
 
 bindsym $mod+9 mode "$mode_application"
-set $mode_application (t)hunar, (c)hrome, (w)ps
+set $mode_application (t)hunar, (c)hrome, (w)ps, (a)nyconnect, (x)face_setting
 mode "$mode_application" {
     bindsym t exec --no-startup-id thunar, mode "default"
     bindsym c exec --no-startup-id google-chrome, mode "default"
     bindsym w exec --no-startup-id wps, mode "default"
+    bindsym a exec --no-startup-id /opt/cisco/anyconnect/bin/vpnui, mode "default"
+    bindsym x exec --no-startup-id xfce4-settings-manager, mode "default"
     # exit system mode: "Enter" or "Escape"
     bindsym Return mode "default"
     bindsym Escape mode "default"
@@ -126,7 +133,8 @@ mode "resize" {
 bar {
 	i3bar_command i3bar
 	status_command i3status
-	position bottom
+	#position bottom
+	position top
 	bindsym button4 nop
 	bindsym button5 nop
 	strip_workspace_numbers yes
