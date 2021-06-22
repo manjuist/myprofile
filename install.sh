@@ -17,42 +17,6 @@ readonly CONFIG_PATH="${APP_PATH}/config"
 [ -z "${REPO_PATH}" ] && REPO_PATH="${APP_PATH}"
 [ -z "${REPO_URI}" ] && REPO_URI="${APP_URL}"
 
-lnif() {
-    if [ -e "$1" ]; then
-        ln -sf "$1" "$2"
-    fi
-}
-
-getFile() {
-    local dir_name=$1
-    # dir_list=$(/usr/bin/find "${dir_name}" -maxdepth 1)
-    dir_list=$(ls "${dir_name}")
-}
-
-handler() {
-    local file
-    local path_name="$1"
-    local target_dir="$2"
-    getFile "${path_name}"
-    for i in ${dir_list}; do
-        file=$(basename "$i")
-        lnif "${path_name}/${file}" "${target_dir}${file%.sh}"
-    done
-}
-
-OSX() {
-    sys_args=$(uname -a | tr "[:upper:]" "[:lower:]")
-    [[ ${sys_args} =~ "darwin" ]] && echo "OSX"
-}
-
-runCommand() {
-    cmd=$1
-    args=$*
-    other_args=${args#* }
-
-    eval "$cmd" install "$other_args"
-}
-
 msg() {
     printf '%b\n' "$1" >&2
 }
@@ -74,6 +38,39 @@ debug() {
     fi
 }
 
+lnif() {
+    if [ -e "$1" ]; then
+        ln -sf "$1" "$2"
+    fi
+}
+
+getFile() {
+    local dir_name=$1
+    # dir_list=$(/usr/bin/find "${dir_name}" -maxdepth 1)
+    dir_list=$(ls "${dir_name}")
+}
+
+handler() {
+    local file
+    local path_name="$1"
+    local target_dir="$2"
+    getFile "${path_name}"
+    for i in ${dir_list}; do
+        file=$(basename "$i")
+        lnif "${path_name}/${file}" "${target_dir}${file%.sh}"
+    done
+
+    ret="$?"
+    success "Link success!"
+    debug
+
+}
+
+OSX() {
+    sys_args=$(uname -a | tr "[:upper:]" "[:lower:]")
+    [[ ${sys_args} =~ "darwin" ]] && echo "OSX"
+}
+
 syncRepo() {
     local repo_path="$1"
     local repo_uri="$2"
@@ -86,19 +83,27 @@ syncRepo() {
         cd "$repo_path" && git pull origin master
         ret="$?"
     fi
-    success "Download success!"
+    success "Clone success!"
     debug
 }
 
 install_mac() {
     brew install neovim zsh the_silver_searcher make cmake ctags uncrustify tidy-html5 \
         yamllint shfmt swiftformat swiftlint fd highlight gcc python3 ## shellcheck
+
+    ret="$?"
+    success "Install APP success!"
+    debug
 }
 
 install_apt() {
     apt install neovim zsh fd-find silversearcher-ag universal-ctags \
         make cmake uncrustify tidy yamllint shellcheck highlight gcc rofi i3 \
         python3
+
+    ret="$?"
+    success "Install APP success!"
+    debug
 }
 
 hasCommand() {
