@@ -9,12 +9,8 @@ set -e
 set -o pipefail
 
 dir=~/Code
-custom_dir=$1
+sys_open=$1
 cur_dir=$dir
-
-if [[ -d "${custom_dir}" ]]; then
-    cur_dir=$custom_dir
-fi
 
 cd "${cur_dir}"
 list="$(find . -type d -maxdepth 1 | sort)"
@@ -25,5 +21,10 @@ done
 
 if [[ -d "${selected}" ]]; then
     echo "${dir}/${selected}"
-    open "${dir}/${selected}"
+    cd "${dir}/${selected}"
+    if [[ -z ${sys_open} ]]; then
+        command zsh
+    else
+        open "${dir}/${selected}"
+    fi
 fi
