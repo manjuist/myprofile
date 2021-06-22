@@ -112,13 +112,13 @@ hasCommand() {
 
 hasCommand git
 
+syncRepo "$REPO_PATH" "$REPO_URI"
+
+handler "$TOOLS_PATH" "${BIN_PATH}"
+handler "$CONFIG_PATH" "$HOME/."
+
 if [[ $(OSX) == "OSX" ]]; then
     install_mac
 else
     install_apt
 fi
-
-syncRepo "$REPO_PATH" "$REPO_URI"
-
-handler "$TOOLS_PATH" "${BIN_PATH}"
-handler "$CONFIG_PATH" "$HOME/."
