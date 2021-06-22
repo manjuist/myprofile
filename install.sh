@@ -93,29 +93,29 @@ syncRepo() {
     debug
 }
 
-hasCommand() {
-    for m in "$@"; do
-        type "$m" >/dev/null 2>&1 || error "\"$m\" was not installed! Dependence \"$*\""
-    done
+install_mac() {
+    brew install the_silver_searcher make cmake ctags uncrustify tidy-html5 \
+        yamllint shfmt swiftformat swiftlint fd highlight gcc python3 ## shellcheck
 }
 
-hasCommand zsh
+install_apt() {
+    apt install fd-find silversearcher-ag universal-ctags \
+        make cmake uncrustify tidy yamllint shellcheck highlight gcc rofi i3 \
+        python3
+}
+
+if [[ $(OSX) == "OSX" ]]; then
+    install_mac
+else
+    install_apt
+fi
 
 syncRepo "$REPO_PATH" "$REPO_URI"
 
-hasCommand node || bash "${SETUP_PATH}/nvm-install.sh"
-hasCommand pip || hasCommand python3 && python3 "${SETUP_PATH}/get-pip.py"
-
-if [[ $(OSX) == "OSX" ]]; then
-    hasCommand brew || bash "${SETUP_PATH}/homebrew_cn_install.sh"
-
-    runCommand brew the_silver_searcher make cmake ctags \
-        uncrustify tidy-html5 yamllint shfmt swiftformat \
-        swiftlint fd highlight gcc ## shellcheck
-else
-    hasCommand apt && runCommand apt fd-find silversearcher-ag universal-ctags \
-        make cmake uncrustify tidy yamllint shellcheck highlight gcc rofi i3
-fi
+source "${SETUP_PATH}/brew.sh"
+source "${SETUP_PATH}/nvm.sh"
+source "${SETUP_PATH}/ohmyzsh.sh"
+python3 "${SETUP_PATH}/pip.py"
 
 handler "$TOOLS_PATH" "${BIN_PATH}"
 handler "$CONFIG_PATH" "$HOME/."
