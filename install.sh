@@ -94,12 +94,12 @@ syncRepo() {
 }
 
 install_mac() {
-    brew install the_silver_searcher make cmake ctags uncrustify tidy-html5 \
+    brew install zsh the_silver_searcher make cmake ctags uncrustify tidy-html5 \
         yamllint shfmt swiftformat swiftlint fd highlight gcc python3 ## shellcheck
 }
 
 install_apt() {
-    apt install fd-find silversearcher-ag universal-ctags \
+    apt install zsh fd-find silversearcher-ag universal-ctags \
         make cmake uncrustify tidy yamllint shellcheck highlight gcc rofi i3 \
         python3
 }
