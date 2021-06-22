@@ -112,6 +112,8 @@ hasCommand() {
     done
 }
 
+rm -rf .i3 .pip
+
 hasCommand git
 
 syncRepo "$REPO_PATH" "$REPO_URI"
