@@ -13,18 +13,17 @@ sys_open=$1
 cur_dir=$dir
 
 cd "${cur_dir}"
-list="$(find . -type d -maxdepth 1 | sort)"
+list="$(find ${dir} -type d -maxdepth 1 | sort)"
 
 select selected in $list; do
     break
 done
 
 if [[ -d "${selected}" ]]; then
-    echo "${dir}/${selected}"
-    cd "${dir}/${selected}"
+    cd "${selected}"
     if [[ -z ${sys_open} ]]; then
         command zsh
     else
-        open "${dir}/${selected}"
+        open "${selected}"
     fi
 fi

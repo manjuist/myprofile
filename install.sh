@@ -3,12 +3,58 @@
 set -e
 set -o pipefail
 
-readonly APP_NAME="myprofile"
-
-[ -z "$REPO_PATH" ] && REPO_PATH="$HOME/.$APP_NAME"
-[ -z "$REPO_URI" ] && REPO_URI="https://github.com/mdvis/$APP_NAME.git"
-
 is_debug="0"
+dir_list=""
+
+readonly APP_NAME="myprofile"
+readonly APP_PATH="${HOME}/.${APP_NAME}"
+readonly APP_URL="https://github.com/mdvis/${APP_NAME}.git"
+
+readonly BIN_PATH="/usr/local/bin/"
+readonly TOOLS_PATH="${APP_PATH}/tools"
+readonly CONFIG_PATH="${APP_PATH}/config"
+readonly SETUP_PATH="${APP_PATH}/setup"
+
+[ -z "${REPO_PATH}" ] && REPO_PATH="${APP_PATH}"
+[ -z "${REPO_URI}" ] && REPO_URI="${APP_URL}"
+
+lnif() {
+    if [ -e "$1" ]; then
+        ln -sf "$1" "$2"
+    fi
+}
+
+getFile() {
+    local dir_name=$1
+    dir_list=$(/usr/bin/find "${dir_name}" -depth 1)
+}
+
+handler() {
+    local dir
+    local file
+    local path_name="$1"
+    local target_dir="$2"
+    getFile "${path_name}"
+    for i in ${dir_list}; do
+        dir=$(dirname "$i")
+        file=$(basename "$i")
+        echo "${dir}/${file} ---> ${target_dir}${file}"
+        lnif "${dir}/${file}" "${target_dir}${file%.sh}"
+    done
+}
+
+OSX() {
+    sys_args=$(uname -a | tr "[:upper:]" "[:lower:]")
+    [[ ${sys_args} =~ "darwin" ]] && echo "OSX"
+}
+
+runCommand() {
+    cmd=$1
+    args=$*
+    other_args=${args#* }
+
+    eval "$cmd" install "$other_args"
+}
 
 msg() {
     printf '%b\n' "$1" >&2
@@ -26,26 +72,10 @@ error() {
 }
 
 debug() {
-    if [ "$is_debug" -eq "1" ] && [ "$ret" -gt "1" ]; then
+    if [ "${is_debug}" -eq "1" ] && [ "${ret}" -gt "1" ]; then
         msg "${FUNCNAME[1]}/${BASH_LINENO[1]}"
     fi
 }
-
-backup(){
-  now=$(date +%Y%m%d_%s)
-    mv "$1" "$1.$now"
-    debug
-}
-
-exiseBackup(){
-    for i in "$@"; do
-        if [ -e "$i" ]; then
-            backup "$i"
-        fi
-    done
-    ret="$?"
-    debug
- }
 
 syncRepo() {
     local repo_path="$1"
@@ -63,56 +93,29 @@ syncRepo() {
     debug
 }
 
-lnif() {
-    if [ -e "$1" ]; then
-        ln -sf "$1" "$2"
-    fi
-    ret="$?"
-    debug
+hasCommand() {
+    for m in "$@"; do
+        type "$m" >/dev/null 2>&1 || error "\"$m\" was not installed! Dependence \"$*\""
+    done
 }
 
-createSymlinks() {
-  local index=1
+hasCommand zsh
 
-  for linkName in "$@"
-  do
-    [ $index -eq 1 ] && local source_path=$linkName
-    [ $index -eq 2 ] && local target_path=$linkName
-    [ $index -ge 3 ] && lnif "$source_path/$linkName" "$target_path/$linkName"
-    index=$((index + 1))
-  done
-  ret="$?"
-  success "Link complete!"
-  debug
-}
+syncRepo "$REPO_PATH" "$REPO_URI"
 
-hasCommand(){
-	for m in "$@"; do
-		type "$m">/dev/null 2>&1 || error "\"$m\" was not installed! Dependence \"$*\""
-	done
-}
+hasCommand node || bash "${SETUP_PATH}/nvm-install.sh"
+hasCommand pip || hasCommand python3 && python3 "${SETUP_PATH}/get-pip.py"
 
-hasCommand      zsh
+if [[ $(OSX) == "OSX" ]]; then
+    hasCommand brew || bash "${SETUP_PATH}/homebrew_cn_install.sh"
 
-exiseBackup     "$HOME/.zshrc" \
-                "$HOME/.alias"
+    runCommand brew the_silver_searcher make cmake ctags \
+        uncrustify tidy-html5 yamllint shfmt swiftformat \
+        swiftlint fd highlight gcc ## shellcheck
+else
+    hasCommand apt && runCommand apt fd-find silversearcher-ag universal-ctags \
+        make cmake uncrustify tidy yamllint shellcheck highlight gcc rofi i3
+fi
 
-syncRepo        "$REPO_PATH" \
-                "$REPO_URI"
-
-createSymlinks  "$REPO_PATH" \
-                "$HOME" \
-                ".agignore" \
-                ".editorconfig" \
-                ".fetchmailrc" \
-                ".gitconfig" \
-                ".gitmessages" \
-                ".msmtprc" \
-                ".muttrc" \
-                ".procmailrc" \
-                ".profile" \
-                ".tern-config" \
-                ".tmux.conf" \
-                ".xprofile" \
-                ".zshrc" \
-                ".alias"
+handler "$TOOLS_PATH" "${BIN_PATH}"
+handler "$CONFIG_PATH" "$HOME/."
