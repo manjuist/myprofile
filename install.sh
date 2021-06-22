@@ -104,6 +104,14 @@ install_apt() {
         python3
 }
 
+hasCommand() {
+    for m in "$@"; do
+        type "$m" >/dev/null 2>&1 || error "\"$m\" was not installed! Dependence \"$*\""
+    done
+}
+
+hasCommand git
+
 if [[ $(OSX) == "OSX" ]]; then
     install_mac
 else
@@ -111,11 +119,6 @@ else
 fi
 
 syncRepo "$REPO_PATH" "$REPO_URI"
-
-source "${SETUP_PATH}/brew.sh"
-source "${SETUP_PATH}/nvm.sh"
-source "${SETUP_PATH}/ohmyzsh.sh"
-python3 "${SETUP_PATH}/pip.py"
 
 handler "$TOOLS_PATH" "${BIN_PATH}"
 handler "$CONFIG_PATH" "$HOME/."
