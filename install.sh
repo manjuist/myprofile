@@ -17,6 +17,8 @@ readonly CONFIG_PATH="${APP_PATH}/config"
 [ -z "${REPO_PATH}" ] && REPO_PATH="${APP_PATH}"
 [ -z "${REPO_URI}" ] && REPO_URI="${APP_URL}"
 
+[ ! -e "${BIN_PATH}" ] && mkdir -p "${BIN_PATH}"
+
 msg() {
     printf '%b\n' "$1" >&2
 }
@@ -112,7 +114,7 @@ hasCommand() {
     done
 }
 
-rm -rf .i3 .pip
+rm -rf "$HOME/.i3" "$HOME/.pip"
 
 hasCommand git
 
