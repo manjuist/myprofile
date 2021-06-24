@@ -90,7 +90,7 @@ syncRepo() {
 }
 
 install_mac() {
-    brew install neovim zsh the_silver_searcher make cmake ctags uncrustify tidy-html5 \
+    brew install neovim zsh the_silver_searcher make cmake ctags uncrustify tidy-html5 tmux \
         yamllint shfmt swiftformat swiftlint fd highlight gcc python3 golang  ## shellcheck
 
     ret="$?"
@@ -101,7 +101,7 @@ install_mac() {
 install_apt() {
     apt install neovim zsh fd-find silversearcher-ag universal-ctags \
         make cmake uncrustify tidy yamllint shellcheck highlight gcc rofi i3 \
-        python3 golang
+        python3 golang tmux
 
     ret="$?"
     success "Install APP success!"
