@@ -101,7 +101,7 @@ install_mac() {
 install_apt() {
     apt install neovim zsh fd-find silversearcher-ag universal-ctags \
         make cmake uncrustify tidy yamllint shellcheck highlight gcc rofi i3 \
-        python3 golang tmux
+        python3 golang tmux konsole
 
     ret="$?"
     success "Install APP success!"
