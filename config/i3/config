@@ -24,15 +24,15 @@ bindsym $mod+F4 exec --no-startup-id xfce4-settings-manager
 bindsym $mod+j focus left
 bindsym $mod+k focus down
 bindsym $mod+l focus up
-bindsym $mod+; focus right
+bindsym $mod+semicolon focus right
 
 bindsym $mod+Shift+j move left
 bindsym $mod+Shift+k move down
 bindsym $mod+Shift+l move up
-bindsym $mod+Shift+; move right
+bindsym $mod+Shift+semicolon move right
 
-bindsym $mod+h split h;exec notify-send 'tile horizontally'
-bindsym $mod+v split v;exec notify-send 'tile vertically'
+bindsym $mod+h split h
+bindsym $mod+v split v
 bindsym $mod+q split toggle
 
 bindsym $mod+f fullscreen toggle
