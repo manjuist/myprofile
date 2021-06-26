@@ -14,7 +14,6 @@ workspace_auto_back_and_forth yes
 # exec --release
 bindsym $mod+Return exec konsole # terminal
 bindsym $mod+Shift+q kill
-#bindsym $mod+d exec --no-startup-id dmenu_run -l 20
 bindsym $mod+d exec --no-startup-id rofi -show drun
 
 bindsym $mod+F1 exec --no-startup-id thunar
@@ -22,19 +21,20 @@ bindsym $mod+F2 exec --no-startup-id google-chrome
 bindsym $mod+F3 exec --no-startup-id /opt/cisco/anyconnect/bin/vpnui
 bindsym $mod+F4 exec --no-startup-id xfce4-settings-manager
 
-bindsym $mod+h focus left
-bindsym $mod+j focus down
-bindsym $mod+k focus up
-bindsym $mod+l focus right
+bindsym $mod+j focus left
+bindsym $mod+k focus down
+bindsym $mod+l focus up
+bindsym $mod+; focus right
 
-bindsym $mod+Shift+h move left
-bindsym $mod+Shift+j move down
-bindsym $mod+Shift+k move up
-bindsym $mod+Shift+l move right
+bindsym $mod+Shift+j move left
+bindsym $mod+Shift+k move down
+bindsym $mod+Shift+l move up
+bindsym $mod+Shift+; move right
 
-#bindsym $mod+h split h;exec notify-send 'tile horizontally'
-#bindsym $mod+v split v;exec notify-send 'tile vertically'
+bindsym $mod+h split h;exec notify-send 'tile horizontally'
+bindsym $mod+v split v;exec notify-send 'tile vertically'
 bindsym $mod+q split toggle
+
 bindsym $mod+f fullscreen toggle
 bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
@@ -94,9 +94,10 @@ mode "$mode_application" {
 }
 
 bindsym $mod+0 mode "$mode_system"
-set $mode_system (l)ock, (u)ser, (r)eboot, (e)xit
+set $mode_system (l)ock, (s)uspend, (u)ser, (r)eboot, (e)xit
 mode "$mode_system" {
     bindsym l exec --no-startup-id i3lock, mode "default"
+    bindsym s exec --no-startup-id systemctl suspend, mode "default"
     bindsym u exec --no-startup-id i3-msg exit, mode "default"
     bindsym r exec --no-startup-id systemctl reboot, mode "default"
     bindsym e exec --no-startup-id systemctl poweroff, mode "default"
