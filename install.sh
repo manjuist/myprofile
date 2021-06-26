@@ -3,12 +3,21 @@
 set -e
 set -o pipefail
 
-readonly APP_NAME="myprofile"
-
-[ -z "$REPO_PATH" ] && REPO_PATH="$HOME/.$APP_NAME"
-[ -z "$REPO_URI" ] && REPO_URI="https://github.com/mdvis/$APP_NAME.git"
-
 is_debug="0"
+dir_list=""
+
+readonly APP_NAME="myprofile"
+readonly APP_PATH="${HOME}/.${APP_NAME}"
+readonly APP_URL="https://github.com/mdvis/${APP_NAME}.git"
+
+readonly BIN_PATH="$HOME/.local/bin/"
+readonly TOOLS_PATH="${APP_PATH}/tools"
+readonly CONFIG_PATH="${APP_PATH}/config"
+
+[ -z "${REPO_PATH}" ] && REPO_PATH="${APP_PATH}"
+[ -z "${REPO_URI}" ] && REPO_URI="${APP_URL}"
+
+[ ! -e "${BIN_PATH}" ] && mkdir -p "${BIN_PATH}"
 
 msg() {
     printf '%b\n' "$1" >&2
@@ -26,26 +35,43 @@ error() {
 }
 
 debug() {
-    if [ "$is_debug" -eq "1" ] && [ "$ret" -gt "1" ]; then
+    if [ "${is_debug}" -eq "1" ] && [ "${ret}" -gt "1" ]; then
         msg "${FUNCNAME[1]}/${BASH_LINENO[1]}"
     fi
 }
 
-backup(){
-  now=$(date +%Y%m%d_%s)
-    mv "$1" "$1.$now"
-    debug
+lnif() {
+    if [ -e "$1" ]; then
+        ln -sf "$1" "$2"
+    fi
 }
 
-exiseBackup(){
-    for i in "$@"; do
-        if [ -e "$i" ]; then
-            backup "$i"
-        fi
+getFile() {
+    local dir_name=$1
+    # dir_list=$(/usr/bin/find "${dir_name}" -maxdepth 1)
+    dir_list=$(ls "${dir_name}")
+}
+
+handler() {
+    local file
+    local path_name="$1"
+    local target_dir="$2"
+    getFile "${path_name}"
+    for i in ${dir_list}; do
+        file=$(basename "$i")
+        lnif "${path_name}/${file}" "${target_dir}${file%.sh}"
     done
+
     ret="$?"
+    success "Link success!"
     debug
- }
+
+}
+
+OSX() {
+    sys_args=$(uname -a | tr "[:upper:]" "[:lower:]")
+    [[ ${sys_args} =~ "darwin" ]] && echo "OSX"
+}
 
 syncRepo() {
     local repo_path="$1"
@@ -53,66 +79,52 @@ syncRepo() {
 
     if [ ! -e "$repo_path" ]; then
         mkdir -p "$repo_path"
-        git clone "$repo_uri" "$repo_path"
+        git clone --depth 1 "$repo_uri" "$repo_path"
         ret="$?"
     else
         cd "$repo_path" && git pull origin master
         ret="$?"
     fi
-    success "Download success!"
+    success "Clone success!"
     debug
 }
 
-lnif() {
-    if [ -e "$1" ]; then
-        ln -sf "$1" "$2"
-    fi
+install_mac() {
+    brew install neovim zsh the_silver_searcher make cmake ctags uncrustify tidy-html5 tmux \
+        yamllint shfmt swiftformat swiftlint fd highlight gcc python3 golang  ## shellcheck
+
     ret="$?"
+    success "Install APP success!"
     debug
 }
 
-createSymlinks() {
-  local index=1
+install_apt() {
+    apt install neovim zsh fd-find silversearcher-ag universal-ctags \
+        make cmake uncrustify tidy yamllint shellcheck highlight gcc rofi i3 \
+        python3 python3-dev golang tmux konsole
 
-  for linkName in "$@"
-  do
-    [ $index -eq 1 ] && local source_path=$linkName
-    [ $index -eq 2 ] && local target_path=$linkName
-    [ $index -ge 3 ] && lnif "$source_path/$linkName" "$target_path/$linkName"
-    index=$((index + 1))
-  done
-  ret="$?"
-  success "Link complete!"
-  debug
+    ret="$?"
+    success "Install APP success!"
+    debug
 }
 
-hasCommand(){
-	for m in "$@"; do
-		type "$m">/dev/null 2>&1 || error "\"$m\" was not installed! Dependence \"$*\""
-	done
+hasCommand() {
+    for m in "$@"; do
+        type "$m" >/dev/null 2>&1 || error "\"$m\" was not installed! Dependence \"$*\""
+    done
 }
 
-hasCommand      zsh
+rm -rf "$HOME/.i3" "$HOME/.pip"
 
-exiseBackup     "$HOME/.zshrc" \
-                "$HOME/.alias"
+hasCommand git
 
-syncRepo        "$REPO_PATH" \
-                "$REPO_URI"
+syncRepo "$REPO_PATH" "$REPO_URI"
 
-createSymlinks  "$REPO_PATH" \
-                "$HOME" \
-                ".agignore" \
-                ".editorconfig" \
-                ".fetchmailrc" \
-                ".gitconfig" \
-                ".gitmessages" \
-                ".msmtprc" \
-                ".muttrc" \
-                ".procmailrc" \
-                ".profile" \
-                ".tern-config" \
-                ".tmux.conf" \
-                ".xprofile" \
-                ".zshrc" \
-                ".alias"
+handler "$TOOLS_PATH" "${BIN_PATH}"
+handler "$CONFIG_PATH" "$HOME/."
+
+if [[ $(OSX) == "OSX" ]]; then
+    install_mac
+else
+    install_apt
+fi

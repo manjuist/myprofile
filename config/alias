@@ -1,7 +1,7 @@
 # Dir
 alias ,c='cd ~/Code'
 alias ,m='cd ~/.myprofile'
-alias ,d='cd ~/.dvim'
+alias ,d='cd ~/.vim'
 
 # Profile
 alias et='exit'

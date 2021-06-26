@@ -1,0 +1,184 @@
+# Mod1 Alt
+# Mod4 Win
+set $mod Mod1
+#font pango:monospace 16
+font pango:SauceCodePro\ Nerd\ Font 16
+
+new_float normal
+new_window pixel 1
+hide_edge_borders none
+floating_modifier $mod
+workspace_auto_back_and_forth yes
+
+# exec --no-startup-id
+# exec --release
+bindsym $mod+Return exec konsole # terminal
+bindsym $mod+Shift+q kill
+bindsym $mod+d exec --no-startup-id rofi -show drun
+
+bindsym $mod+F1 exec --no-startup-id thunar
+bindsym $mod+F2 exec --no-startup-id google-chrome
+bindsym $mod+F3 exec --no-startup-id /opt/cisco/anyconnect/bin/vpnui
+bindsym $mod+F4 exec --no-startup-id xfce4-settings-manager
+
+bindsym $mod+j focus left
+bindsym $mod+k focus down
+bindsym $mod+l focus up
+bindsym $mod+semicolon focus right
+
+bindsym $mod+Shift+j move left
+bindsym $mod+Shift+k move down
+bindsym $mod+Shift+l move up
+bindsym $mod+Shift+semicolon move right
+
+bindsym $mod+h split h
+bindsym $mod+v split v
+bindsym $mod+q split toggle
+
+bindsym $mod+f fullscreen toggle
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+bindsym $mod+Shift+space floating toggle
+bindsym $mod+space focus mode_toggle
+bindsym $mod+Shift+s sticky toggle
+bindsym $mod+a focus parent
+
+set $ws1 1
+set $ws2 2
+set $ws3 3
+set $ws4 4
+set $ws5 5
+set $ws6 6
+set $ws7 7
+set $ws8 8
+
+bindsym $mod+1 workspace $ws1
+bindsym $mod+2 workspace $ws2
+bindsym $mod+3 workspace $ws3
+bindsym $mod+4 workspace $ws4
+bindsym $mod+5 workspace $ws5
+bindsym $mod+6 workspace $ws6
+bindsym $mod+7 workspace $ws7
+bindsym $mod+8 workspace $ws8
+
+bindsym $mod+Ctrl+1 move container to workspace $ws1
+bindsym $mod+Ctrl+2 move container to workspace $ws2
+bindsym $mod+Ctrl+3 move container to workspace $ws3
+bindsym $mod+Ctrl+4 move container to workspace $ws4
+bindsym $mod+Ctrl+5 move container to workspace $ws5
+bindsym $mod+Ctrl+6 move container to workspace $ws6
+bindsym $mod+Ctrl+7 move container to workspace $ws7
+bindsym $mod+Ctrl+8 move container to workspace $ws8
+
+bindsym $mod+Shift+1 move container to workspace $ws1; workspace $ws1
+bindsym $mod+Shift+2 move container to workspace $ws2; workspace $ws2
+bindsym $mod+Shift+3 move container to workspace $ws3; workspace $ws3
+bindsym $mod+Shift+4 move container to workspace $ws4; workspace $ws4
+bindsym $mod+Shift+5 move container to workspace $ws5; workspace $ws5
+bindsym $mod+Shift+6 move container to workspace $ws6; workspace $ws6
+bindsym $mod+Shift+7 move container to workspace $ws7; workspace $ws7
+bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
+
+bindsym $mod+9 mode "$mode_application"
+set $mode_application (t)hunar, (c)hrome, (w)ps, (a)nyconnect, (x)face_setting
+mode "$mode_application" {
+    bindsym t exec --no-startup-id thunar, mode "default"
+    bindsym c exec --no-startup-id google-chrome, mode "default"
+    bindsym w exec --no-startup-id wps, mode "default"
+    bindsym a exec --no-startup-id /opt/cisco/anyconnect/bin/vpnui, mode "default"
+    bindsym x exec --no-startup-id xfce4-settings-manager, mode "default"
+    # exit system mode: "Enter" or "Escape"
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
+bindsym $mod+0 mode "$mode_system"
+set $mode_system (l)ock, (s)uspend, (u)ser, (r)eboot, (e)xit
+mode "$mode_system" {
+    bindsym l exec --no-startup-id i3lock, mode "default"
+    bindsym s exec --no-startup-id systemctl suspend, mode "default"
+    bindsym u exec --no-startup-id i3-msg exit, mode "default"
+    bindsym r exec --no-startup-id systemctl reboot, mode "default"
+    bindsym e exec --no-startup-id systemctl poweroff, mode "default"
+    # exit system mode: "Enter" or "Escape"
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
+bindsym $mod+Shift+c reload
+bindsym $mod+Shift+r restart
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+
+bindsym $mod+r mode "resize"
+mode "resize" {
+        # These bindings trigger as soon as you enter the resize mode
+        # Pressing left will shrink the window’s width.
+        # Pressing right will grow the window’s width.
+        # Pressing up will shrink the window’s height.
+        # Pressing down will grow the window’s height.
+        bindsym j resize shrink width 5 px or 5 ppt
+        bindsym k resize grow height 5 px or 5 ppt
+        bindsym l resize shrink height 5 px or 5 ppt
+        bindsym semicolon resize grow width 5 px or 5 ppt
+        # same bindings, but for the arrow keys
+        bindsym Left resize shrink width 10 px or 10 ppt
+        bindsym Down resize grow height 10 px or 10 ppt
+        bindsym Up resize shrink height 10 px or 10 ppt
+        bindsym Right resize grow width 10 px or 10 ppt
+        # exit resize mode: Enter or Escape
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+bar {
+	i3bar_command i3bar
+	status_command i3status
+	#position bottom
+	position top
+	bindsym button4 nop
+	bindsym button5 nop
+	strip_workspace_numbers yes
+    #mode hide
+    font pango:SauceCodePro\ Nerd\ Font 14
+    colors {
+        background #222D31
+        statusline #F9FAF9
+        separator  #454947
+        focused_workspace  #F9FAF9 #16a085 #292F34
+        active_workspace   #595B5B #353836 #FDF6E3
+        inactive_workspace #595B5B #222D31 #EEE8D5
+        binding_mode       #16a085 #2C2C2C #F9FAF9
+        urgent_workspace   #16a085 #FDF6E3 #E5201D
+    }
+}
+
+bindsym $mod+m bar mode toggle
+  client.focused          #556064 #556064 #80FFF9 #FDF6E3
+  client.focused_inactive #2F3D44 #2F3D44 #1ABC9C #454948
+  client.unfocused        #2F3D44 #2F3D44 #1ABC9C #454948
+  client.urgent           #CB4B16 #FDF6E3 #1ABC9C #268BD2
+  client.placeholder      #000000 #0c0c0c #ffffff #000000
+  client.background       #2B2C2B
+
+#方案一 此方案在我这里音量调节无上限，喇叭都要炸了！因此我用方案二
+#set $refresh_i3status killall -SIGUSR1 i3status
+#bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
+#bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
+#bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
+#bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+
+#方案二  经测试后面的值为6550+- 刚好每次加减音量10%，如果有强迫证建议修改
+#bindsym XF86AudioRaiseVolume exec amixer set Master playback 5000+
+#bindsym XF86AudioLowerVolume exec amixer set Master playback 5000-
+#bindsym XF86AudioMute exec amixer set Master toggle
+
+#方案一
+#xorg-xbacklight, acpilight
+#bindsym XF86MonBrightnessUp exec "xbacklight -inc 10; notify-send 'brightness up'"
+#bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness down'"
+
+#方案二
+#light-git
+#bindsym XF86MonBrightnessUp exec light -A 10
+#bindsym XF86MonBrightnessDown exec light -U 10
