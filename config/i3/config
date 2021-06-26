@@ -1,6 +1,6 @@
 # Mod1 Alt
 # Mod4 Win
-set $mod Mod4
+set $mod Mod1
 #font pango:monospace 16
 font pango:SauceCodePro\ Nerd\ Font 16
 
