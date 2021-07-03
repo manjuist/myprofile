@@ -12,7 +12,8 @@ workspace_auto_back_and_forth yes
 
 # exec --no-startup-id
 # exec --release
-bindsym $mod+Return exec konsole # terminal
+# term -> alacritty
+bindsym $mod+Return exec konsole # terminal/alacritty
 bindsym $mod+Shift+q kill
 bindsym $mod+d exec --no-startup-id rofi -show drun
 
@@ -96,6 +97,7 @@ mode "$mode_application" {
 bindsym $mod+0 mode "$mode_system"
 set $mode_system (l)ock, (s)uspend, (u)ser, (r)eboot, (e)xit
 mode "$mode_system" {
+    #bindsym l exec --no-startup-id i3lock-fancy, mode "default"
     bindsym l exec --no-startup-id i3lock, mode "default"
     bindsym s exec --no-startup-id systemctl suspend, mode "default"
     bindsym u exec --no-startup-id i3-msg exit, mode "default"
@@ -182,3 +184,9 @@ bindsym $mod+m bar mode toggle
 #light-git
 #bindsym XF86MonBrightnessUp exec light -A 10
 #bindsym XF86MonBrightnessDown exec light -U 10
+#
+#指定程序启动默认在指定workspace启动
+#assign [class="(?i)Chrome"] $ws1
+#assign [class="vlc"] $ws1
+# 开机启动输入法
+#exec --no-startup-id fcitx
