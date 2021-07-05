@@ -1,6 +1,6 @@
 export LANG=en_US.UTF-8
 export PATH=/opt/homebrew/bin:$PATH
-export PATH="${HOME}/.local/bin":$PATH
+export PATH=${HOME}/.local/bin:$PATH
 
 export FZF_DEFAULT_COMMAND="fd -H -t f -t d --exclude={.git,.idea,.vscode,.sass-cache,node_modules,build}"
 export FZF_DEFAULT_OPTS="--height 40% --border --preview '(highlight -O ansi {} || cat {}) 2> /dev/null | head -50'"
