@@ -65,12 +65,21 @@ handler() {
     ret="$?"
     success "Link success!"
     debug
-
 }
 
 OSX() {
     sys_args=$(uname -a | tr "[:upper:]" "[:lower:]")
     [[ ${sys_args} =~ "darwin" ]] && echo "OSX"
+}
+
+MANJARO() {
+    sys_args=$(uname -a | tr "[:upper:]" "[:lower:]")
+    [[ ${sys_args} =~ "arch" ]] && echo "MANJARO"
+}
+
+MINT() {
+    sys_args=$(uname -a | tr "[:upper:]" "[:lower:]")
+    [[ ${sys_args} =~ "mint" ]] && echo "MINT"
 }
 
 syncRepo() {
@@ -91,7 +100,7 @@ syncRepo() {
 
 install_mac() {
     brew install neovim zsh the_silver_searcher make cmake ctags uncrustify tidy-html5 tmux \
-        yamllint shfmt swiftformat swiftlint fd highlight gcc python3 golang  ## shellcheck
+        yamllint shfmt swiftformat swiftlint fd highlight gcc python3 golang ## shellcheck
 
     ret="$?"
     success "Install APP success!"
@@ -99,6 +108,16 @@ install_mac() {
 }
 
 install_apt() {
+    apt install neovim zsh fd-find silversearcher-ag universal-ctags \
+        make cmake uncrustify tidy yamllint shellcheck highlight gcc rofi i3 \
+        python3 python3-dev golang tmux konsole
+
+    ret="$?"
+    success "Install APP success!"
+    debug
+}
+
+install_pacman() {
     apt install neovim zsh fd-find silversearcher-ag universal-ctags \
         make cmake uncrustify tidy yamllint shellcheck highlight gcc rofi i3 \
         python3 python3-dev golang tmux konsole
@@ -125,6 +144,12 @@ handler "$CONFIG_PATH" "$HOME/."
 
 if [[ $(OSX) == "OSX" ]]; then
     install_mac
-else
+fi
+
+if [[ ${MANJARO} ]]; then
+    install_pacman
+fi
+
+if [[ ${MINT} ]]; then
     install_apt
 fi

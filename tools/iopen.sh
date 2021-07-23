@@ -13,7 +13,7 @@ sys_open=$1
 cur_dir=$dir
 
 cd "${cur_dir}"
-list="$(find ${dir} -type d -maxdepth 1 | sort)"
+list="$(find . -type d -maxdepth 1 | sort)"
 
 select selected in $list; do
     break
