@@ -23,7 +23,5 @@ font:
 
 # Shell configuration
 shell:
-    program: /bin/zsh
-    args:
-        - --login
+    program: /usr/local/bin/tmux
 # End Shell configuration
