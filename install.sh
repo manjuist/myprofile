@@ -68,17 +68,17 @@ handler() {
 }
 
 OSX() {
-    sys_args=$(uname -a | tr "[:upper:]" "[:lower:]")
+    sys_args=$(uname -s | tr "[:upper:]" "[:lower:]")
     [[ ${sys_args} =~ "darwin" ]] && echo "OSX"
 }
 
 MANJARO() {
-    sys_args=$(uname -a | tr "[:upper:]" "[:lower:]")
+    sys_args=$(uname -n | tr "[:upper:]" "[:lower:]")
     [[ ${sys_args} =~ "arch" ]] && echo "MANJARO"
 }
 
 MINT() {
-    sys_args=$(uname -a | tr "[:upper:]" "[:lower:]")
+    sys_args=$(uname -n | tr "[:upper:]" "[:lower:]")
     [[ ${sys_args} =~ "mint" ]] && echo "MINT"
 }
 
