@@ -20,8 +20,8 @@ select selected in $list; do
 done
 
 if [[ -d "${selected}" ]]; then
-    cd "${selected}"
     if [[ -z ${sys_open} ]]; then
+        cd "${selected}"
         command zsh
     else
         open "${selected}"
