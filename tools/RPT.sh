@@ -9,7 +9,6 @@ set -e
 set -o pipefail
 
 currentDay=$(date +"%w")
-currentTime=$(date)
 dir=~/Code
 custom_dir=$2
 cur_dir=$dir
@@ -30,9 +29,7 @@ done
 
 cd "${selected}"
 
-echo "----${currentTime}----" >>~/report
-
 git log --oneline --since="${currentDay}".days --author="${author}" | grep ": " |
-    awk -F ":" '{print $2}' | uniq | cat -n >>~/report
+    awk -F ":" '{print $2}' | uniq | cat >>~/report
 
 nvim ~/report || vim ~/report
