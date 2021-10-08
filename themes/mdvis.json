@@ -422,7 +422,7 @@
   },
   "Name" : "mdvis",
   "Blinking Cursor" : true,
-  "Guid" : "DDA3BB56-3779-4DF0-B46D-463CC3197F56",
+  "Guid" : "5CDEC89E-DC12-4BD5-A1AC-1C7463B8EB95",
   "Badge Max Width" : 0.080000000000000002,
   "Idle Code" : 0,
   "Ansi 10 Color" : {
@@ -459,7 +459,7 @@
   },
   "Cursor Type" : 0,
   "Blur" : true,
-  "Normal Font" : "SauceCodeProNerdFontComplete-Regular 16",
+  "Normal Font" : "SauceCodeProNerdFontComplete-Light 20",
   "Vertical Spacing" : 1,
   "Ansi 7 Color" : {
     "Red Component" : 0.5926094651222229,
@@ -515,7 +515,7 @@
   "Unicode Normalization" : 0,
   "Show Timestamps" : 0,
   "Visual Bell" : true,
-  "Custom Directory" : "Yes",
+  "ASCII Ligatures" : false,
   "Thin Strokes" : 4,
-  "ASCII Ligatures" : false
+  "Custom Directory" : "Yes"
 }
