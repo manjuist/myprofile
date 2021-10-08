@@ -170,10 +170,10 @@
 	<data>
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
 	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGkCwwVFlUkbnVsbNQNDg8QERIT
-	FFZOU1NpemVYTlNmRmxhZ3NWTlNOYW1lViRjbGFzcyNAMgAAAAAAABAQgAKAA18QJFNh
-	dWNlQ29kZVByb05lcmRGb250Q29tcGxldGUtUmVndWxhctIXGBkaWiRjbGFzc25hbWVY
-	JGNsYXNzZXNWTlNGb250ohkbWE5TT2JqZWN0CBEaJCkyN0lMUVNYXmdud36FjpCSlLvA
-	y9Tb3gAAAAAAAAEBAAAAAAAAABwAAAAAAAAAAAAAAAAAAADn
+	FFZOU1NpemVYTlNmRmxhZ3NWTlNOYW1lViRjbGFzcyNANAAAAAAAABAQgAKAA18QIlNh
+	dWNlQ29kZVByb05lcmRGb250Q29tcGxldGUtTGlnaHTSFxgZGlokY2xhc3NuYW1lWCRj
+	bGFzc2VzVk5TRm9udKIZG1hOU09iamVjdAgRGiQpMjdJTFFTWF5nbnd+hY6QkpS5vsnS
+	2dwAAAAAAAABAQAAAAAAAAAcAAAAAAAAAAAAAAAAAAAA5Q==
 	</data>
 	<key>ProfileCurrentVersion</key>
 	<real>2.0699999999999998</real>
@@ -217,7 +217,7 @@
 	<key>columnCount</key>
 	<integer>90</integer>
 	<key>name</key>
-	<string>Gruvbox</string>
+	<string>mdvis</string>
 	<key>rowCount</key>
 	<integer>50</integer>
 	<key>shellExitAction</key>
