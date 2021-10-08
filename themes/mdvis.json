@@ -183,7 +183,7 @@
   },
   "Use Non-ASCII Font" : false,
   "Shortcut" : "M",
-  "Background Image Location" : "\/Users\/deve\/Desktop\/我的坚果云\/壁纸\/PC_00001.jpg",
+  "Background Image Location" : "\/Users\/deve\/.myprofile\/themes\/PC_00001.jpg",
   "Bold Color" : {
     "Red Component" : 1,
     "Color Space" : "Calibrated",
@@ -458,7 +458,7 @@
     "Green Component" : 0.11759573966264725
   },
   "Cursor Type" : 0,
-  "Blur" : true,
+  "Blur" : false,
   "Normal Font" : "SauceCodeProNerdFontComplete-Light 20",
   "Vertical Spacing" : 1,
   "Ansi 7 Color" : {
@@ -475,7 +475,7 @@
   "Reduce Flicker" : false,
   "Option Key Sends" : 0,
   "Blink Allowed" : false,
-  "Custom Icon Path" : "\/Users\/dewei.ma\/Downloads\/77_ekg_22px_536599_easyicon.net.ico",
+  "Custom Icon Path" : "\/Users\/deve\/.myprofile\/themes\/Ring.ico",
   "Ansi 15 Color" : {
     "Red Component" : 0.90061241388320923,
     "Color Space" : "Calibrated",
@@ -515,7 +515,7 @@
   "Unicode Normalization" : 0,
   "Show Timestamps" : 0,
   "Visual Bell" : true,
-  "ASCII Ligatures" : false,
+  "Custom Directory" : "Yes",
   "Thin Strokes" : 4,
-  "Custom Directory" : "Yes"
+  "ASCII Ligatures" : false
 }
