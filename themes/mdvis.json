@@ -33,7 +33,7 @@
     "Green Component" : 0.82989895343780518
   },
   "Right Option Key Sends" : 0,
-  "Show Status Bar" : true,
+  "Show Status Bar" : false,
   "Character Encoding" : 4,
   "Selection Color" : {
     "Red Component" : 0.90061241388320923,
@@ -100,7 +100,7 @@
           "layout advanced configuration dictionary value" : {
             "remove empty components" : true,
             "font" : "SauceCodeProNerdFontComplete-Regular 12",
-            "algorithm" : 1,
+            "algorithm" : 0,
             "auto-rainbow style" : 2
           }
         }
@@ -121,7 +121,7 @@
           "layout advanced configuration dictionary value" : {
             "remove empty components" : true,
             "font" : "SauceCodeProNerdFontComplete-Regular 12",
-            "algorithm" : 1,
+            "algorithm" : 0,
             "auto-rainbow style" : 2
           }
         }
@@ -142,7 +142,7 @@
           "layout advanced configuration dictionary value" : {
             "remove empty components" : true,
             "font" : "SauceCodeProNerdFontComplete-Regular 12",
-            "algorithm" : 1,
+            "algorithm" : 0,
             "auto-rainbow style" : 2
           }
         }
@@ -151,7 +151,7 @@
     "advanced configuration" : {
       "remove empty components" : true,
       "font" : "SauceCodeProNerdFontComplete-Regular 12",
-      "algorithm" : 1,
+      "algorithm" : 0,
       "auto-rainbow style" : 2
     }
   },
@@ -183,7 +183,6 @@
   },
   "Use Non-ASCII Font" : false,
   "Shortcut" : "M",
-  "Background Image Location" : "\/Users\/deve\/.myprofile\/themes\/PC_00001.jpg",
   "Bold Color" : {
     "Red Component" : 1,
     "Color Space" : "Calibrated",
@@ -191,7 +190,7 @@
     "Alpha Component" : 1,
     "Green Component" : 1
   },
-  "Unlimited Scrollback" : false,
+  "Unlimited Scrollback" : true,
   "Custom Command" : "No",
   "Title Components" : 2,
   "Keyboard Map" : {
@@ -376,8 +375,8 @@
     "profile",
     "zsh",
     "tmux",
-    "font",
-    "color"
+    "fonts",
+    "colors"
   ],
   "Ansi 9 Color" : {
     "Red Component" : 0.96744710206985474,
@@ -396,7 +395,8 @@
     "Alpha Component" : 1,
     "Green Component" : 0.58534377813339233
   },
-  "Window Type" : 1,
+  "Window Type" : 0,
+  "Allow Title Reporting" : false,
   "Use Bright Bold" : true,
   "Cursor Text Color" : {
     "Red Component" : 0.11759927868843079,
@@ -422,7 +422,7 @@
   },
   "Name" : "mdvis",
   "Blinking Cursor" : true,
-  "Guid" : "5CDEC89E-DC12-4BD5-A1AC-1C7463B8EB95",
+  "Guid" : "DE6D3676-2EAA-40D6-94F2-67ABC208E38F",
   "Badge Max Width" : 0.080000000000000002,
   "Idle Code" : 0,
   "Ansi 10 Color" : {
@@ -446,8 +446,13 @@
     "Alpha Component" : 0.5,
     "Green Component" : 0.28100395202636719
   },
+  "Semantic History" : {
+    "action" : "best editor",
+    "text" : "",
+    "editor" : "com.github.atom"
+  },
   "Ambiguous Double Width" : false,
-  "Blur Radius" : 6.4287904779961771,
+  "Blur Radius" : 6.6451695393041232,
   "Badge Max Height" : 0.070000000000000034,
   "Background Image Mode" : 0,
   "Ansi 0 Color" : {
@@ -474,8 +479,9 @@
   "Horizontal Spacing" : 1,
   "Reduce Flicker" : false,
   "Option Key Sends" : 0,
+  "Only The Default BG Color Uses Transparency" : true,
   "Blink Allowed" : false,
-  "Custom Icon Path" : "\/Users\/deve\/.myprofile\/themes\/Ring.ico",
+  "Custom Icon Path" : "",
   "Ansi 15 Color" : {
     "Red Component" : 0.90061241388320923,
     "Color Space" : "Calibrated",
@@ -491,7 +497,7 @@
     "Alpha Component" : 1,
     "Green Component" : 0.55607825517654419
   },
-  "Transparency" : 0.056679895279255328,
+  "Transparency" : 0.091623711340206151,
   "Badge Top Margin" : 10,
   "Background Color" : {
     "Red Component" : 0.11759927868843079,
