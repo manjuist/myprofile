@@ -41,6 +41,8 @@ alias glg='git log \
   --date=format:"%m/%d-%H:%M" \
   --pretty="%C(yellow)%h %<(12,trunc)%C(red)%ad %<(12,trunc)%C(blue)%cn %C(reset)%s"'
 alias gl5='glg -5'
+alias gss='git stash save'
+alias gsp='git stash pop'
 
 # Npm
 alias cnpm='npm --registry https://registry.npm.taobao.org/'
