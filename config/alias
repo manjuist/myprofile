@@ -8,7 +8,6 @@ alias et='exit'
 alias c='clear'
 alias rm='rm -i'
 alias rmf='rm -rf'
-alias hs='history'
 alias vi='nvim'
 alias vim='nvim'
 alias l='ls -1AF'
@@ -22,7 +21,7 @@ alias ga='git add'
 alias gaa='git add -A'
 alias gap='git add -p'
 alias gs='git status --short'
-alias gf='git fetch origin'
+alias gfo='git fetch origin'
 alias gl='git pull'
 alias gp='git push'
 alias glp='git pull && git push'
@@ -40,9 +39,10 @@ alias gba='echo "$(git branch -a)"'
 alias glg='git log \
   --date=format:"%m/%d-%H:%M" \
   --pretty="%C(yellow)%h %<(12,trunc)%C(red)%ad %<(12,trunc)%C(blue)%cn %C(reset)%s"'
-alias gl5='glg -5'
 alias gss='git stash save'
 alias gsp='git stash pop'
+alias gcl='git clone '
+alias gri='git rebase -i '
 
 # Npm
 alias cnpm='npm --registry https://registry.npm.taobao.org/'
@@ -52,7 +52,7 @@ alias wnpm='npm --registry http://npm-registry.lan'
 #
 alias unsp='unset http_proxy https_proxy'
 
-alias msp='export http_proxy=http://127.0.0.1:1087 \
+alias sp='export http_proxy=http://127.0.0.1:1087 \
   export https_proxy=http://127.0.0.1:1087'
 
 # Tmux
