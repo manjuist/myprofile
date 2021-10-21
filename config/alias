@@ -52,17 +52,8 @@ alias wnpm='npm --registry http://npm-registry.lan'
 #
 alias unsp='unset http_proxy https_proxy'
 
-# OS X
 alias msp='export http_proxy=http://127.0.0.1:1087 \
   export https_proxy=http://127.0.0.1:1087'
-
-# lantern
-alias lsp='export http_proxy=http://127.0.0.1:49919 \
-  export https_proxy=http://127.0.0.1:49919'
-
-# wls
-alias wsp='export http_proxy=http://127.0.0.1:1080 \
-  export https_proxy=http://127.0.0.1:1080'
 
 # Tmux
 alias tka='tmux kill-session -a'
