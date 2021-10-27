@@ -16,7 +16,7 @@
     "Alpha Component" : 1,
     "Green Component" : 0.2891082763671875
   },
-  "Rows" : 25,
+  "Rows" : 22,
   "Ansi 11 Color" : {
     "Red Component" : 0.96949708461761475,
     "Color Space" : "Calibrated",
@@ -66,7 +66,7 @@
     "slogin",
     "telnet"
   ],
-  "Scrollback Lines" : 1000,
+  "Scrollback Lines" : 0,
   "Draw Powerline Glyphs" : false,
   "Status Bar Layout" : {
     "components" : [
@@ -92,7 +92,7 @@
             "Network download color" : {
               "Red Component" : 0,
               "Color Space" : "sRGB",
-              "Blue Component" : 0.026778578758239746,
+              "Blue Component" : 0.026778578758239736,
               "Alpha Component" : 1,
               "Green Component" : 0.42865347862243652
             }
@@ -422,7 +422,7 @@
   },
   "Name" : "mdvis",
   "Blinking Cursor" : true,
-  "Guid" : "DE6D3676-2EAA-40D6-94F2-67ABC208E38F",
+  "Guid" : "0402CA0E-81AF-4438-AF08-886AB1D3300A",
   "Badge Max Width" : 0.080000000000000002,
   "Idle Code" : 0,
   "Ansi 10 Color" : {
@@ -464,7 +464,7 @@
   },
   "Cursor Type" : 0,
   "Blur" : false,
-  "Normal Font" : "SauceCodeProNerdFontComplete-Light 20",
+  "Normal Font" : "FuraCodeNerdFontComplete-Retina 20",
   "Vertical Spacing" : 1,
   "Ansi 7 Color" : {
     "Red Component" : 0.5926094651222229,
@@ -497,7 +497,7 @@
     "Alpha Component" : 1,
     "Green Component" : 0.55607825517654419
   },
-  "Transparency" : 0.091623711340206151,
+  "Transparency" : 0.09162371134020611,
   "Badge Top Margin" : 10,
   "Background Color" : {
     "Red Component" : 0.11759927868843079,
@@ -517,11 +517,11 @@
     "Alpha Component" : 1,
     "Green Component" : 0.43883562088012695
   },
-  "Columns" : 80,
+  "Columns" : 88,
   "Unicode Normalization" : 0,
   "Show Timestamps" : 0,
   "Visual Bell" : true,
-  "Custom Directory" : "Yes",
+  "ASCII Ligatures" : true,
   "Thin Strokes" : 4,
-  "ASCII Ligatures" : false
+  "Custom Directory" : "Yes"
 }
