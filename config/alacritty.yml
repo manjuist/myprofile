@@ -3,19 +3,19 @@
 # Font configuration
 font:
     normal:
-        family: SauceCodePro Nerd Font
-        style: Regular
+        family: FuraCode NF
+        style: Retina
 
     bold:
-        family: SauceCodePro Nerd Font
+        family: FuraCode NF
         style: Bold
 
     italic:
-        family: SauceCodePro Nerd Font
+        family: FuraCode NF
         style: Italic
 
     bold_italic:
-        family: SauceCodePro Nerd Font
+        family: FuraCode NF
         style: Bold Italic
 
     size: 18.0
@@ -23,5 +23,6 @@ font:
 
 # Shell configuration
 shell:
-    program: /usr/local/bin/tmux
+    #program: /usr/local/bin/tmux
+    program: /opt/homebrew/bin/tmux
 # End Shell configuration
