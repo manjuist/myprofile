@@ -51,3 +51,5 @@
 # }
 
 plugins=(git brew gulp man npm osx tmux python sudo yarn)
+
+source /Users/mdvis/.config/broot/launcher/bash/br
