@@ -1,30 +1,37 @@
 [user]
-	name = dewei.ma
-	email = mdeve@qq.com
+    name = dewei.ma
+    email = mdeve@qq.com
 
 [core]
-	editor = nvim
+    editor = nvim
+    excludesfile = /Users/mdvis/.gitignore_global
 
 [commit]
-  template=~/.gitmessages
+    template=~/.gitmessages
 
 [merge]
-	tool = diffmerge
-	ff = true
+    tool = diffmerge
+    ff = true
 
 [diff]
-	tool = diffmerge
+    tool = diffmerge
 
 [mergetool "diffmerge"]
-	path = /Applications/DiffMerge.app/Contents/MacOS/DiffMerge
-	trustExitCode = true
+    path = /Applications/Beyond Compare.app/Contents/MacOS/BCompare
+    trustExitCode = true
 
 [difftool "diffmerge"]
-	path = /Applications/DiffMerge.app/Contents/MacOS/DiffMerge
+    path = /Applications/Beyond Compare.app/Contents/MacOS/BCompare
 
 [difftool]
-	prompt = false
+    prompt = false
 
 [pull]
-	rebase = false
-	ff = false
+    rebase = false
+    ff = false
+[difftool "sourcetree"]
+    cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+    path =
+[mergetool "sourcetree"]
+    cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+    trustExitCode = true
