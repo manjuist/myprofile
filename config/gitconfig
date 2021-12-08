@@ -4,6 +4,7 @@
 
 [core]
 	editor = nvim
+	excludesfile = /Users/mdvis/.gitignore_global
 
 [commit]
   template=~/.gitmessages
@@ -22,3 +23,9 @@
 [pull]
 	rebase = false
 	ff = false
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Users/mdvis/Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
