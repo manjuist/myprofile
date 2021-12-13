@@ -2,27 +2,26 @@
 ---
 # Font configuration
 font:
-    normal:
-        family: FuraCode NF
-        style: Retina
+  normal:
+    family: FuraCode NF
+    style: Retina
 
-    bold:
-        family: FuraCode NF
-        style: Bold
+  bold:
+    family: FuraCode NF
+    style: Bold
 
-    italic:
-        family: FuraCode NF
-        style: Italic
+  italic:
+    family: FuraCode NF
+    style: Italic
 
-    bold_italic:
-        family: FuraCode NF
-        style: Bold Italic
+  bold_italic:
+    family: FuraCode NF
+    style: Bold Italic
 
-    size: 18.0
+  size: 18.0
 # End Font configuration
 
 # Shell configuration
 shell:
-    #program: /usr/local/bin/tmux
-    program: /opt/homebrew/bin/tmux
+  program: /Users/mdvis/.local/bin/tmux
 # End Shell configuration
