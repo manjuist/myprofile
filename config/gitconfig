@@ -7,21 +7,24 @@
     excludesfile = /Users/mdvis/.gitignore_global
 
 [commit]
-    template=~/.gitmessages
+    template = ~/.gitmessages
 
 [merge]
-    tool = diffmerge
+    tool = bc3
     ff = true
 
 [diff]
-    tool = diffmerge
+    tool = bc3
 
-[mergetool "diffmerge"]
-    path = /Applications/Beyond Compare.app/Contents/MacOS/BCompare
+[mergetool "bc3"]
+    path = /Applications/Beyond Compare.app/Contents/MacOS/bcomp
     trustExitCode = true
 
-[difftool "diffmerge"]
-    path = /Applications/Beyond Compare.app/Contents/MacOS/BCompare
+[difftool "bc3"]
+    path = /Applications/Beyond Compare.app/Contents/MacOS/bcomp
+
+[mergetool]
+    keepBackup = false
 
 [difftool]
     prompt = false
@@ -29,10 +32,3 @@
 [pull]
     rebase = false
     ff = false
-
-[difftool "sourcetree"]
-    cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-    path = 
-
-[mergetool "sourcetree"]
-    cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
