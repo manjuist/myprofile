@@ -11,6 +11,7 @@ alias rmf='rm -rf'
 alias vi='nvim'
 alias vim='nvim'
 alias l='ls -1AF'
+alias l1='ls -1F'
 alias la='ls -AF'
 alias ll='ls -lAFh'
 

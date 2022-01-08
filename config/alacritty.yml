@@ -3,19 +3,19 @@
 # Font configuration
 font:
   normal:
-    family: FuraCode NF
+    family: FuraCode Nerd Font
     style: Retina
 
   bold:
-    family: FuraCode NF
+    family: FuraCode Nerd Font
     style: Bold
 
   italic:
-    family: FuraCode NF
+    family: FuraCode Nerd Font
     style: Italic
 
   bold_italic:
-    family: FuraCode NF
+    family: FuraCode Nerd Font
     style: Bold Italic
 
   size: 18.0
