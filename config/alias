@@ -2,6 +2,7 @@
 alias ,c='cd ~/Code'
 alias ,m='cd ~/.myprofile'
 alias ,d='cd ~/.vim'
+alias ,g='cd ~/go'
 
 # Profile
 alias et='exit'
