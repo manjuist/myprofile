@@ -8,9 +8,9 @@ module.exports = {
         // or `'canary'` for less polished but more frequent updates
         updateChannel: 'stable',
         // default font size in pixels for all tabs
-        fontSize: 18,
+        fontSize: 16,
         // font family with optional fallbacks
-        fontFamily: 'FuraCode NF',
+        fontFamily: 'FuraCode Nerd Font',
         // default font weight: 'normal' or 'bold'
         fontWeight: 'retina',
         // font weight for bold characters: 'normal' or 'bold'
@@ -93,7 +93,7 @@ module.exports = {
         // Cygwin
         // - Example: `C:\\cygwin64\\bin\\bash.exe`
         //shell: '/opt/homebrew/bin/tmux',
-        shell: '/usr/local/bin/tmux',
+        shell: '/bin/zsh',
         // for setting shell arguments (i.e. for using interactive shellArgs: `['-i']`)
         // by default `['--login']` will be used
         //shellArgs: ['--login'],
@@ -135,7 +135,7 @@ module.exports = {
     //   `hyperpower`
     //   `@company/project`
     //   `project#1.0.1`
-    plugins: ['hyperpower', 'hyper-gruvbox'],
+    plugins: ['hyper-gruvbox'],
     // in development, you can create a directory under
     // `~/.hyper_plugins/local/` and include it here
     // to load it and avoid it being `npm install`ed
