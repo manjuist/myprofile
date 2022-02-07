@@ -43,6 +43,7 @@ alias glg='git log \
   --pretty="%C(yellow)%h %<(12,trunc)%C(red)%ad %<(12,trunc)%C(blue)%cn %C(reset)%s"'
 alias gss='git stash save'
 alias gsp='git stash pop'
+alias gsl='git stash list'
 alias gcl='git clone '
 alias gri='git rebase -i '
 
