@@ -55,8 +55,8 @@ alias wnpm='npm --registry http://maven-registry.lan:8081/nexus/repository/npm-g
 #
 alias unsp='unset http_proxy https_proxy'
 
-alias sp='export http_proxy=http://127.0.0.1:1087 \
-  export https_proxy=http://127.0.0.1:1087'
+alias sp='export http_proxy=http://127.0.0.1:58591 \
+  export https_proxy=http://127.0.0.1:58591'
 
 # Tmux
 alias tka='tmux kill-session -a'
