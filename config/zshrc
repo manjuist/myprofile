@@ -5,6 +5,7 @@
     export PATH=/opt/homebrew/bin:$PATH
     export PATH="${HOME}/.local/bin":$PATH
     export PATH="/opt/homebrew/opt/make/libexec/gnubin:$PATH"
+    export PATH="${HOME}/go/bin:$PATH"
 # }
 
 # fzf {
@@ -49,6 +50,10 @@
     }
     add-zsh-hook chpwd load-nvmrc
     load-nvmrc
+# }
+
+# gvm {
+    source /Users/mdvis/.gvm/scripts/gvm
 # }
 
 plugins=(git brew gulp man npm macos tmux python sudo yarn)

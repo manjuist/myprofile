@@ -2,6 +2,7 @@
 alias ,c='cd ~/Code'
 alias ,m='cd ~/.myprofile'
 alias ,d='cd ~/.vim'
+alias ,g='cd ~/go'
 
 # Profile
 alias et='exit'
@@ -42,6 +43,7 @@ alias glg='git log \
   --pretty="%C(yellow)%h %<(12,trunc)%C(red)%ad %<(12,trunc)%C(blue)%cn %C(reset)%s"'
 alias gss='git stash save'
 alias gsp='git stash pop'
+alias gsl='git stash list'
 alias gcl='git clone '
 alias gri='git rebase -i '
 
@@ -53,8 +55,8 @@ alias wnpm='npm --registry http://maven-registry.lan:8081/nexus/repository/npm-g
 #
 alias unsp='unset http_proxy https_proxy'
 
-alias sp='export http_proxy=http://127.0.0.1:1087 \
-  export https_proxy=http://127.0.0.1:1087'
+alias sp='export http_proxy=http://127.0.0.1:58591 \
+  export https_proxy=http://127.0.0.1:58591'
 
 # Tmux
 alias tka='tmux kill-session -a'
