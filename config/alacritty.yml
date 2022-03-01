@@ -1,61 +1,61 @@
 # Configuration for Alacritty, the GPU enhanced terminal emulator.
 ---
 font:
-  normal:
-    family: SauceCodePro Nerd Font
-    style: Regular
+    normal:
+        family: SauceCodePro Nerd Font
+        style: Regular
 
-  bold:
-    family: SauceCodePro Nerd Font
-    style: Bold
+    bold:
+        family: SauceCodePro Nerd Font
+        style: Bold
 
-  italic:
-    family: SauceCodePro Nerd Font
-    style: Italic
+    italic:
+        family: SauceCodePro Nerd Font
+        style: Italic
 
-  bold_italic:
-    family: SauceCodePro Nerd Font
-    style: Bold Italic
+    bold_italic:
+        family: SauceCodePro Nerd Font
+        style: Bold Italic
 
-  size: 18.0
+    size: 18.0
 
 shell:
-  program: /Users/mdvis/.local/bin/tmux
-  # args:
-  #     - attach
+    program: /Users/mdvis/.local/bin/tmux
+    # args:
+    #     - attach
 
 working_directory: /Users/mdvis/Code
 
 env:
-  TERM: xterm-256color
+    TERM: xterm-256color
 
 colors:
-  primary:
-    background: "#1d1f21"
-    foreground: "#c5c8c6"
+    primary:
+        background: "#1d1f21"
+        foreground: "#c5c8c6"
 
 cursor:
-  text: CellBackground
-  cursor: CellForeground
+    text: CellBackground
+    cursor: CellForeground
 
 save_to_clipboard: true
 
 window:
-  decorations: none
-  opacity: 0.9
+    decorations: none
+    # opacity: 0.9
 
-  # dimensions:
-  #   columns: 100
-  #   lines: 32
+    # dimensions:
+    #   columns: 100
+    #   lines: 32
 
-  # position:
-  #  x: 888
-  #  y: 369
+    # position:
+    #  x: 888
+    #  y: 369
 
-  # padding:
-  #   x: 0
-  #   y: 0
+    # padding:
+    #   x: 0
+    #   y: 0
 
-  # decorations: full
+    # decorations: full
 # import:
 #     - ~/dirconf.yml
