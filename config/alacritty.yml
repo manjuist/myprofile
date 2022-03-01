@@ -1,8 +1,5 @@
 # Configuration for Alacritty, the GPU enhanced terminal emulator.
 ---
-import:
-  - ~/dirconf.yml
-
 font:
   normal:
     family: SauceCodePro Nerd Font
@@ -24,30 +21,13 @@ font:
 
 shell:
   program: /Users/mdvis/.local/bin/tmux
-  args:
-    - attach
+  # args:
+  #     - attach
 
 working_directory: /Users/mdvis/Code
 
 env:
-  TERM: alacritty
-
-window:
-  dimensions:
-    columns: 90
-    lines: 30
-
-  position:
-    x: 888
-    y: 369
-
-  padding:
-    x: 0
-    y: 0
-
-  decorations: transparent
-
-  opacity: 0.9
+  TERM: xterm-256color
 
 colors:
   primary:
@@ -59,3 +39,23 @@ cursor:
   cursor: CellForeground
 
 save_to_clipboard: true
+
+window:
+  decorations: none
+  # opacity: 0.9
+
+  # dimensions:
+  #   columns: 100
+  #   lines: 32
+
+  # position:
+  #  x: 888
+  #  y: 369
+
+  # padding:
+  #   x: 0
+  #   y: 0
+
+  # decorations: full
+# import:
+#     - ~/dirconf.yml
