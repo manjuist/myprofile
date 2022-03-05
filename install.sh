@@ -95,8 +95,8 @@ syncRepo() {
 
 install_mac() {
     brew install neovim zsh fd the_silver_searcher ctags make cmake \
-        tidy-html5 yamllint shellcheck highlight gcc shfmt tmux libxml2 python3 \
-        swiftformat swiftlint openssl
+        tidy-html5 yamllint shellcheck highlight gcc shfmt tmux libxml2 \
+        python3 swiftformat swiftlint openssl
 
     ret="$?"
     success "Install APP success!"
@@ -104,9 +104,9 @@ install_mac() {
 }
 
 install_apt() {
-    apt install neovim zsh fd-find silversearcher-ag universal-ctags make cmake \
-        tidy yamllint shellcheck highlight gcc shfmt tmux libxml2 \
-        python3 tilda rofi konsole i3 python3-dev openssl
+    sudo apt install neovim zsh fd-find silversearcher-ag universal-ctags \
+        make cmake tidy yamllint shellcheck highlight gcc tmux libxml2 \
+        python3 tilda rofi konsole i3 python3-dev openssl # shfmt
 
     ret="$?"
     success "Install APP success!"
@@ -114,9 +114,9 @@ install_apt() {
 }
 
 install_pacman() {
-    pacman -S neovim zsh fd the_silver_searcher ctags make cmake \
-        tidy yamllint shellcheck highlight gcc shfmt tmux libxml2 python3 tilda \
-        rofi konsole i3-wm openssl
+    sudo pacman -S neovim zsh fd the_silver_searcher ctags make cmake \
+        tidy yamllint shellcheck highlight gcc shfmt tmux libxml2 python3 \
+        tilda rofi konsole i3-wm openssl
 
     ret="$?"
     success "Install APP success!"
