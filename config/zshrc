@@ -57,3 +57,5 @@
 # }
 
 plugins=(git brew gulp man npm macos tmux python sudo yarn)
+
+eval $(thefuck --alias)

@@ -10,9 +10,9 @@ module.exports = {
         // default font size in pixels for all tabs
         fontSize: 16,
         // font family with optional fallbacks
-        fontFamily: 'FuraCode Nerd Font',
+        fontFamily: 'SauceCodePro Nerd Font',
         // default font weight: 'normal' or 'bold'
-        fontWeight: 'retina',
+        fontWeight: 'normal',
         // font weight for bold characters: 'normal' or 'bold'
         fontWeightBold: 'bold',
         // line height as a relative unit
