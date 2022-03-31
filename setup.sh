@@ -9,11 +9,50 @@
 set -e
 set -o pipefail
 
-source ./check.sh
+is_debug="0"
+local_path="${HOME}/.local/bin"
+brew_path_x86="/usr/local/homebrew/bin"
+brew_path_arm="/opt/homebrew/bin"
+brew_path="${brew_path_x86}"
+
+msg() {
+    printf '%b\n' "$1" >&2
+}
+
+success() {
+    if [ "$ret" -eq "0" ]; then
+        msg "\033[32m[✔]\033[0m ${1}${2}"
+    fi
+}
 
 error() {
     msg "\033[31m[✘]\033[0m ${1}${2}"
     exit 1
+}
+
+debug() {
+    if [ "${is_debug}" -eq "1" ] && [ "${ret}" -gt "1" ]; then
+        msg "${FUNCNAME[1]}/${BASH_LINENO[1]}"
+    fi
+}
+
+OSX() {
+    sys_args=$(uname -s | tr "[:upper:]" "[:lower:]")
+    [[ ${sys_args} =~ "darwin" ]] && echo "OSX"
+}
+
+LINUX() {
+    sys_args=$(uname -s | tr "[:upper:]" "[:lower:]")
+    [[ ${sys_args} =~ "linux" ]] && echo "LINUX"
+}
+
+ISARM() {
+    sys_args=$(uname -m | tr "[:upper:]" "[:lower:]")
+    if [[ ${sys_args} =~ "arm" ]]; then
+        return 0
+    else
+        return 1
+    fi
 }
 
 hasCmd() {
@@ -49,6 +88,21 @@ install_pacman() {
     success "Install APP success!"
     debug
 }
+
+lnif() {
+    if [ -e "$1" ]; then
+        echo "$1"
+        echo "$2"
+        ln -sf "$1" "$2"
+    fi
+}
+
+if ISARM; then
+    brew_path="${brew_path_arm}"
+fi
+
+lnif "${brew_path}/tmux" "${local_path}/tmux"
+lnif "${brew_path}/zsh" "${local_path}/zsh"
 
 hasCmd pip3
 pip3 install thefuck tldr ranger
