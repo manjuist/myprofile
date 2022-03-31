@@ -11,7 +11,7 @@ set -o pipefail
 
 is_debug="0"
 local_path="${HOME}/.local/bin"
-brew_path_x86="/usr/local/homebrew/bin"
+brew_path_x86="/usr/local/bin"
 brew_path_arm="/opt/homebrew/bin"
 brew_path="${brew_path_x86}"
 
@@ -91,8 +91,6 @@ install_pacman() {
 
 lnif() {
     if [ -e "$1" ]; then
-        echo "$1"
-        echo "$2"
         ln -sf "$1" "$2"
     fi
 }
