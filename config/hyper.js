@@ -92,12 +92,12 @@ module.exports = {
         //
         // Cygwin
         // - Example: `C:\\cygwin64\\bin\\bash.exe`
-        //shell: '/opt/homebrew/bin/tmux',
-        shell: '/bin/zsh',
+        // shell: '/opt/homebrew/bin/tmux',
+        shell: '/Users/mdvis/.local/bin/zsh',
         // for setting shell arguments (i.e. for using interactive shellArgs: `['-i']`)
         // by default `['--login']` will be used
-        //shellArgs: ['--login'],
-        shellArgs: [],
+        // shellArgs: ['--login'],
+        // shellArgs: [],
         // for environment variables
         env: {},
         // Supported Options:
@@ -141,8 +141,8 @@ module.exports = {
     // to load it and avoid it being `npm install`ed
     localPlugins: [],
     keymaps: {
-    // Example
-    // 'window:devtools': 'cmd+alt+o',
+        // Example
+        // 'window:devtools': 'cmd+alt+o',
     },
 };
 //# sourceMappingURL=config-default.js.map
