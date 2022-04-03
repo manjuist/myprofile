@@ -38,14 +38,17 @@ alias gm='git merge'
 alias gmt='git mergetool'
 alias gb='echo "$(git branch)"'
 alias gba='echo "$(git branch -a)"'
-alias glg='git log \
-  --date=format:"%m/%d-%H:%M" \
-  --pretty="%C(yellow)%h %<(12,trunc)%C(red)%ad %<(12,trunc)%C(blue)%cn %C(reset)%s"'
 alias gss='git stash save'
 alias gsp='git stash pop'
 alias gsl='git stash list'
 alias gcl='git clone '
 alias gri='git rebase -i '
+alias gwta='git worktree add -b '
+alias gwtd='git worktree remove '
+alias gwtl='git worktree list'
+alias glg='git log \
+  --date=format:"%m/%d-%H:%M" \
+  --pretty="%C(yellow)%h %<(12,trunc)%C(red)%ad %<(12,trunc)%C(blue)%cn %C(reset)%s"'
 
 # Npm
 alias cnpm='npm --registry https://registry.npm.taobao.org/'
