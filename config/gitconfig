@@ -1,6 +1,6 @@
 [user]
     name = dewei.ma
-    email = mdeve@qq.com
+    email = madw@superred.com.cn
 
 [core]
     editor = nvim
@@ -10,11 +10,11 @@
     template = ~/.gitmessages
 
 [merge]
-    tool = bc3
+    tool = diffmerge
     ff = true
 
 [diff]
-    tool = bc3
+    tool = diffmerge
 
 [mergetool "bc3"]
     path = /Applications/Beyond Compare.app/Contents/MacOS/bcomp
@@ -32,3 +32,8 @@
 [pull]
     rebase = false
     ff = false
+[difftool "diffmerge"]
+    cmd = /Applications/DiffMerge.app/Contents/MacOS/DiffMerge
+[mergetool "diffmerge"]
+    cmd = /Applications/DiffMerge.app/Contents/MacOS/DiffMerge
+    trustExitCode = true
