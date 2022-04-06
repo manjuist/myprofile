@@ -53,7 +53,7 @@ alias glg='git log \
 # Npm
 alias cnpm='npm --registry https://registry.npm.taobao.org/'
 #alias wnpm='npm --registry http://maven-registry.lan:8081/nexus/repository/npm-group/'
-alias wnpm='npm --registry http://10.5.0.18:8081/nexus/repository/npm-group/'
+alias wnpm='npm --registry http://maven-registry.lan:8081/nexus/repository/npm-group/'
 
 # Proxy
 #
