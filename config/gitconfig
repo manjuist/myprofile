@@ -35,5 +35,5 @@
 [difftool "diffmerge"]
 	cmd = \"/Applications/DiffMerge.app/Contents/MacOS/DiffMerge\" \"$LOCAL\" \"$REMOTE\"
 [mergetool "diffmerge"]
-	cmd = \"/Applications/DiffMerge.app/Contents/MacOS/DiffMerge \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
+    cmd = \"/Applications/DiffMerge.app/Contents/MacOS/DiffMerge\" -merge -result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
     trustExitCode = true
