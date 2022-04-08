@@ -2,11 +2,13 @@
 alias ,c='cd ~/Code'
 alias ,m='cd ~/.myprofile'
 alias ,d='cd ~/.vim'
-alias ,g='cd ~/go'
+alias ,v='cd ~/.vim'
+alias ,g='cd ~/Code/myapp/packages/go/src'
 
 # Profile
 alias et='exit'
 alias c='clear'
+alias cls='clear'
 alias rm='rm -i'
 alias rmf='rm -rf'
 alias vi='nvim'
@@ -15,7 +17,6 @@ alias l='ls -1AF'
 alias l1='ls -1F'
 alias la='ls -AF'
 alias ll='ls -lAFh'
-
 
 # Git
 alias grh='git reset --hard HEAD'
