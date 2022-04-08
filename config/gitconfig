@@ -1,6 +1,6 @@
 [user]
     name = dewei.ma
-    email = mdeve@qq.com
+    email = madw@superred.com.cn
 
 [core]
     editor = nvim
@@ -10,11 +10,11 @@
     template = ~/.gitmessages
 
 [merge]
-    tool = bc3
+    tool = diffmerge
     ff = true
 
 [diff]
-    tool = bc3
+    tool = diffmerge
 
 [mergetool "bc3"]
     path = /Applications/Beyond Compare.app/Contents/MacOS/bcomp
@@ -32,3 +32,40 @@
 [pull]
     rebase = false
     ff = false
+[difftool "diffmerge"]
+	cmd = \"/Applications/DiffMerge.app/Contents/MacOS/DiffMerge\" \"$LOCAL\" \"$REMOTE\"
+[mergetool "diffmerge"]
+    cmd = \"/Applications/DiffMerge.app/Contents/MacOS/DiffMerge\" -merge -result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
+    trustExitCode = true
+[alias]
+    rh = reset --hard HEAD
+    a = add
+    aa = add -A
+    ap = add -p
+    s = status --short
+    fo = fetch origin
+    l = pull
+    p = push
+    pf = push --force
+    d = diff
+    dt = difftool
+    cl = clone
+    c = commit
+    ca = commit -a
+    cp = commit -p
+    co = checkout
+    m = merge
+    mt = mergetool
+    b = branch
+    ba = branch -a
+    ss = stash save
+    sp = stash pop
+    sl = stash list
+    cl = clone
+    ri = rebase -i
+    wta = worktree add -b
+    wtd = worktree remove
+    wtl = worktree list
+    lg=log \
+        --date=format:\"%m/%d-%H:%M\" \
+        --pretty=\"%C(yellow)%h %<(12,trunc)%C(red)%ad %<(12,trunc)%C(blue)%cn %C(reset)%s\"
