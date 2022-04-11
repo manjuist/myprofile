@@ -63,7 +63,8 @@
     sl = stash list
     cl = clone
     ri = rebase -i
-    wta = worktree add -b
+    wta = worktree add
+    wtab = worktree add -b
     wtd = worktree remove
     wtl = worktree list
     lg=log \
