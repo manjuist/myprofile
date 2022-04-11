@@ -49,5 +49,5 @@ alias sp="\
 alias tka='tmux kill-session -a'
 
 # FZF
-alias cdf='cd $(find * -type d | fzf)'
-alias vif='vim $(fzf)'
+alias fcd='cd $(find * -type d | fzf)'
+alias fvi='vim $(fzf)'
