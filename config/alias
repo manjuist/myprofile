@@ -27,21 +27,23 @@ alias wnpm='npm --registry http://maven-registry.lan:8081/nexus/repository/npm-g
 #
 alias unsp='unset \
            all_proxy \
-           ALL_PROXY \
            http_proxy \
-           HTTP_PROXY \
            https_proxy \
+           ALL_PROXY \
+           HTTP_PROXY \
            HTTPS_PROXY \
            '
 
-alias sp=' \
-         export all_proxy=socks5://127.0.0.1:58591 \
-         export ALL_PROXY=socks5://127.0.0.1:58591 \
-         export http_proxy=socks5://127.0.0.1:58591 \
-         export HTTP_PROXY=socks5://127.0.0.1:58591 \
-         export https_proxy=socks5://127.0.0.1:58591 \
-         export HTTPS_PROXY=socks5://127.0.0.1:58591 \
-         '
+proxy_address='socks5://127.0.0.1:58591'
+
+alias sp="\
+         export all_proxy=${proxy_address} \
+         export http_proxy=${proxy_address} \
+         export https_proxy=${proxy_address} \
+         export ALL_PROXY=${proxy_address} \
+         export HTTP_PROXY=${proxy_address} \
+         export HTTPS_PROXY=${proxy_address} \
+         "
 
 # Tmux
 alias tka='tmux kill-session -a'
