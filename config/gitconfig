@@ -16,13 +16,6 @@
 [diff]
     tool = diffmerge
 
-[mergetool "bc3"]
-    path = /Applications/Beyond Compare.app/Contents/MacOS/bcomp
-    trustExitCode = true
-
-[difftool "bc3"]
-    path = /Applications/Beyond Compare.app/Contents/MacOS/bcomp
-
 [mergetool]
     keepBackup = false
 
@@ -33,9 +26,9 @@
     rebase = false
     ff = false
 [difftool "diffmerge"]
-	cmd = \"/Applications/DiffMerge.app/Contents/MacOS/DiffMerge\" \"$LOCAL\" \"$REMOTE\"
+    cmd = /usr/local/bin/diffmerge \"$LOCAL\" \"$REMOTE\"
 [mergetool "diffmerge"]
-    cmd = \"/Applications/DiffMerge.app/Contents/MacOS/DiffMerge\" -merge -result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
+    cmd = /usr/local/bin/diffmerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
     trustExitCode = true
 [alias]
     a = add
