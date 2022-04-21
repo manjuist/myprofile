@@ -3,7 +3,7 @@ alias ,c='cd ~/Code'
 alias ,m='cd ~/.myprofile'
 alias ,d='cd ~/.vim'
 alias ,v='cd ~/.vim'
-alias ,g='cd ~/Code/myapp/packages/go/src'
+alias ,a='cd ~/Code/myapp/packages/'
 
 # Profile
 alias et='exit'
