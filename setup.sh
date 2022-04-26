@@ -62,7 +62,8 @@ hasCmd() {
 install_mac() {
     brew install neovim zsh fd the_silver_searcher ctags make cmake \
         tidy-html5 yamllint shellcheck highlight gcc shfmt tmux libxml2 \
-        python3 swiftformat swiftlint openssl w3m
+        python3 swiftformat swiftlint openssl w3m zoxide fzf nnn difftastic \
+        glances duf dust bat exa mounty ripgrep aria2 emacs ffmpeg git-delta
 
     ret="$?"
     success "Install APP success!"
@@ -72,7 +73,9 @@ install_mac() {
 install_apt() {
     sudo apt install neovim zsh fd-find silversearcher-ag universal-ctags \
         make cmake tidy yamllint shellcheck highlight gcc tmux libxml2 \
-        python3 tilda rofi konsole i3 python3-dev openssl w3m # shfmt
+        python3 tilda rofi konsole i3 python3-dev openssl w3m zoxide fzf \
+        nnn difftastic glances duf dust bat exa ripgrep aria2 emacs ffmpeg \
+        git-delta # shfmt
 
     ret="$?"
     success "Install APP success!"
@@ -82,7 +85,8 @@ install_apt() {
 install_pacman() {
     sudo pacman -S neovim zsh fd the_silver_searcher ctags make cmake \
         tidy yamllint shellcheck highlight gcc shfmt tmux libxml2 python3 \
-        tilda rofi konsole i3-wm openssl w3m
+        tilda rofi konsole i3-wm openssl w3m zoxide fzf nnn difftastic \
+        glances duf dust bat exa ripgrep aria2 emacs ffmpeg git-delta
 
     ret="$?"
     success "Install APP success!"
