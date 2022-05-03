@@ -53,7 +53,7 @@
 # }
 
 # gvm {
-    source /Users/mdvis/.gvm/scripts/gvm
+    source "${HOME}/.gvm/scripts/gvm"
 # }
 
 plugins=(git brew gulp man npm macos tmux python sudo yarn)
