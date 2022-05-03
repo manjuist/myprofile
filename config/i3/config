@@ -142,7 +142,7 @@ bar {
 	bindsym button5 nop
 	strip_workspace_numbers yes
     #mode hide
-    font pango:SauceCodePro Nerd Font 16
+    font pango:SauceCodePro Nerd Font, Icons 14
     colors {
         background #222D31
         statusline #F9FAF9
