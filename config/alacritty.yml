@@ -41,7 +41,7 @@ cursor:
 save_to_clipboard: true
 
 window:
-  decorations: none
+  # decorations: none
   # opacity: 0.9
 
   # dimensions:
@@ -56,6 +56,6 @@ window:
   #   x: 0
   #   y: 0
 
-  # decorations: full
+  decorations: full
 # import:
 #     - ~/dirconf.yml
