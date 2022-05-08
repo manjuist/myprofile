@@ -63,9 +63,9 @@ install_mac() {
     brew install neovim zsh fd the_silver_searcher ctags make cmake \
         tidy-html5 yamllint shellcheck highlight gcc shfmt tmux libxml2 \
         python3 swiftformat swiftlint openssl w3m zoxide fzf nnn difftastic \
-        glances duf dust bat exa mounty ripgrep aria2 emacs ffmpeg git-delta \
+        glances duf dust bat exa ripgrep aria2 emacs ffmpeg git-delta \
         google-chrome firefox iterm2 visual-studio-code calibre vlc rectangle \
-        signal pnpm nvm graphicsmagick
+        pnpm nvm graphicsmagick xld itsycal joplin
 
     ret="$?"
     success "Install APP success!"
@@ -77,7 +77,7 @@ install_pacman() {
         tidy yamllint shellcheck highlight gcc shfmt tmux libxml2 python3 \
         tilda rofi konsole i3-wm i3status i3lock openssl w3m zoxide fzf nnn \
         difftastic glances duf dust bat exa ripgrep aria2 emacs ffmpeg \
-        git-delta ttf-font-icons alacritty graphicsmagick
+        git-delta ttf-font-icons alacritty graphicsmagick calibre vlc
 
     ret="$?"
     success "Install APP success!"
