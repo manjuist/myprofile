@@ -65,7 +65,7 @@ install_mac() {
         python3 swiftformat swiftlint openssl w3m zoxide fzf nnn difftastic \
         glances duf dust bat exa ripgrep aria2 emacs ffmpeg git-delta \
         google-chrome firefox iterm2 visual-studio-code calibre vlc rectangle \
-        pnpm nvm graphicsmagick xld itsycal joplin
+        pnpm nvm graphicsmagick xld itsycal joplin pencil drawio thunderbird
 
     ret="$?"
     success "Install APP success!"
