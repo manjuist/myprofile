@@ -85,4 +85,5 @@ alias gs='git status --short'
 alias gsc='git stash clear'
 alias gsl='git stash list'
 alias gsp='git stash pop'
+alias gss='git stash save'
 # }
