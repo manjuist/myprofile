@@ -60,12 +60,15 @@ hasCmd() {
 }
 
 install_mac() {
-    brew install neovim zsh fd the_silver_searcher ctags make cmake \
-        tidy-html5 yamllint shellcheck highlight gcc shfmt tmux libxml2 \
+    brew install neovim zsh fd the_silver_searcher ctags make cmake mos thor \
+        tidy-html5 yamllint shellcheck highlight gcc shfmt tmux libxml2 keka \
         python3 swiftformat swiftlint openssl w3m zoxide fzf nnn difftastic \
-        glances duf dust bat exa ripgrep aria2 emacs ffmpeg git-delta \
+        glances duf dust bat exa ripgrep aria2 emacs ffmpeg git-delta gitup \
         google-chrome firefox iterm2 visual-studio-code calibre vlc rectangle \
-        pnpm nvm graphicsmagick xld itsycal joplin pencil drawio thunderbird
+        pnpm nvm graphicsmagick xld itsycal joplin pencil drawio thunderbird \
+        kekaexternalhelper v2rayu netnewswire bdash cocoarestclient go2shell \
+        skim tencent-lemon rocket-chat wireshark gas-mask lulu shottr hiddenbar \
+        clipy appcleaner diffmerge youdaodict wpsoffice-cn blender
 
     ret="$?"
     success "Install APP success!"
