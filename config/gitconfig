@@ -1,6 +1,7 @@
 [user]
     name = dewei.ma
     email = madw@superred.com.cn
+	signingkey = madw@superred.com.cn
 
 [core]
     editor = nvim
@@ -8,6 +9,7 @@
 
 [commit]
     template = ~/.gitmessages
+	gpgsign = true
 
 [merge]
     tool = diffmerge
