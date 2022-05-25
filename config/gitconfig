@@ -1,7 +1,7 @@
 [user]
     name = dewei.ma
     email = madw@superred.com.cn
-	signingkey = madw@superred.com.cn
+    signingkey = madw@superred.com.cn
 
 [core]
     editor = nvim
@@ -9,7 +9,7 @@
 
 [commit]
     template = ~/.gitmessages
-	gpgsign = true
+    gpgsign = true
 
 [merge]
     tool = diffmerge
@@ -27,11 +27,14 @@
 [pull]
     rebase = false
     ff = false
+
 [difftool "diffmerge"]
     cmd = /usr/local/bin/diffmerge \"$LOCAL\" \"$REMOTE\"
+
 [mergetool "diffmerge"]
     cmd = /usr/local/bin/diffmerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
     trustExitCode = true
+
 [alias]
     a = add
     aa = add -A

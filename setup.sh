@@ -68,7 +68,8 @@ install_mac() {
         pnpm nvm graphicsmagick xld itsycal joplin pencil drawio thunderbird \
         kekaexternalhelper v2rayu netnewswire bdash cocoarestclient go2shell \
         skim tencent-lemon rocket-chat wireshark gas-mask lulu shottr hiddenbar \
-        clipy appcleaner diffmerge youdaodict wpsoffice-cn blender
+        clipy appcleaner diffmerge youdaodict wpsoffice-cn blender farbar2000 \
+        gpg pandoc sigil
 
     ret="$?"
     success "Install APP success!"
@@ -102,6 +103,9 @@ lnif "${brew_path}/zsh" "${local_path}/zsh"
 
 hasCmd pip3
 pip3 install thefuck tldr ranger
+
+hasCmd npm
+npm i -g tern
 
 if [[ $(OSX) == "OSX" ]]; then
     install_mac
