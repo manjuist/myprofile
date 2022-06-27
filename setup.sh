@@ -60,16 +60,17 @@ hasCmd() {
 }
 
 install_mac() {
-    brew install neovim zsh fd the_silver_searcher ctags make cmake mos thor \
-        tidy-html5 yamllint shellcheck highlight gcc shfmt tmux libxml2 keka \
-        python3 swiftformat swiftlint openssl w3m zoxide fzf nnn difftastic \
-        glances duf dust bat exa ripgrep aria2 emacs ffmpeg git-delta gitup \
-        google-chrome firefox iterm2 visual-studio-code calibre vlc rectangle \
-        pnpm nvm graphicsmagick xld itsycal joplin pencil drawio thunderbird \
+    brew install neovim zsh fd the_silver_searcher ctags make cmake ffmpeg \
+        tidy-html5 yamllint shellcheck highlight gcc shfmt tmux libxml2 python3 \
+        openssl w3m zoxide fzf nnn difftastic glances duf dust bat exa ripgrep \
+        aria2 emacs git-delta alacritty graphicsmagick vlc calibre gpg \
+
+        gitup swiftformat swiftlint mos thor keka rectangle thunderbird drawio \
+        google-chrome firefox iterm2 visual-studio-code joplin pencil itsycal \
         kekaexternalhelper v2rayu netnewswire bdash cocoarestclient go2shell \
         skim tencent-lemon rocket-chat wireshark gas-mask lulu shottr hiddenbar \
         clipy appcleaner diffmerge youdaodict wpsoffice-cn blender farbar2000 \
-        gpg pandoc sigil
+        pandoc sigil golangci-lint pnpm nvm xld
 
     ret="$?"
     success "Install APP success!"
@@ -77,11 +78,38 @@ install_mac() {
 }
 
 install_pacman() {
-    sudo pacman -S neovim zsh fd the_silver_searcher ctags make cmake \
+    sudo pacman -S neovim zsh fd the_silver_searcher ctags make cmake ffmpeg \
         tidy yamllint shellcheck highlight gcc shfmt tmux libxml2 python3 \
-        tilda rofi konsole i3-wm i3status i3lock openssl w3m zoxide fzf nnn \
-        difftastic glances duf dust bat exa ripgrep aria2 emacs ffmpeg \
-        git-delta ttf-font-icons alacritty graphicsmagick calibre vlc
+        openssl w3m zoxide fzf nnn difftastic glances duf dust bat exa ripgrep \
+        aria2 emacs git-delta alacritty graphicsmagick vlc calibre gpg \
+
+        tilda rofi konsole i3-wm i3status i3lock ttf-font-icons
+
+    ret="$?"
+    success "Install APP success!"
+    debug
+}
+
+install_apt() {
+    sudo apt install neovim zsh fd-find silversearcher-ag universal-ctags make \
+        cmake ffmpeg tidy yamllint shellcheck highlight gcc tmux libxml2 \
+        python3 openssl w3m zoxide fzf nnn difftastic glances duf dust bat exa \
+        ripgrep aria2 emacs git-delta alacritty graphicsmagick vlc calibre gpg \
+
+        tilda rofi konsole i3 i3status i3lock python3-dev
+
+    ret="$?"
+    success "Install APP success!"
+    debug
+}
+
+install_dnf() {
+    sudo dnf install neovim zsh fd-find silversearcher-ag universal-ctags make \
+        cmake ffmpeg tidy yamllint shellcheck highlight gcc tmux libxml2 \
+        python3 openssl w3m zoxide fzf nnn difftastic glances duf dust bat exa \
+        ripgrep aria2 emacs git-delta alacritty graphicsmagick vlc calibre gpg \
+
+        tilda rofi konsole i3 i3status i3lock python3-dev
 
     ret="$?"
     success "Install APP success!"
