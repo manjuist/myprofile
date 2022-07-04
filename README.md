@@ -1,8 +1,11 @@
 # Install
 ```
-$ curl -L https://raw.githubusercontent.com/mdvis/myprofile/master/install.sh -o - | sh
+curl -L https://raw.githubusercontent.com/mdvis/myprofile/master/setup.sh -o - | sh
 ```
 
+```
+curl -L https://raw.githubusercontent.com/mdvis/myprofile/master/install.sh -o - | sh
+```
 
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -18,4 +21,4 @@ bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/bins
 python -m ensurepip --upgrade
 ```
 
-# https://golang.google.cn/dl/
+https://golang.google.cn/dl/
