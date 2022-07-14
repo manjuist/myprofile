@@ -14,7 +14,7 @@ TOOL_PATH="${APP_PATH}/tools"
 CONFIG_PATH="${APP_PATH}/config"
 VIM_PATH="${APP_PATH}/vim"
 BIN_PATH="$HOME/.local/bin/"
-VIM_RUNTIMEEE_PATH="${HOME}/.vim"
+VIM_RUNTIME_PATH="${HOME}/.vim"
 
 Red='\033[0;31m'
 Green='\033[0;32m'
@@ -85,11 +85,11 @@ hash git &>/dev/null && syncRepo "$APP_PATH" "$REPO_URI"
 
 cd "$APP_PATH" || exit
 
-git submodule update --init --recursive
-
-[[ -d "${VIM_PATH}" ]] && lnif "${VIM_PATH}" "$VIM_RUNTIMEEE_PATH"
-
-cd "$VIM_RUNTIMEEE_PATH" || ./install.sh || exit
-
 handler "$TOOL_PATH" "${BIN_PATH}"
 handler "$CONFIG_PATH" "$HOME/."
+
+git submodule update --init --recursive
+
+[[ -d "${VIM_PATH}" ]] && lnif "${VIM_PATH}" "$VIM_RUNTIME_PATH"
+
+[[ -d "$VIM_RUNTIME_PATH" ]] && "$VIM_RUNTIME_PATH/install.sh"
