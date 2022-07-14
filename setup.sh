@@ -42,17 +42,19 @@ set_package_tool_name() {
 }
 
 install_brew() {
-    eval "$BREW_PATH/brew install neovim zsh fd the_silver_searcher ctags make cmake ffmpeg \
-        tidy-html5 yamllint shellcheck highlight gcc shfmt tmux libxml2 python3 \
-        openssl w3m zoxide fzf nnn difftastic glances duf dust bat exa ripgrep \
-        aria2 emacs git-delta alacritty graphicsmagick vlc calibre gpg"
+    command "$BREW_PATH/brew" install alacritty aria2 bat calibre cmake ctags \
+        difftastic duf dust emacs exa fd ffmpeg fzf gcc git-delta glances gpg \
+        graphicsmagick highlight libxml2 make neovim nnn openssl python3 \
+        ripgrep shellcheck shfmt the_silver_searcher tidy-html5 tmux vlc w3m \
+        yamllint zoxide zsh
 
-    eval "$BREW_PATH/brew install swiftformat swiftlint mos thor keka rectangle drawio \
-        google-chrome firefox iterm2 visual-studio-code joplin pencil itsycal \
-        kekaexternalhelper v2rayu netnewswire bdash cocoarestclient go2shell \
-        skim tencent-lemon rocket-chat gas-mask lulu shottr hiddenbar \
-        clipy appcleaner diffmerge youdaodict wpsoffice-cn blender \
-        pandoc sigil golangci-lint pnpm nvm xld thunderbird"
+    command "$BREW_PATH/brew" install appcleaner bdash blender clipy \
+        cocoarestclient diffmerge drawio firefox gas-mask go2shell \
+        golangci-lint google-chrome hiddenbar iterm2 itsycal joplin keka \
+        kekaexternalhelper lulu mos netnewswire nvm pandoc pencil pnpm \
+        rectangle rocket-chat shottr sigil skim swiftformat swiftlint \
+        tencent-lemon thor thunderbird v2rayu visual-studio-code wpsoffice-cn \
+        xld youdaodict
 
     # farbar2000 wireshark gitup
 
@@ -60,46 +62,46 @@ install_brew() {
 }
 
 install_apt() {
-    sudo apt install neovim zsh fd-find silversearcher-ag universal-ctags make \
-        cmake ffmpeg tidy yamllint shellcheck highlight gcc tmux libxml2 \
-        python3 openssl w3m zoxide fzf nnn difftastic glances duf dust bat exa \
-        ripgrep aria2 emacs git-delta alacritty graphicsmagick vlc calibre gpg \
-        tilda rofi konsole i3 i3status i3lock python3-dev
+    sudo apt install alacritty aria2 bat calibre cmake difftastic duf dust \
+        emacs exa fd-find ffmpeg fzf gcc git-delta glances gpg graphicsmagick \
+        highlight i3 i3lock i3status konsole libxml2 make neovim nnn openssl \
+        python3 python3-dev ripgrep rofi shellcheck silversearcher-ag tidy \
+        tilda tmux universal-ctags vlc w3m yamllint zoxide zsh
 
     success "Install APP(apt) success!"
 }
 
 install_dnf() {
-    sudo dnf install neovim zsh fd-find silversearcher-ag universal-ctags make \
-        cmake ffmpeg tidy yamllint shellcheck highlight gcc tmux libxml2 \
-        python3 openssl w3m zoxide fzf nnn difftastic glances duf dust bat exa \
-        ripgrep aria2 emacs git-delta alacritty graphicsmagick vlc calibre gpg \
-        tilda rofi konsole i3 i3status i3lock python3-dev
+    sudo dnf install alacritty aria2 bat calibre cmake difftastic duf dust \
+        emacs exa fd-find ffmpeg fzf gcc git-delta glances gpg graphicsmagick \
+        highlight i3 i3lock i3status konsole libxml2 make neovim nnn openssl \
+        python3 python3-dev ripgrep rofi shellcheck silversearcher-ag tidy \
+        tilda tmux universal-ctags vlc w3m yamllint zoxide zsh
 
     success "Install APP(dnf) success!"
 }
 
 install_pacman() {
-    sudo pacman -S neovim zsh fd the_silver_searcher ctags make cmake ffmpeg \
-        tidy yamllint shellcheck highlight gcc shfmt tmux libxml2 python3 \
-        openssl w3m zoxide fzf nnn difftastic glances duf dust bat exa ripgrep \
-        aria2 emacs git-delta alacritty graphicsmagick vlc calibre gpg tilda \
-        lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings fcitx5 \
-        fcitx5-im fcitx5-chinese-addons fcitx5-configtool fcitx5-qt fcitx5-gtk \
-        rofi konsole i3-wm i3status i3lock ttf-font-icons xorg
+    sudo pacman -S alacritty aria2 bat calibre cmake ctags difftastic duf dust \
+        emacs exa fcitx5 fcitx5-chinese-addons fcitx5-configtool fcitx5-gtk \
+        fcitx5-im fcitx5-qt fd ffmpeg fzf gcc git-delta glances gpg \
+        graphicsmagick highlight i3-wm i3lock i3status konsole libxml2 lightdm \
+        lightdm-gtk-greeter lightdm-gtk-greeter-settings make neovim nnn \
+        openssl python3 ripgrep rofi shellcheck shfmt the_silver_searcher tidy \
+        tilda tmux ttf-font-icons vlc w3m xorg yamllint zoxide zsh
 
     success "Install APP(pacman) success!"
 }
 
 install_npm() {
-    npm i -g jsonlint prettier stylelint stylelint-config-standard neovim tern
+    npm i -g jsonlint neovim prettier stylelint stylelint-config-standard tern
 
     success "Install APP(npm) success!"
 }
 
 install_pip() {
-    pip3 install pynvim neovim jedi yapf isort flake8 pylint autopep8 vim-vint \
-        thefuck tldr ranger
+    pip3 install autopep8 flake8 isort jedi neovim pylint pynvim ranger \
+        thefuck tldr vim-vint yapf
 
     success "Install APP(pip) success!"
 }
