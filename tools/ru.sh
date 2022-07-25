@@ -1,8 +1,9 @@
 #! /usr/bin/env bash
+
 # ------
-# name: get work dir
+# name: ru.sh
 # author: Deve
-# date: 2020-11-12
+# date: 2022-07-25
 # ------
 
 set -e
@@ -29,29 +30,18 @@ handlerText() {
     done <"$1"
 }
 
-dir=~/Code
-custom_dir=$1
-cur_dir=$dir
-
-if [[ -d "${custom_dir}" ]]; then
-    cur_dir=$custom_dir
-fi
-
-cd "${cur_dir}"
-list="$(find . -type d -maxdepth 1 | sort)"
-
-select selected in $list; do
-    break
-done
-
-if [[ -d "${selected}" ]]; then
-    cd "${dir}/${selected}"
-    handlerText ./package.json
+function runCmd() {
     select m in "${scriptsLs[@]}"; do
-        [ -f .nvmrc ] && nvm use
+        [[ -f ".nvmrc" ]] && nvm use
         npm run "$m"
         break
     done
-fi
+}
 
-#clear
+handleCmd() {
+    [[ -f "./package.json" ]] || return 1
+    handlerText ./package.json
+    runCmd
+}
+
+handleCmd || (cd "$(fzf)" && handleCmd)
