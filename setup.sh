@@ -51,7 +51,7 @@ install_brew() {
     command "$BREW_PATH/brew" install appcleaner bdash blender clipy \
         cocoarestclient diffmerge drawio firefox gas-mask go2shell \
         golangci-lint google-chrome hiddenbar iterm2 itsycal joplin keka \
-        kekaexternalhelper lulu mos netnewswire nvm pandoc pencil pnpm \
+        kekaexternalhelper lulu mos netnewswire nvm pandoc pencil \
         rectangle rocket-chat shottr sigil skim swiftformat swiftlint \
         tencent-lemon thor thunderbird v2rayu visual-studio-code wpsoffice-cn \
         xld youdaodict
@@ -94,7 +94,7 @@ install_pacman() {
 }
 
 install_npm() {
-    npm i -g jsonlint neovim prettier stylelint stylelint-config-standard tern
+    npm i -g nrm pnpm jsonlint neovim prettier stylelint stylelint-config-standard tern
 
     success "Install APP(npm) success!"
 }
