@@ -12,9 +12,7 @@ REPO_URI="https://github.com/mdvis/${APP_NAME}.git"
 APP_PATH="${HOME}/.${APP_NAME}"
 TOOL_PATH="${APP_PATH}/tools"
 CONFIG_PATH="${APP_PATH}/config"
-VIM_PATH="${APP_PATH}/vim"
 BIN_PATH="$HOME/.local/bin/"
-VIM_RUNTIME_PATH="${HOME}/.vim"
 
 Red='\033[0;31m'
 Green='\033[0;32m'
@@ -87,9 +85,3 @@ cd "$APP_PATH" || exit
 
 handler "$TOOL_PATH" "${BIN_PATH}"
 handler "$CONFIG_PATH" "$HOME/."
-
-git submodule update --init --recursive
-
-[[ -d "${VIM_PATH}" ]] && lnif "${VIM_PATH}" "$VIM_RUNTIME_PATH"
-
-[[ -d "$VIM_RUNTIME_PATH" ]] && "$VIM_RUNTIME_PATH/install.sh"
