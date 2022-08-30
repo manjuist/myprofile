@@ -1,7 +1,7 @@
 # Dir {
 alias ,c='cd ~/Code'
-alias ,m='cd ~/Code/myprofile'
-alias ,d='cd ~/Code/dvim'
+alias ,m='cd ~/.myprofile'
+alias ,d='cd ~/.vim'
 alias ,p='cd ~/Code/myapp'
 # }
 
