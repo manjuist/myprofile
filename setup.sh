@@ -34,7 +34,7 @@ set_brew_path() {
 }
 
 set_package_tool_name() {
-    package_list=(pacman dnf apt-get brew)
+    package_list=(pacman dnf brew)
 
     for i in "${package_list[@]}"; do
         hash "${i}" &>/dev/null && PACKAGE_TOOL_NAME="${i}"
@@ -61,21 +61,11 @@ install_brew() {
     success "Install APP(brew) success!"
 }
 
-install_apt() {
-    sudo apt install alacritty aria2 bat calibre cmake difftastic duf dust \
-        emacs exa fd-find ffmpeg fzf gcc git-delta glances gpg graphicsmagick \
-        highlight i3 i3lock i3status konsole libxml2 make neovim nnn openssl \
-        python3 python3-dev ripgrep rofi shellcheck silversearcher-ag tidy \
-        tilda tmux universal-ctags vlc w3m yamllint zoxide zsh
-
-    success "Install APP(apt) success!"
-}
-
 install_dnf() {
     sudo dnf install alacritty aria2 bat calibre cmake difftastic duf dust \
         emacs exa fd-find ffmpeg fzf gcc git-delta glances gpg graphicsmagick \
         highlight i3 i3lock i3status konsole libxml2 make neovim nnn openssl \
-        python3 python3-dev ripgrep rofi shellcheck silversearcher-ag tidy \
+        python3 python3-dev ripgrep rofi shellcheck the_silver_searcher tidy \
         tilda tmux universal-ctags vlc w3m yamllint zoxide zsh
 
     success "Install APP(dnf) success!"
@@ -112,7 +102,6 @@ set_brew_path
 hash npm &>/dev/null && install_npm
 hash pip3 &>/dev/null && install_pip
 
-[[ "${PACKAGE_TOOL_NAME}" = "apt-get" ]] && install_apt
 [[ "${PACKAGE_TOOL_NAME}" = "brew" ]] && install_brew
-[[ "${PACKAGE_TOOL_NAME}" = "dnf" ]] && install_dnf
 [[ "${PACKAGE_TOOL_NAME}" = "pacman" ]] && install_pacman
+[[ "${PACKAGE_TOOL_NAME}" = "dnf" ]] && install_dnf
