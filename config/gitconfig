@@ -38,33 +38,7 @@
 
 [alias]
     a = add
-    aa = add -A
-    ap = add -p
-    b = branch
-    ba = branch -a
     c = commit
-    ca = commit -a
-    cl = clone
     co = checkout
-    cp = commit -p
-    d = diff
-    dt = difftool
-    fo = fetch origin
-    l = pull
-    m = merge
-    mt = mergetool
-    p = push
     pf = push --force
-    rh = reset --hard HEAD
     ri = rebase -i
-    s = status --short
-    sl = stash list
-    sp = stash pop
-    ss = stash save
-    wa = worktree add
-    wab = worktree add -b
-    wd = worktree remove
-    wl = worktree list
-    lg=log \
-        --date=format:\"%m/%d-%H:%M\" \
-        --pretty=\"%C(yellow)%h %<(12,trunc)%C(red)%ad %<(12,trunc)%C(blue)%cn %C(reset)%s\"
