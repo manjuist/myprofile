@@ -4,19 +4,27 @@
     signingkey = xnmageis@outlook.com
 
 [core]
+    pager = delta
     editor = nvim
     excludesfile = /Users/mdvis/.gitignore_global
+
+[interactive]
+    diffFilter = delta --color-only
 
 [commit]
     template = ~/.gitmessages
     gpgsign = false
 
 [merge]
-    tool = diffmerge
+    tool = meld
     ff = true
 
 [diff]
-    tool = diffmerge
+    tool = meld
+
+[delta]
+    navigate = ture
+    line-numbers = true
 
 [mergetool]
     keepBackup = false
@@ -27,13 +35,6 @@
 [pull]
     rebase = false
     ff = false
-
-[difftool "diffmerge"]
-    cmd = /usr/local/bin/diffmerge \"$LOCAL\" \"$REMOTE\"
-
-[mergetool "diffmerge"]
-    cmd = /usr/local/bin/diffmerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
-    trustExitCode = true
 
 [alias]
     a = add
