@@ -34,7 +34,7 @@ set_brew_path() {
 }
 
 set_package_tool_name() {
-    package_list=(pacman dnf brew)
+    package_list=(pacman brew)
 
     for i in "${package_list[@]}"; do
         hash "${i}" &>/dev/null && PACKAGE_TOOL_NAME="${i}"
@@ -45,7 +45,7 @@ install_brew() {
     command "$BREW_PATH/brew" install alacritty aria2 bat calibre cmake ctags \
         difftastic duf dust emacs exa fd ffmpeg fzf gcc git-delta glances gpg \
         graphicsmagick highlight libxml2 make neovim nnn openssl python3 \
-        ripgrep shellcheck shfmt the_silver_searcher tidy-html5 tmux vlc w3m \
+        ripgrep shellcheck shfmt the_silver_searcher tidy-html5 tmux vlc \
         yamllint zoxide zsh
 
     command "$BREW_PATH/brew" install appcleaner bdash blender clipy \
@@ -54,21 +54,11 @@ install_brew() {
         kekaexternalhelper lulu mos netnewswire nvm pandoc pencil \
         rectangle rocket-chat shottr sigil skim swiftformat swiftlint \
         tencent-lemon thor thunderbird v2rayu visual-studio-code wpsoffice-cn \
-        xld youdaodict
+        xld youdaodict krita scribus
 
     # farbar2000 wireshark gitup
 
     success "Install APP(brew) success!"
-}
-
-install_dnf() {
-    sudo dnf install alacritty aria2 bat calibre cmake difftastic duf dust \
-        emacs exa fd-find ffmpeg fzf gcc git-delta glances gpg graphicsmagick \
-        highlight i3 i3lock i3status konsole libxml2 make neovim nnn openssl \
-        python3 python3-dev ripgrep rofi shellcheck the_silver_searcher tidy \
-        tilda tmux universal-ctags vlc w3m yamllint zoxide zsh
-
-    success "Install APP(dnf) success!"
 }
 
 install_pacman() {
@@ -78,7 +68,8 @@ install_pacman() {
         graphicsmagick highlight i3-wm i3lock i3status konsole libxml2 lightdm \
         lightdm-gtk-greeter lightdm-gtk-greeter-settings make neovim nnn \
         openssl python3 ripgrep rofi shellcheck shfmt the_silver_searcher tidy \
-        tilda tmux ttf-font-icons vlc w3m xorg yamllint zoxide zsh
+        guake tmux ttf-font-icons vlc xorg yamllint zoxide zsh krita foliate \
+        simplescreenrecorder scribus
 
     success "Install APP(pacman) success!"
 }
@@ -104,4 +95,3 @@ hash pip3 &>/dev/null && install_pip
 
 [[ "${PACKAGE_TOOL_NAME}" = "brew" ]] && install_brew
 [[ "${PACKAGE_TOOL_NAME}" = "pacman" ]] && install_pacman
-[[ "${PACKAGE_TOOL_NAME}" = "dnf" ]] && install_dnf
