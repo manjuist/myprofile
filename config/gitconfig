@@ -42,3 +42,5 @@
     co = checkout
     pf = push --force
     ri = rebase -i
+[init]
+	defaultBranch = main
