@@ -6,6 +6,7 @@ alias ,m='cd ~/Code/myapp'
 # }
 
 # Profile {
+alias cd='z'
 alias et='exit'
 alias c='clear'
 alias rm='rm -i'
