@@ -74,6 +74,8 @@ install_pacman() {
     success "Install APP(pacman) success!"
 }
 
+# flatpak install flathub com.usebottles.bottles
+
 install_npm() {
     npm i -g nrm pnpm jsonlint neovim prettier stylelint stylelint-config-standard tern
 
