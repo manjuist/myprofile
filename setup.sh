@@ -46,10 +46,10 @@ install_brew() {
         difftastic duf dust emacs exa fd ffmpeg fzf gcc git-delta glances gpg \
         graphicsmagick highlight libxml2 make neovim nnn openssl python3 \
         ripgrep shellcheck shfmt the_silver_searcher tidy-html5 tmux vlc \
-        yamllint zoxide zsh
+        yamllint zoxide zsh meld mpv
 
-    command "$BREW_PATH/brew" install appcleaner bdash blender clipy \
-        cocoarestclient diffmerge drawio firefox gas-mask go2shell \
+    command "$BREW_PATH/brew" install bdash blender clipy \
+        cocoarestclient drawio gas-mask go2shell \
         golangci-lint google-chrome hiddenbar iterm2 itsycal joplin keka \
         kekaexternalhelper lulu mos netnewswire nvm pandoc pencil \
         rectangle rocket-chat shottr sigil skim swiftformat swiftlint \
@@ -62,14 +62,14 @@ install_brew() {
 }
 
 install_pacman() {
-    sudo pacman -S alacritty aria2 bat calibre cmake ctags difftastic duf dust \
+    sudo pacman -S kitty aria2 bat calibre cmake ctags difftastic duf dust \
         emacs exa fcitx5 fcitx5-chinese-addons fcitx5-configtool fcitx5-gtk \
         fcitx5-im fcitx5-qt fd ffmpeg fzf gcc git-delta glances gpg \
         graphicsmagick highlight i3-wm i3lock i3status konsole libxml2 lightdm \
         lightdm-gtk-greeter lightdm-gtk-greeter-settings make neovim nnn \
         openssl python3 ripgrep rofi shellcheck shfmt the_silver_searcher tidy \
         guake tmux ttf-font-icons vlc xorg yamllint zoxide zsh krita foliate \
-        simplescreenrecorder scribus
+        simplescreenrecorder scribus meld mpv scribus simplescreenrecorder
 
     success "Install APP(pacman) success!"
 }
@@ -97,3 +97,4 @@ hash pip3 &>/dev/null && install_pip
 
 [[ "${PACKAGE_TOOL_NAME}" = "brew" ]] && install_brew
 [[ "${PACKAGE_TOOL_NAME}" = "pacman" ]] && install_pacman
+
