@@ -16,6 +16,11 @@ alias ls='exa -F'
 alias la='exa -aF'
 alias l1='exa -1F'
 alias ll='exa -lhF'
+alias grep='rg'
+alias diff='difft'
+alias df='duf'
+alias du='dust'
+alias find='fd'
 # }
 
 # Proxy {
