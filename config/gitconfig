@@ -21,9 +21,11 @@
 
 [diff]
     tool = meld
+	;external = difft
 
 [delta]
-    navigate = ture
+    side-by-side = true
+    navigate = true
     line-numbers = true
 
 [mergetool]
@@ -42,5 +44,6 @@
     co = checkout
     pf = push --force
     ri = rebase -i
+
 [init]
 	defaultBranch = main

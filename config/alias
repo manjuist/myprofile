@@ -1,6 +1,6 @@
 # Dir {
 alias ,c='cd ~/Code'
-alias ,d='cd ~/.vim'
+alias ,v='cd ~/.vim'
 alias ,p='cd ~/.myprofile'
 # }
 
@@ -16,6 +16,11 @@ alias ls='exa -F'
 alias la='exa -aF'
 alias l1='exa -1F'
 alias ll='exa -lhF'
+alias grep='rg'
+alias diff='difft'
+alias df='duf'
+alias du='dust'
+alias find='fd'
 # }
 
 # Proxy {
@@ -66,7 +71,7 @@ alias gpu='git push'
 shotCommitHash='%C(yellow)%h'
 dataStr='%C(red)%ad'
 commitName='%<(9,trunc)%C(blue)%cn'
-commitMsg='%<(20,trunc)%C(reset)%s'
+commitMsg='%<(40,trunc)%C(reset)%s'
 prettyStr="${shotCommitHash} ${dataStr} ${commitName} ${commitMsg}"
 dateFmtStr='%m/%d-%H:%M'
 
