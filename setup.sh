@@ -52,7 +52,7 @@ install_brew() {
         cocoarestclient drawio gas-mask go2shell clipy google-chrome blender \
         hiddenbar itsycal keka kekaexternalhelper lulu netnewswire pencil skim \
         mpv meld tencent-lemon thor v2rayu visual-studio-code wpsoffice-cn xld \
-        youdaodict krita scribus rectangle sigil dbeaver-community kitty
+        youdaodict krita scribus rectangle sigil dbeaver-community kitty stats
 
     success "Install APP(brew) success!"
 }
