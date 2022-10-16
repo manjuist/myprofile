@@ -48,12 +48,12 @@ install_brew() {
         ripgrep shellcheck shfmt the_silver_searcher tidy-html5 tmux zoxide \
         swiftformat swiftlint nvm pandoc
 
-    command "$BREW_PATH/brew" install --cask calibre foobar2000 wireshark iterm2 \
+    command "$BREW_PATH/brew" install --cask calibre foobar2000 wireshark mpv \
         cocoarestclient drawio gas-mask go2shell clipy google-chrome blender \
         hiddenbar itsycal keka kekaexternalhelper lulu netnewswire pencil skim \
-        mpv meld tencent-lemon thor v2rayu visual-studio-code wpsoffice-cn xld \
+        iterm2 meld tencent-lemon thor visual-studio-code wpsoffice-cn maccy \
         youdaodict krita scribus rectangle sigil dbeaver-community kitty stats \
-        brewlet
+        brewlet obsidian macdown xld espanso v2rayu
 
     success "Install APP(brew) success!"
 }
