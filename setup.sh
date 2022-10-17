@@ -6,6 +6,9 @@
 # date: 2022-06-29
 # ------
 
+set -e
+set -o pipefail
+
 Red='\033[0;31m'
 Green='\033[0;32m'
 Color_off='\033[0m'
@@ -42,59 +45,63 @@ set_package_tool_name() {
 }
 
 install_brew() {
-    command "$BREW_PATH/brew" install alacritty aria2 bat calibre cmake ctags \
-        difftastic duf dust emacs exa fd ffmpeg fzf gcc git-delta glances gpg \
-        graphicsmagick highlight libxml2 make neovim nnn openssl python3 \
-        ripgrep shellcheck shfmt the_silver_searcher tidy-html5 tmux vlc \
-        yamllint zoxide zsh meld mpv
+    command "$BREW_PATH/brew" install alacritty aria2 bat cmake ctags zsh exa \
+        difftastic duf dust emacs fd ffmpeg fzf gcc git-delta glances gpg nnn \
+        graphicsmagick highlight libxml2 make neovim openssl python3 yamllint \
+        ripgrep shellcheck shfmt the_silver_searcher tidy-html5 tmux zoxide \
+        swiftformat swiftlint nvm pandoc
 
-    command "$BREW_PATH/brew" install bdash blender clipy \
-        cocoarestclient drawio gas-mask go2shell \
-        golangci-lint google-chrome hiddenbar iterm2 itsycal joplin keka \
-        kekaexternalhelper lulu mos netnewswire nvm pandoc pencil \
-        rectangle rocket-chat shottr sigil skim swiftformat swiftlint \
-        tencent-lemon thor thunderbird v2rayu visual-studio-code wpsoffice-cn \
-        xld youdaodict krita scribus
-
-    # farbar2000 wireshark gitup
+    command "$BREW_PATH/brew" install --cask calibre foobar2000 wireshark skim \
+        youdaodict krita scribus rectangle sigil dbeaver-community kitty stats \
+        iterm2 meld tencent-lemon thor visual-studio-code wpsoffice-cn charles \
+        hiddenbar itsycal keka kekaexternalhelper lulu netnewswire pencil mpv \
+        cocoarestclient drawio gas-mask go2shell clipy google-chrome obsidian \
+        xld cyberduck wechat handbrake docker kdenlive robo-3t gimp audacity \
+        brewlet blender macdown espanso monitorcontrol maccy textmate v2rayu \
+        free-download-manager alt-tab nutstore syntax-highlight inkscape \
+        rocket-chat opentoonz losslesscut shotcut
 
     success "Install APP(brew) success!"
 }
 
 install_pacman() {
-    sudo pacman -S kitty aria2 bat calibre cmake ctags difftastic duf dust \
-        emacs exa fcitx5 fcitx5-chinese-addons fcitx5-configtool fcitx5-gtk \
-        fcitx5-im fcitx5-qt fd ffmpeg fzf gcc git-delta glances gpg \
-        graphicsmagick highlight i3-wm i3lock i3status konsole libxml2 lightdm \
-        lightdm-gtk-greeter lightdm-gtk-greeter-settings make neovim nnn \
-        openssl python3 ripgrep rofi shellcheck shfmt the_silver_searcher tidy \
-        guake tmux ttf-font-icons vlc xorg yamllint zoxide zsh krita foliate \
-        simplescreenrecorder scribus meld mpv scribus simplescreenrecorder
+    sudo pacman -S kitty aria2 bat calibre cmake ctags difftastic duf dust exa \
+        emacs fcitx5 fcitx5-chinese-addons fcitx5-configtool fcitx5-gtk ffmpeg \
+        highlight i3-wm i3lock i3status konsole libxml2 lightdm make neovim fd \
+        ripgrep rofi shellcheck shfmt the_silver_searcher tidy guake tmux mpv \
+        ttf-font-icons xorg yamllint zoxide zsh krita foliate scribus blender \
+        fcitx5-im fcitx5-qt fzf gcc git-delta glances gpg graphicsmagick meld \
+        lightdm-gtk-greeter lightdm-gtk-greeter-settings nnn openssl python3 \
+        simplescreenrecorder wireshark-cli wireshark-qt chromium sigil-git \
+        pencil visual-studio-code-bin wps-office-cn dbeaver-ee flatpak
 
     success "Install APP(pacman) success!"
 }
 
-# flatpak install flathub com.usebottles.bottles
-
 install_npm() {
-    npm i -g nrm pnpm jsonlint neovim prettier stylelint stylelint-config-standard tern
+    npm i -g nrm pnpm jsonlint neovim prettier yarn stylelint-config-standard \
+        stylelint tern
 
     success "Install APP(npm) success!"
 }
 
 install_pip() {
-    pip3 install autopep8 flake8 isort jedi neovim pylint pynvim ranger \
-        thefuck tldr vim-vint yapf
+    pip3 install autopep8 flake8 isort jedi neovim pylint pynvim tldr thefuck \
+        vim-vint yapf
 
     success "Install APP(pip) success!"
+}
+
+install_flatpak() {
+    flatpak install flathub com.jgraph.drawio.desktop com.usebottles.bottles
 }
 
 set_package_tool_name
 set_brew_path
 
-hash npm &>/dev/null && install_npm
-hash pip3 &>/dev/null && install_pip
-
 [[ "${PACKAGE_TOOL_NAME}" = "brew" ]] && install_brew
 [[ "${PACKAGE_TOOL_NAME}" = "pacman" ]] && install_pacman
 
+hash npm &>/dev/null && install_npm
+hash pip3 &>/dev/null && install_pip
+hash flatpak &>/dev/null && install_flatpak
