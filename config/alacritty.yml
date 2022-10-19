@@ -2,19 +2,19 @@
 ---
 font:
   normal:
-    family: SauceCodePro Nerd Font
+    family: Source Code Pro
     style: Regular
 
   bold:
-    family: SauceCodePro Nerd Font
+    family: Source Code Pro
     style: Bold
 
   italic:
-    family: SauceCodePro Nerd Font
+    family: Source Code Pro
     style: Italic
 
   bold_italic:
-    family: SauceCodePro Nerd Font
+    family: Source Code Pro
     style: Bold Italic
 
   size: 18.0

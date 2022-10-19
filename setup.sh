@@ -6,6 +6,9 @@
 # date: 2022-06-29
 # ------
 
+set -e
+set -o pipefail
+
 Red='\033[0;31m'
 Green='\033[0;32m'
 Color_off='\033[0m'
@@ -48,12 +51,15 @@ install_brew() {
         ripgrep shellcheck shfmt the_silver_searcher tidy-html5 tmux zoxide \
         swiftformat swiftlint nvm pandoc
 
-    command "$BREW_PATH/brew" install --cask calibre foobar2000 wireshark mpv \
-        cocoarestclient drawio gas-mask go2shell clipy google-chrome blender \
-        hiddenbar itsycal keka kekaexternalhelper lulu netnewswire pencil skim \
-        iterm2 meld tencent-lemon thor visual-studio-code wpsoffice-cn maccy \
+    command "$BREW_PATH/brew" install --cask calibre foobar2000 wireshark skim \
         youdaodict krita scribus rectangle sigil dbeaver-community kitty stats \
-        brewlet obsidian macdown xld espanso v2rayu
+        iterm2 meld tencent-lemon thor visual-studio-code wpsoffice-cn charles \
+        hiddenbar itsycal keka kekaexternalhelper lulu netnewswire pencil mpv \
+        cocoarestclient drawio gas-mask go2shell clipy google-chrome obsidian \
+        xld cyberduck wechat handbrake docker kdenlive robo-3t gimp audacity \
+        brewlet blender macdown espanso monitorcontrol maccy textmate v2rayu \
+        free-download-manager alt-tab nutstore syntax-highlight inkscape \
+        rocket-chat opentoonz losslesscut shotcut
 
     success "Install APP(brew) success!"
 }
@@ -71,6 +77,8 @@ install_pacman() {
 
     success "Install APP(pacman) success!"
 }
+
+# flatpak install flathub com.usebottles.bottles
 
 install_npm() {
     npm i -g nrm pnpm jsonlint neovim prettier yarn stylelint-config-standard \
