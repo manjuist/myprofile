@@ -11,8 +11,9 @@ REPO_URI="https://github.com/mdvis/${APP_NAME}.git"
 
 APP_PATH="${HOME}/.${APP_NAME}"
 TOOL_PATH="${APP_PATH}/tools"
-CONFIG_PATH="${APP_PATH}/config"
+APP_CONFIG_PATH="${APP_PATH}/config"
 BIN_PATH="$HOME/.local/bin/"
+CONFIG_PATH="$HOME/.config/"
 
 Red='\033[0;31m'
 Green='\033[0;32m'
@@ -41,19 +42,36 @@ lnif() {
 
 getFile() {
     local dir_name=$1
-    # dir_list=$(/usr/bin/find "${dir_name}" -maxdepth 1)
-    dir_list=$(ls "${dir_name}")
+    dir_list=$(/usr/bin/find "${dir_name}" -maxdepth 1 -type f)
+    #dir_list=$(ls "${dir_name}")
+}
+
+getDir() {
+    local dir_name=$1
+    dir_list=$(/usr/bin/find "${dir_name}" -maxdepth 1 -type d)
+    #dir_list=$(ls "${dir_name}")
+}
+
+isDirectory() {
+    typeRes=$(file "$1")
+    if [[ "${typeRes}" =~ "directory" ]]; then
+        return 0
+    fi
+    return 1
 }
 
 handler() {
     local file
     local path_name="$1"
     local target_dir="$2"
+    local typ="$3"
 
-    getFile "${path_name}"
+    [[ "${typ}" == "f" ]] && getFile "${path_name}"
+    [[ "${typ}" == "d" ]] && getDir "${path_name}"
 
     for i in ${dir_list}; do
         file=$(basename "$i")
+        backup "${target_dir}${file%.sh}"
         lnif "${path_name}/${file}" "${target_dir}${file%.sh}"
         success "Link $file!"
     done
@@ -77,11 +95,20 @@ syncRepo() {
     success "Clone $name success!"
 }
 
-rm -rf "$HOME/.i3" "$HOME/.pip" "$HOME/.vim"
+backup() {
+    list="$*"
+    time=$(date +%s)
+    for i in $list; do
+        [[ -d "${i}" ]] && mv "${i}" "${i}"."${time}"
+
+        success "Buckup $i success!"
+    done
+}
 
 hash git &>/dev/null && syncRepo "$APP_PATH" "$REPO_URI"
 
 cd "$APP_PATH" || exit
 
 handler "$TOOL_PATH" "${BIN_PATH}"
-handler "$CONFIG_PATH" "$HOME/."
+handler "$APP_CONFIG_PATH" "$HOME/." "f"
+handler "$APP_CONFIG_PATH" "$CONFIG_PATH" "d"
