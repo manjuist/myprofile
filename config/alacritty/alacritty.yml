@@ -57,5 +57,5 @@ window:
   #   y: 0
 
   decorations: full
-# import:
-#     - ~/dirconf.yml
+import:
+  - ./Iceberg.yml
