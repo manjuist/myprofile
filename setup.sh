@@ -49,7 +49,7 @@ install_brew() {
         difftastic duf dust emacs fd ffmpeg fzf gcc git-delta glances gpg nnn \
         graphicsmagick highlight libxml2 make neovim openssl python3 yamllint \
         ripgrep shellcheck shfmt the_silver_searcher tidy-html5 tmux zoxide \
-        swiftformat swiftlint nvm pandoc
+        swiftformat swiftlint nvm pandoc rust-analyzer
 
     command "$BREW_PATH/brew" install --cask calibre foobar2000 wireshark skim \
         youdaodict krita scribus rectangle sigil dbeaver-community kitty stats \
@@ -77,6 +77,8 @@ install_pacman() {
 
     success "Install APP(pacman) success!"
 }
+
+# flatpak install flathub com.usebottles.bottles
 
 install_npm() {
     npm i -g nrm pnpm jsonlint neovim prettier yarn stylelint-config-standard \
