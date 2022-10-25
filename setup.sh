@@ -46,19 +46,18 @@ set_package_tool_name() {
 
 install_brew() {
     command "$BREW_PATH/brew" install alacritty aria2 bat cmake ctags zsh exa \
-        difftastic duf dust emacs fd ffmpeg fzf gcc git-delta glances gpg nnn \
+        difftastic duf dust fd ffmpeg fzf gcc git-delta glances gpg nnn pandoc \
         graphicsmagick highlight libxml2 make neovim openssl python3 yamllint \
         ripgrep shellcheck shfmt the_silver_searcher tidy-html5 tmux zoxide \
-        swiftformat swiftlint nvm pandoc rust-analyzer
+        swiftformat swiftlint nvm rust-analyzer
 
     command "$BREW_PATH/brew" install --cask calibre foobar2000 wireshark skim \
         youdaodict krita scribus rectangle sigil dbeaver-community kitty stats \
         iterm2 meld tencent-lemon thor visual-studio-code wpsoffice-cn charles \
         hiddenbar itsycal keka kekaexternalhelper lulu netnewswire pencil mpv \
         cocoarestclient drawio gas-mask go2shell clipy google-chrome obsidian \
-        xld cyberduck wechat handbrake docker kdenlive robo-3t gimp audacity \
+        free-download-manager alt-tab nutstore syntax-highlight inkscape emacs xld cyberduck wechat handbrake docker kdenlive robo-3t gimp audacity \
         brewlet blender macdown espanso monitorcontrol maccy textmate v2rayu \
-        free-download-manager alt-tab nutstore syntax-highlight inkscape \
         rocket-chat opentoonz losslesscut shotcut
 
     success "Install APP(brew) success!"

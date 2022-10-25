@@ -5,22 +5,20 @@ alias ,p='cd ~/.myprofile'
 # }
 
 # Profile {
-alias cd='z'
-alias et='exit'
-alias c='clear'
+alias ex='exit'
+
+alias cls='clear'
+
 alias rm='rm -i'
 alias rmf='rm -rf'
+
 alias vi='nvim'
 alias vim='nvim'
+
 alias ls='exa -F'
 alias la='exa -aF'
 alias l1='exa -1F'
 alias ll='exa -lhF'
-alias grep='rg'
-alias diff='difft'
-alias df='duf'
-alias du='dust'
-alias find='fd'
 # }
 
 # Proxy {
