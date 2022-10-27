@@ -49,7 +49,7 @@ install_brew() {
         difftastic duf dust fd ffmpeg fzf gcc git-delta glances gpg nnn pandoc \
         graphicsmagick highlight libxml2 make neovim openssl python3 yamllint \
         ripgrep shellcheck shfmt the_silver_searcher tidy-html5 tmux zoxide \
-        swiftformat swiftlint nvm rust-analyzer
+        swiftformat swiftlint nvm rust-analyzer btop
 
     command "$BREW_PATH/brew" install --cask calibre foobar2000 wireshark skim \
         youdaodict krita scribus rectangle sigil dbeaver-community kitty stats \
