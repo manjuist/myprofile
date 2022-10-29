@@ -55,10 +55,10 @@ install_brew() {
         youdaodict krita scribus rectangle sigil dbeaver-community kitty stats \
         iterm2 meld tencent-lemon thor visual-studio-code wpsoffice-cn charles \
         hiddenbar itsycal keka kekaexternalhelper lulu netnewswire pencil mpv \
-        cocoarestclient drawio gas-mask go2shell clipy google-chrome obsidian \
+        drawio gas-mask go2shell clipy google-chrome obsidian \
         free-download-manager alt-tab nutstore syntax-highlight inkscape emacs xld cyberduck wechat handbrake docker kdenlive robo-3t gimp audacity \
         brewlet blender macdown espanso monitorcontrol maccy textmate v2rayu \
-        rocket-chat opentoonz losslesscut shotcut
+        rocket-chat opentoonz losslesscut shotcut httpie
 
     success "Install APP(brew) success!"
 }
