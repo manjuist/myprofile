@@ -59,7 +59,7 @@ install_brew() {
         free-download-manager alt-tab nutstore syntax-highlight xld cyberduck \
         drawio gas-mask go2shell clipy google-chrome obsidian inkscape httpie \
         brewlet blender macdown espanso monitorcontrol rocket-chat opentoonz \
-        losslesscut shotcut emacs
+        losslesscut shotcut emacs flameshot
 
     success "Install APP(brew) success!"
 }
@@ -73,7 +73,8 @@ install_pacman() {
         ttf-font-icons xorg yamllint zoxide zsh krita foliate scribus blender \
         fcitx5-im fcitx5-qt fzf gcc git-delta glances gpg graphicsmagick meld \
         lightdm-gtk-greeter lightdm-gtk-greeter-settings nnn openssl python3 \
-        simplescreenrecorder wireshark-cli wireshark-qt chromium sigil-git
+        simplescreenrecorder wireshark-cli wireshark-qt chromium sigil-git \
+        flameshot
 
     success "Install APP(pacman) success!"
 }
