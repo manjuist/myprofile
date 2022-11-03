@@ -90,7 +90,7 @@ install_npm() {
 
 install_pip() {
     pip3 install autopep8 flake8 isort jedi neovim pylint pynvim tldr thefuck \
-        vim-vint yapf
+        vim-vint yapf alacritty-colorscheme
 
     success "Install APP(pip) success!"
 }
