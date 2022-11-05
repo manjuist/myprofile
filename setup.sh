@@ -68,17 +68,17 @@ install_pacman() {
     sudo pacman -S kitty aria2 bat calibre cmake ctags difftastic duf dust exa \
         emacs fcitx5 fcitx5-chinese-addons fcitx5-configtool fcitx5-gtk ffmpeg \
         highlight i3-wm i3lock i3status konsole libxml2 lightdm make neovim fd \
-        pencil visual-studio-code-bin wps-office-cn dbeaver-ee flatpak firefox \
+        lightdm-gtk-greeter lightdm-gtk-greeter-settings nnn openssl flameshot \
+        simplescreenrecorder wireshark-cli wireshark-qt firefoxflatpak python3 \
         ripgrep rofi shellcheck shfmt the_silver_searcher tidy guake tmux mpv \
         ttf-font-icons xorg yamllint zoxide zsh krita foliate scribus blender \
-        fcitx5-im fcitx5-qt fzf gcc git-delta glances gpg graphicsmagick meld \
-        lightdm-gtk-greeter lightdm-gtk-greeter-settings nnn openssl python3 \
-        simplescreenrecorder wireshark-cli wireshark-qt chromium sigil-git \
-        flameshot
+        fcitx5-im fcitx5-qt fzf gcc git-delta glances graphicsmagick chromium \
+        meld
 
     success "Install APP(pacman) success!"
 }
 
+# AUR pencil visual-studio-code-bin wps-office-cn dbeaver-ee gpg sigil-git
 # flatpak install flathub com.usebottles.bottles
 
 install_npm() {
