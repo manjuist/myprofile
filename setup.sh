@@ -59,7 +59,7 @@ install_brew() {
         free-download-manager alt-tab nutstore syntax-highlight xld cyberduck \
         drawio gas-mask go2shell clipy google-chrome obsidian inkscape httpie \
         brewlet blender macdown espanso monitorcontrol rocket-chat opentoonz \
-        losslesscut shotcut emacs flameshot
+        losslesscut shotcut emacs flameshot macpass keepassxc
 
     success "Install APP(brew) success!"
 }
@@ -68,12 +68,13 @@ install_pacman() {
     sudo pacman -S kitty aria2 bat calibre cmake ctags difftastic duf dust exa \
         emacs fcitx5 fcitx5-chinese-addons fcitx5-configtool fcitx5-gtk ffmpeg \
         highlight i3-wm i3lock i3status konsole libxml2 lightdm make neovim fd \
-        lightdm-gtk-greeter lightdm-gtk-greeter-settings nnn openssl flameshot \
-        simplescreenrecorder wireshark-cli wireshark-qt firefoxflatpak python3 \
+        pencil visual-studio-code-bin wps-office-cn dbeaver-ee flatpak firefox \
         ripgrep rofi shellcheck shfmt the_silver_searcher tidy guake tmux mpv \
         ttf-font-icons xorg yamllint zoxide zsh krita foliate scribus blender \
-        fcitx5-im fcitx5-qt fzf gcc git-delta glances graphicsmagick chromium \
-        meld
+        fcitx5-im fcitx5-qt fzf gcc git-delta glances gpg graphicsmagick meld \
+        lightdm-gtk-greeter lightdm-gtk-greeter-settings nnn openssl python3 \
+        simplescreenrecorder wireshark-cli wireshark-qt chromium sigil-git \
+        flameshot keepassxc keepass
 
     success "Install APP(pacman) success!"
 }
