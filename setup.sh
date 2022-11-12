@@ -59,7 +59,7 @@ install_brew() {
         free-download-manager alt-tab nutstore syntax-highlight xld cyberduck \
         drawio gas-mask go2shell clipy google-chrome obsidian inkscape httpie \
         brewlet blender macdown espanso monitorcontrol rocket-chat opentoonz \
-        losslesscut shotcut emacs flameshot
+        losslesscut shotcut emacs flameshot macpass keepassxc
 
     success "Install APP(brew) success!"
 }
@@ -74,11 +74,12 @@ install_pacman() {
         fcitx5-im fcitx5-qt fzf gcc git-delta glances gpg graphicsmagick meld \
         lightdm-gtk-greeter lightdm-gtk-greeter-settings nnn openssl python3 \
         simplescreenrecorder wireshark-cli wireshark-qt chromium sigil-git \
-        flameshot
+        flameshot keepassxc keepass
 
     success "Install APP(pacman) success!"
 }
 
+# AUR pencil visual-studio-code-bin wps-office-cn dbeaver-ee gpg sigil-git
 # flatpak install flathub com.usebottles.bottles
 
 install_npm() {
