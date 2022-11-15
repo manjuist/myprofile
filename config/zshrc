@@ -7,6 +7,7 @@
     export PATH="/opt/homebrew/opt/make/libexec/gnubin:$PATH"
     export PATH="${HOME}/go/bin:$PATH"
     export GPG_TTY=$(tty)
+    export GO111MODULE=on
 # }
 
 # fzf {
@@ -62,3 +63,8 @@ plugins=(git brew gulp man npm macos tmux python sudo yarn)
 eval $(thefuck --alias)
 
 eval "$(zoxide init zsh)"
+
+# pnpm
+export PNPM_HOME="/Users/mdvis/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end

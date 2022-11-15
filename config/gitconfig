@@ -13,7 +13,7 @@
 
 [commit]
     template = ~/.gitmessages
-    gpgsign = false
+    gpgsign = true
 
 [merge]
     tool = meld
@@ -24,7 +24,7 @@
 	;external = difft
 
 [delta]
-    side-by-side = true
+    ;side-by-side = true
     navigate = true
     line-numbers = true
 

@@ -5,43 +5,39 @@ alias ,p='cd ~/.myprofile'
 # }
 
 # Profile {
-alias cd='z'
-alias et='exit'
-alias c='clear'
+alias ex='exit'
+
+alias cls='clear'
+
 alias rm='rm -i'
 alias rmf='rm -rf'
+
 alias vi='nvim'
 alias vim='nvim'
+
 alias ls='exa -F'
 alias la='exa -aF'
 alias l1='exa -1F'
 alias ll='exa -lhF'
-alias grep='rg'
-alias diff='difft'
-alias df='duf'
-alias du='dust'
-alias find='fd'
 # }
 
 # Proxy {
 alias unsp='unset \
-           all_proxy \
+           ALL_PROXY \
            http_proxy \
            https_proxy \
-           ALL_PROXY \
-           HTTP_PROXY \
-           HTTPS_PROXY \
            '
 
-proxy_port='1080'
-proxy_address='socks5://127.0.0.1'
-proxy_address="${proxy_address}:${proxy_port}"
+PROXY_HTTP_PORT=1084
+PROXY_SOCKET_PORT=1080
 
-alias sp="\
-         export ALL_PROXY=${proxy_address} \
-         export HTTP_PROXY=${proxy_address} \
-         export HTTPS_PROXY=${proxy_address} \
-         "
+PROXY_SOCKET_ADDRESS='socks5://127.0.0.1'
+PROXY_HTTP_ADDRESS='http://127.0.0.1'
+
+PROXY_SOCKET="${PROXY_SOCKET_ADDRESS}:${PROXY_SOCKET_PORT}"
+PROXY_HTTP="${PROXY_HTTP_ADDRESS}:${PROXY_HTTP_PORT}"
+
+alias sp="export ALL_PROXY=${PROXY_SOCKET}; export http_proxy=${PROXY_HTTP}; export https_proxy=${PROXY_HTTP}"
 # }
 
 # Tmux {

@@ -45,21 +45,21 @@ set_package_tool_name() {
 }
 
 install_brew() {
-    command "$BREW_PATH/brew" install alacritty aria2 bat cmake ctags zsh exa \
-        difftastic duf dust emacs fd ffmpeg fzf gcc git-delta glances gpg nnn \
+    command "$BREW_PATH/brew" install alacritty aria2 bat cmake ctags zsh tmux \
+        difftastic duf dust fd ffmpeg fzf gcc git-delta glances gpg nnn pandoc \
         graphicsmagick highlight libxml2 make neovim openssl python3 yamllint \
-        ripgrep shellcheck shfmt the_silver_searcher tidy-html5 tmux zoxide \
-        swiftformat swiftlint nvm pandoc rust-analyzer
+        ripgrep shellcheck shfmt the_silver_searcher tidy-html5 rust-analyzer \
+        swiftformat swiftlint nvm btop neofetch exa zoxide
 
     command "$BREW_PATH/brew" install --cask calibre foobar2000 wireshark skim \
         youdaodict krita scribus rectangle sigil dbeaver-community kitty stats \
         iterm2 meld tencent-lemon thor visual-studio-code wpsoffice-cn charles \
+        wechat handbrake docker kdenlive robo-3t gimp audacity v2rayu firefox \
         hiddenbar itsycal keka kekaexternalhelper lulu netnewswire pencil mpv \
-        cocoarestclient drawio gas-mask go2shell clipy google-chrome obsidian \
-        xld cyberduck wechat handbrake docker kdenlive robo-3t gimp audacity \
-        brewlet blender macdown espanso monitorcontrol maccy textmate v2rayu \
-        free-download-manager alt-tab nutstore syntax-highlight inkscape \
-        rocket-chat opentoonz losslesscut shotcut
+        free-download-manager alt-tab nutstore syntax-highlight xld cyberduck \
+        drawio gas-mask go2shell clipy google-chrome obsidian inkscape httpie \
+        brewlet blender macdown espanso monitorcontrol rocket-chat opentoonz \
+        losslesscut shotcut emacs flameshot macpass keepassxc
 
     success "Install APP(brew) success!"
 }
@@ -68,16 +68,18 @@ install_pacman() {
     sudo pacman -S kitty aria2 bat calibre cmake ctags difftastic duf dust exa \
         emacs fcitx5 fcitx5-chinese-addons fcitx5-configtool fcitx5-gtk ffmpeg \
         highlight i3-wm i3lock i3status konsole libxml2 lightdm make neovim fd \
+        pencil visual-studio-code-bin wps-office-cn dbeaver-ee flatpak firefox \
         ripgrep rofi shellcheck shfmt the_silver_searcher tidy guake tmux mpv \
         ttf-font-icons xorg yamllint zoxide zsh krita foliate scribus blender \
         fcitx5-im fcitx5-qt fzf gcc git-delta glances gpg graphicsmagick meld \
         lightdm-gtk-greeter lightdm-gtk-greeter-settings nnn openssl python3 \
         simplescreenrecorder wireshark-cli wireshark-qt chromium sigil-git \
-        pencil visual-studio-code-bin wps-office-cn dbeaver-ee flatpak
+        flameshot keepassxc keepass
 
     success "Install APP(pacman) success!"
 }
 
+# AUR pencil visual-studio-code-bin wps-office-cn dbeaver-ee gpg sigil-git
 # flatpak install flathub com.usebottles.bottles
 
 install_npm() {
@@ -89,7 +91,7 @@ install_npm() {
 
 install_pip() {
     pip3 install autopep8 flake8 isort jedi neovim pylint pynvim tldr thefuck \
-        vim-vint yapf
+        vim-vint yapf alacritty-colorscheme
 
     success "Install APP(pip) success!"
 }

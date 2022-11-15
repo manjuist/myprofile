@@ -1,0 +1,140 @@
+font:
+  normal:
+    family: Source Code Pro
+    style: Regular
+
+  bold:
+    family: Source Code Pro
+    style: Bold
+
+  italic:
+    family: Source Code Pro
+    style: Italic
+
+  bold_italic:
+    family: Source Code Pro
+    style: Bold Italic
+
+  size: 18.0
+
+shell:
+  program: /Users/mdvis/.local/bin/tmux
+  # args:
+  #     - attach
+
+working_directory: /Users/mdvis/Code
+
+env:
+  TERM: xterm-256color
+
+colors:
+  # COLORSCHEME: Iceberg.yml
+  # Default colors
+  primary:
+    # hard contrast background - '#1d2021'
+    background: '#161821'
+    foreground: '#d2d4de'
+
+  # Normal colors
+  normal:
+    black: '#161821'
+    red: '#e27878'
+    green: '#b4be82'
+    yellow: '#e2a478'
+    blue: '#84a0c6'
+    magenta: '#a093c7'
+    cyan: '#89b8c2'
+    white: '#c6c8d1'
+
+  # Bright colors
+  bright:
+    black: '#6b7089'
+    red: '#e98989'
+    green: '#c0ca8e'
+    yellow: '#e9b189'
+    blue: '#91acd1'
+    magenta: '#ada0d3'
+    cyan: '#95c4ce'
+    white: '#d2d4de'
+  cursor:
+    text: CellBackground
+    cursor: CellForeground
+  vi_mode_cursor:
+    text: CellBackground
+    cursor: CellForeground
+  # search:
+  #   matches:
+  #     foreground: '#000000'
+  #     background: '#ffffff'
+  #   focused_match:
+  #    foreground: CellBackground
+  #    background: CellForeground
+  #   bar:
+  #     background: ''
+  #     foreground: ''
+  # line_indicator:
+  #   foreground: None
+  #   background: None
+  selection:
+    text: CellBackground
+    background: CellForeground
+  dim:
+    black: '#32302f'
+    red: '#9d0006'
+    green: '#79740e'
+    yellow: '#b57614'
+    blue: '#076678'
+    magenta: '#8f3f71'
+    cyan: '#427b58'
+    white: '#928374'
+  indexed_colors:
+    - {index: 66, color: '#458588'}
+    - {index: 72, color: '#689d6a'}
+    - {index: 106, color: '#98971a'}
+    - {index: 108, color: '#8ec07c'}
+    - {index: 109, color: '#83a598'}
+    - {index: 124, color: '#cc241d'}
+    - {index: 132, color: '#b16286'}
+    - {index: 142, color: '#b8bb26'}
+    - {index: 166, color: '#d65d0e'}
+    - {index: 167, color: '#fb4934'}
+    - {index: 172, color: '#d79921'}
+    - {index: 175, color: '#d3869b'}
+    - {index: 208, color: '#fe8019'}
+    - {index: 214, color: '#fabd2f'}
+    - {index: 223, color: '#ebdbb2'}
+    - {index: 229, color: '#fbf1c7'}
+    - {index: 234, color: '#1d2021'}
+    - {index: 235, color: '#282828'}
+    - {index: 236, color: '#32302f'}
+    - {index: 237, color: '#3c3836'}
+    - {index: 239, color: '#504945'}
+    - {index: 241, color: '#665c54'}
+    - {index: 243, color: '#7c6f64'}
+    - {index: 245, color: '#928374'}
+    - {index: 246, color: '#a89984'}
+    - {index: 248, color: '#bdae93'}
+    - {index: 250, color: '#d5c4a1'}
+cursor:
+  text: CellBackground
+  cursor: CellForeground
+
+save_to_clipboard: true
+
+window:
+  # decorations: none
+  opacity: 1.0
+
+  # dimensions:
+  #   columns: 100
+  #   lines: 32
+
+  # position:
+  #  x: 888
+  #  y: 369
+
+  # padding:
+  #   x: 0
+  #   y: 0
+
+  decorations: full
