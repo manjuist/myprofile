@@ -1,0 +1,1 @@
+Put in `~/.local/share/xfce4/terminal/colorschemes`
