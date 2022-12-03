@@ -1,18 +1,18 @@
 font:
   normal:
-    family: Source Code Pro
-    style: Regular
+    family: SauceCodePro Nerd Font
+    style: Medium
 
   bold:
-    family: Source Code Pro
+    family: SauceCodePro Nerd Font
     style: Bold
 
   italic:
-    family: Source Code Pro
+    family: SauceCodePro Nerd Font
     style: Italic
 
   bold_italic:
-    family: Source Code Pro
+    family: SauceCodePro Nerd Font
     style: Bold Italic
 
   size: 18.0
@@ -28,34 +28,32 @@ env:
   TERM: xterm-256color
 
 colors:
-  # COLORSCHEME: Iceberg.yml
-  # Default colors
+  # COLORSCHEME: gruvbox.yml
   primary:
     # hard contrast background - '#1d2021'
-    background: '#161821'
-    foreground: '#d2d4de'
-
-  # Normal colors
+    background: &gruvbox_dark_bg '#282828'
+    # soft contrast background - '#32302f'
+    foreground: '#ebdbb2'
+    bright_foreground: '#fbf1c7'
+    dim_foreground: '#a89984'
   normal:
-    black: '#161821'
-    red: '#e27878'
-    green: '#b4be82'
-    yellow: '#e2a478'
-    blue: '#84a0c6'
-    magenta: '#a093c7'
-    cyan: '#89b8c2'
-    white: '#c6c8d1'
-
-  # Bright colors
+    black: *gruvbox_dark_bg
+    red: '#cc241d'
+    green: '#98971a'
+    yellow: '#d79921'
+    blue: '#458588'
+    magenta: '#b16286'
+    cyan: '#689d6a'
+    white: '#a89984'
   bright:
-    black: '#6b7089'
-    red: '#e98989'
-    green: '#c0ca8e'
-    yellow: '#e9b189'
-    blue: '#91acd1'
-    magenta: '#ada0d3'
-    cyan: '#95c4ce'
-    white: '#d2d4de'
+    black: '#928374'
+    red: '#fb4934'
+    green: '#b8bb26'
+    yellow: '#fabd2f'
+    blue: '#83a598'
+    magenta: '#d3869b'
+    cyan: '#8ec07c'
+    white: '#ebdbb2'
   cursor:
     text: CellBackground
     cursor: CellForeground
@@ -115,6 +113,13 @@ colors:
     - {index: 246, color: '#a89984'}
     - {index: 248, color: '#bdae93'}
     - {index: 250, color: '#d5c4a1'}
+  search:
+    matches:
+      foreground: CellBackground
+      background: '#88c0d0'
+  footer_bar:
+    background: '#434c5e'
+    foreground: '#d8dee9'
 cursor:
   text: CellBackground
   cursor: CellForeground
