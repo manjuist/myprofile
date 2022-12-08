@@ -14,34 +14,34 @@ order += "tztime local"
 order += "load"
 
 wireless _first_ {
-    format_up = " %essid  %quality  %bitrate  %ip"
-    format_down = " down"
+    format_up = "直 %essid 老 %quality 龍 %bitrate  %ip"
+    format_down = "睊 down"
 }
 ethernet _first_ {
-    format_up = " %ip  %speed"
-    format_down = " down"
+    format_up = " %ip 龍 %speed"
+    format_down = " down"
 }
 disk "/" {
-    format = " %free / %avail / %total / %used"
+    format = " %free / %avail / %total / %used"
 }
 battery 0 {
     format = "%status %percentage %remaining %emptytime"
-    format_down = "No battery"
-    status_chr = ""
-    status_bat = ""
-    status_unk = ""
-    status_full = ""
+    format_down = " NO BAT"
+    status_chr = ""
+    status_bat = ""
+    status_unk = ""
+    status_full = ""
     path = "/sys/class/power_supply/BAT%d/uevent"
     low_threshold = 10
 }
 memory {
-    format = " %used / %total"
+    format = " %used / %total"
     threshold_degraded = "10%"
     format_degraded = "MEMORY: %available / %free"
 }
 tztime local {
-    format = " %y/%m/%d  %H:%M"
+    format = " %y/%m/%d  %H:%M"
 }
 load {
-    format = " %5min"
+    format = "祥 %5min"
 }
