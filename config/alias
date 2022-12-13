@@ -28,7 +28,7 @@ alias unsp='unset \
            https_proxy \
            '
 
-PROXY_HTTP_PORT=1084
+PROXY_HTTP_PORT=1087
 PROXY_SOCKET_PORT=1080
 
 PROXY_SOCKET_ADDRESS='socks5://127.0.0.1'
