@@ -133,27 +133,27 @@ mode "resize" {
         bindsym Escape mode "default"
 }
 
-bar {
-	i3bar_command i3bar
-	status_command i3status
-	#position bottom
-	position top
-	bindsym button4 nop
-	bindsym button5 nop
-	strip_workspace_numbers yes
-    #mode hide
-    font pango:SauceCodePro Nerd Font, Icons 14
-    colors {
-        background #222D31
-        statusline #F9FAF9
-        separator  #454947
-        focused_workspace  #F9FAF9 #16a085 #292F34
-        active_workspace   #595B5B #353836 #FDF6E3
-        inactive_workspace #595B5B #222D31 #EEE8D5
-        binding_mode       #16a085 #2C2C2C #F9FAF9
-        urgent_workspace   #16a085 #FDF6E3 #E5201D
-    }
-}
+#bar {
+	#i3bar_command i3bar
+	#status_command i3status
+	##position bottom
+	#position top
+	#bindsym button4 nop
+	#bindsym button5 nop
+	#strip_workspace_numbers yes
+    ##mode hide
+    #font pango:SauceCodePro Nerd Font, Icons 4
+    #colors {
+        #background #222D31
+        #statusline #F9FAF9
+        #separator  #454947
+        #focused_workspace  #F9FAF9 #16a085 #292F34
+        #active_workspace   #595B5B #353836 #FDF6E3
+        #inactive_workspace #595B5B #222D31 #EEE8D5
+        #binding_mode       #16a085 #2C2C2C #F9FAF9
+        #urgent_workspace   #16a085 #FDF6E3 #E5201D
+    #}
+#}
 
 bindsym $mod+m bar mode toggle
   client.focused          #556064 #556064 #80FFF9 #FDF6E3
@@ -163,6 +163,7 @@ bindsym $mod+m bar mode toggle
   client.placeholder      #000000 #0c0c0c #ffffff #000000
   client.background       #2B2C2B
 
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 #方案一 此方案在我这里音量调节无上限，喇叭都要炸了！因此我用方案二
 #set $refresh_i3status killall -SIGUSR1 i3status
 #bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
