@@ -22,7 +22,8 @@ ethernet _first_ {
     format_down = " down"
 }
 disk "/" {
-    format = " %free / %avail / %total / %used"
+    #format = " %free / %avail / %total / %used"
+    format = " %used/%total"
 }
 battery 0 {
     format = "%status %percentage %remaining %emptytime"
@@ -35,7 +36,7 @@ battery 0 {
     low_threshold = 10
 }
 memory {
-    format = " %used / %total"
+    format = " %used/%total"
     threshold_degraded = "10%"
     format_degraded = "MEMORY: %available / %free"
 }
