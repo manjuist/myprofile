@@ -9,17 +9,17 @@
 set -e
 set -o pipefail
 
-sudo apt install alacritty aria2 bat blender calibre chromium cmake ctags duf \
-    fcitx5 flatpak foliate fzf gcc git-delta glances gpg graphicsmagick guake \
+sudo apt install aria2 bat blender calibre chromium cmake universal-ctags duf \
     libxml2 lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings make mpv \
-    syncthing the_silver_searcher tidy tilix tmux universal-ctags vlc w3m zsh \
-    dbeaver-ee difftastic dust emacs exa fd fd-find ffmpeg firefox flameshot \
-    visual-studio-code-bin wireshark-cli wireshark-qt wps-office-cn yamllint \
-    highlight i3 i3-wm i3lock i3status keepass keepassxc kitty konsole krita \
-    meld neovim nnn openssl pencil python3 python3-dev ripgrep rofi scribus \
-    shellcheck shfmt sigil-git silversearcher-ag simplescreenrecorder tilda \
-    fcitx5-chinese-addons fcitx5-configtool fcitx5-gtk fcitx5-im fcitx5-qt \
-    xorg zoxide
+    syncthing silversearcher-ag tidy tilix tmux universal-ctags vlc w3m zsh \
+    emacs exa fd-find ffmpeg firefox flameshot wireshark wireshark-qt yamllint \
+    highlight i3 i3-wm i3lock i3status kitty konsole krita meld neovim nnn \
+    openssl python3 python3-dev ripgrep rofi scribus fcitx5-chinese-addons \
+    fcitx5-config-qt shellcheck shfmt silversearcher-ag xorg zoxide \
+    simplescreenrecorder tilda fcitx5 flatpak fzf gcc glances gpg guake \
+    graphicsmagick
 
-# AUR pencil visual-studio-code-bin wps-office-cn dbeaver-ee gpg sigil-git
+# AUR pencil visual-studio-code-bin wps-office-cn dbeaver-ee gpg 
 # flatpak install flathub com.usebottles.bottles
+# git-delta alacritty dbeaver-ce difftastic dust sigil-git
+# pencil keepass keepassxc 
