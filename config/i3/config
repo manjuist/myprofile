@@ -1,8 +1,7 @@
-# Mod1 Alt
-# Mod4 Win
+# Mod1 Alt / Mod4 Win
 set $mod Mod1
-#font pango:monospace 16
-font pango:SauceCodePro Nerd Font 16
+
+font pango:SauceCodePro Nerd Font 20
 
 new_float normal
 new_window pixel 1
@@ -12,14 +11,14 @@ workspace_auto_back_and_forth yes
 
 # exec --no-startup-id
 # exec --release
-# term -> alacritty
-bindsym $mod+Return exec konsole # terminal/alacritty
+
+bindsym $mod+Return exec konsole
 bindsym $mod+Shift+q kill
 bindsym $mod+d exec --no-startup-id rofi -show drun
 
 bindsym $mod+F1 exec --no-startup-id thunar
-bindsym $mod+F2 exec --no-startup-id google-chrome
-bindsym $mod+F3 exec --no-startup-id /opt/cisco/anyconnect/bin/vpnui
+bindsym $mod+F2 exec --no-startup-id firefox
+bindsym $mod+F3 exec --no-startup-id /home/mdvis/QV2ray/Qv2ray-v2.7.0-linux-x64.AppImage
 bindsym $mod+F4 exec --no-startup-id xfce4-settings-manager
 
 bindsym $mod+j focus left
@@ -82,12 +81,12 @@ bindsym $mod+Shift+7 move container to workspace $ws7; workspace $ws7
 bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
 
 bindsym $mod+9 mode "$mode_application"
-set $mode_application (t)hunar, (c)hrome, (w)ps, (a)nyconnect, (x)face_setting
+set $mode_application (t)hunar, (f)irefox, (w)ps, (q)v2ray, (x)face_setting
 mode "$mode_application" {
     bindsym t exec --no-startup-id thunar, mode "default"
-    bindsym c exec --no-startup-id google-chrome, mode "default"
+    bindsym f exec --no-startup-id firefox, mode "default"
     bindsym w exec --no-startup-id wps, mode "default"
-    bindsym a exec --no-startup-id /opt/cisco/anyconnect/bin/vpnui, mode "default"
+    bindsym q exec --no-startup-id /home/mdvis/QV2ray/Qv2ray-v2.7.0-linux-x64.AppImage, mode "default"
     bindsym x exec --no-startup-id xfce4-settings-manager, mode "default"
     # exit system mode: "Enter" or "Escape"
     bindsym Return mode "default"
@@ -133,27 +132,38 @@ mode "resize" {
         bindsym Escape mode "default"
 }
 
-#bar {
-	#i3bar_command i3bar
-	#status_command i3status
-	##position bottom
-	#position top
-	#bindsym button4 nop
-	#bindsym button5 nop
-	#strip_workspace_numbers yes
-    ##mode hide
-    #font pango:SauceCodePro Nerd Font, Icons 4
-    #colors {
-        #background #222D31
-        #statusline #F9FAF9
-        #separator  #454947
-        #focused_workspace  #F9FAF9 #16a085 #292F34
-        #active_workspace   #595B5B #353836 #FDF6E3
-        #inactive_workspace #595B5B #222D31 #EEE8D5
-        #binding_mode       #16a085 #2C2C2C #F9FAF9
-        #urgent_workspace   #16a085 #FDF6E3 #E5201D
-    #}
-#}
+# class                 border  bground text    indicator child_border
+client.focused          #6272A4 #6272A4 #F8F8F2 #6272A4   #6272A4
+client.focused_inactive #44475A #44475A #F8F8F2 #44475A   #44475A
+client.unfocused        #282A36 #282A36 #BFBFBF #282A36   #282A36
+client.urgent           #44475A #FF5555 #F8F8F2 #FF5555   #FF5555
+client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
+
+client.background       #F8F8F2
+
+bar {
+    i3bar_command i3bar
+    status_command i3status
+    #position bottom
+    position top
+    bindsym button4 nop
+    bindsym button5 nop
+    strip_workspace_numbers yes
+    #mode hide
+    font pango:SauceCodePro Nerd Font 16
+    separator_symbol "::"
+    colors {
+        background #282A36
+            statusline #F8F8F2
+            separator  #44475A
+
+            focused_workspace  #44475A #44475A #F8F8F2
+            active_workspace   #282A36 #44475A #F8F8F2
+            inactive_workspace #282A36 #282A36 #BFBFBF
+            urgent_workspace   #FF5555 #FF5555 #F8F8F2
+            binding_mode       #FF5555 #FF5555 #F8F8F2
+    }
+}
 
 bindsym $mod+m bar mode toggle
   client.focused          #556064 #556064 #80FFF9 #FDF6E3
@@ -163,7 +173,6 @@ bindsym $mod+m bar mode toggle
   client.placeholder      #000000 #0c0c0c #ffffff #000000
   client.background       #2B2C2B
 
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 #方案一 此方案在我这里音量调节无上限，喇叭都要炸了！因此我用方案二
 #set $refresh_i3status killall -SIGUSR1 i3status
 #bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
