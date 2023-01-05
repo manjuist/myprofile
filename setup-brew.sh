@@ -18,8 +18,8 @@ brew install tmux ripgrep shellcheck shfmt the_silver_searcher tidy-html5 zsh \
 brew install --cask blender macdown espanso monitorcontrol rocket-chat calibre \
     wechat handbrake docker kdenlive robo-3t gimp audacity v2rayu firefox skim \
     youdaodict krita scribus rectangle sigil dbeaver-community kitty stats xld \
-    iterm2 meld tencent-lemon thor visual-studio-code wpsoffice-cn charles mpv \
     losslesscut shotcut emacs flameshot macpass keepassxc wireshark foobar2000 \
+    hiddenbar itsycal keka kekaexternalhelper lulu netnewswire httpie obsidian \
+    iterm2 meld tencent-lemon thor visual-studio-code charles he3-app/he3/he3 \
     free-download-manager alt-tab nutstore syntax-highlight cyberduck brewlet \
-    hiddenbar itsycal keka kekaexternalhelper lulu netnewswire pencil httpie \
-    drawio gas-mask go2shell clipy google-chrome obsidian inkscape opentoonz
+    drawio gas-mask go2shell clipy google-chrome pencil inkscape opentoonz mpv
