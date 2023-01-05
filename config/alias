@@ -1,3 +1,5 @@
+alias -s {jsx,tsx,js,ts,vue,json,html,xml,scss,less}=nvim
+
 # Dir {
 alias ,c='cd ~/Code'
 alias ,v='cd ~/.vim'
