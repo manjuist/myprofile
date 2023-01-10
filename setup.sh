@@ -41,6 +41,13 @@ install_flatpak() {
     success "Install APP(pkg) success!"
 }
 
-hash npm &>/dev/null && install_npm
-hash pip3 &>/dev/null && install_pip
-hash flatpak &>/dev/null && install_flatpak
+install_cargo() {
+    cargo install du-dust difftastic alacritty git-delta
+
+    success "Install APP(pkg) success!"
+}
+
+install_npm
+install_pip
+install_flatpak
+install_cargo
