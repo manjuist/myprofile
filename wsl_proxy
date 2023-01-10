@@ -5,7 +5,6 @@
                https_proxy \
                '
 
-    PROXY_HTTP_PORT=1087
     PROXY_SOCKET_PORT=1080
 
     name_server=$(cat /etc/resolv.conf | grep nameserver | cut -d' ' -f2)
@@ -17,4 +16,6 @@
     PROXY_HTTP="${PROXY_SOCKET_ADDRESS}:${PROXY_SOCKET_PORT}"
 
     alias sp="export ALL_PROXY=${PROXY_SOCKET}; export http_proxy=${PROXY_HTTP}; export https_proxy=${PROXY_HTTP}"
+
+    export DISPLAY="${name_server}:0"
 # }
