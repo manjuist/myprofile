@@ -150,7 +150,7 @@ bar {
     bindsym button5 nop
     strip_workspace_numbers yes
     #mode hide
-    font pango:SauceCodePro Nerd Font 16
+    font pango:SauceCodePro Nerd Font 6
     separator_symbol "::"
     colors {
         background #282A36
