@@ -21,4 +21,5 @@ brew install --cask blender macdown monitorcontrol rocket-chat calibre firefox \
     free-download-manager alt-tab nutstore syntax-highlight cyberduck kdenlive \
     meld tencent-lemon thor visual-studio-code charles drawio alacritty pencil \
     wechat handbrake docker opentoonz robo-3t audacity skim clipy inkscape mpv \
-    gas-mask go2shell google-chrome gimp v2rayu he3-app/he3/he3
+    another-redis-desktop-manager google-chrome gas-mask gimp v2rayu go2shell \
+    he3-app/he3/he3
