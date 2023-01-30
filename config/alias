@@ -16,6 +16,8 @@ alias rmf='rm -rf'
 
 alias vi='nvim'
 alias vim='nvim'
+alias gvi='neovide'
+alias gvim='neovide'
 
 alias ls='exa -F'
 alias la='exa -aF'

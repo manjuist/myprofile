@@ -6,8 +6,13 @@
     export PATH="${HOME}/.local/bin":$PATH
     export PATH="/opt/homebrew/opt/make/libexec/gnubin:$PATH"
     export PATH="${HOME}/go/bin:$PATH"
+
     export GPG_TTY=$(tty)
+
     export GO111MODULE=on
+
+    export EDITOR=vim
+    export VISUAL=neovide
 # }
 
 # fzf {

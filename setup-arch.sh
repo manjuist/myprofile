@@ -17,6 +17,7 @@ sudo pacman -S lightdm-gtk-greeter lightdm-gtk-greeter-settings openssl gnupg \
     ripgrep rofi shellcheck shfmt the_silver_searcher tidy guake tmux python3 \
     xorg yamllint zoxide zsh krita foliate scribus blender duf syncthing nnn \
     kitty aria2 calibre cmake ctags difftastic dust keepassxc sigil-git meld \
-    fcitx5-im fcitx5-qt fzf gcc git-delta gpg graphicsmagick tilix glodendict
+    fcitx5-im fcitx5-qt fzf gcc git-delta gpg graphicsmagick tilix glodendict \
+    neovide
 
 type flatpak && flatpak install flathub com.usebottles.bottles
