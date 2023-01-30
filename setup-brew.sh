@@ -22,4 +22,4 @@ brew install --cask blender macdown monitorcontrol rocket-chat calibre firefox \
     meld tencent-lemon thor visual-studio-code charles drawio alacritty pencil \
     wechat handbrake docker opentoonz robo-3t audacity skim clipy inkscape mpv \
     another-redis-desktop-manager google-chrome gas-mask gimp v2rayu go2shell \
-    he3-app/he3/he3
+    he3-app/he3/he3 goldendict

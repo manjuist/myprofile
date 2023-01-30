@@ -19,4 +19,4 @@ sudo apt install aria2 bat calibre chromium cmake universal-ctags duf vlc npm \
     fcitx5-config-qt shellcheck shfmt silversearcher-ag xorg zoxide yamllint \
     highlight i3 i3-wm i3lock i3status kitty konsole krita meld neovim sigil \
     fzf tilda fcitx5 scribus pkg-config nodejs openjdk-17-jdk openjdk-17-jre \
-    ripgrep openssl rust-all
+    ripgrep openssl rust-all glodendict

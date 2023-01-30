@@ -16,6 +16,7 @@ sudo dnf install calibre keepassxc nnn mpv syncthing tilix ctags python3 vlc \
     ripgrep rofi shellcheck shfmt the_silver_searcher tidy guake tmux cmake \
     wireshark chromium sigil flameshot fd-find ffmpeg-free kitty aria2 bat \
     highlight i3 i3lock i3status konsole libxml2 lightdm make neovim emacs \
-    lightdm-gtk-greeter lightdm-gtk-greeter-settings simplescreenrecorder
+    lightdm-gtk-greeter lightdm-gtk-greeter-settings simplescreenrecorder \
+    glodendict
 
 type cargo && cargo install difftastic du-dust
