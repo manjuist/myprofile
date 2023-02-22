@@ -18,6 +18,6 @@ sudo pacman -S lightdm-gtk-greeter lightdm-gtk-greeter-settings openssl gnupg \
     xorg yamllint zoxide zsh krita foliate scribus blender duf syncthing nnn \
     kitty aria2 calibre cmake ctags difftastic dust keepassxc sigil-git meld \
     fcitx5-im fcitx5-qt fzf gcc git-delta gpg graphicsmagick tilix glodendict \
-    neovide
+    neovide git-cola
 
 type flatpak && flatpak install flathub com.usebottles.bottles
