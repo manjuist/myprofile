@@ -41,9 +41,8 @@
 [alias]
     a = add
     c = commit
+    m = merge
     co = checkout
-    pf = push --force
-    ri = rebase -i
 
 [init]
 	defaultBranch = main
