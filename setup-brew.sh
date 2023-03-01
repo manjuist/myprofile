@@ -10,16 +10,15 @@ set -e
 set -o pipefail
 
 brew install tmux ripgrep shellcheck shfmt the_silver_searcher tidy-html5 dust \
-    difftastic duf fd ffmpeg fzf gcc git-delta glances gpg nnn pandoc yamllint \
-    nvm btop neofetch zoxide aria2 cmake neovim swiftlint swiftformat exa make \
-    graphicsmagick highlight libxml2 zsh ctags openssl bat rust-analyzer
+    btop neofetch zoxide cmake neovim swiftlint swiftformat exa make highlight \
+    difftastic duf fd ffmpeg fzf gcc git-delta gpg nnn pandoc yamllint nvm zsh \
+    libxml2 ctags openssl bat rust-analyzer
 
-brew install --cask macdown rocket-chat calibre firefox v2rayu he3-app/he3/he3 \
-    krita scribus rectangle sigil dbeaver-community kitty stats xld goldendict \
-    losslesscut shotcut emacs flameshot macpass keepassxc wireshark foobar2000 \
-    hiddenbar itsycal keka kekaexternalhelper lulu netnewswire httpie obsidian \
-    free-download-manager alt-tab nutstore syntax-highlight cyberduck kdenlive \
-    meld tencent-lemon thor visual-studio-code charles drawio alacritty pencil \
-    wechat handbrake docker opentoonz robo-3t audacity skim clipy inkscape mpv \
-    another-redis-desktop-manager google-chrome gas-mask gimp blender go2shell \
-    neovide gitup syncthing
+brew install --cask calibre firefox v2rayu he3-app/he3/he3 rectangle kitty xld \
+    dbeaver-community goldendict losslesscut shotcut emacs flameshot keepassxc \
+    netnewswire obsidian free-download-manager alt-tab nutstore kdenlive clipy \
+    tencent-lemon thor visual-studio-code charles drawio pencil blender docker \
+    handbrake opentoonz robo-3t audacity skim meld inkscape httpie gimp wechat \
+    macpass wireshark hiddenbar itsycal keka kekaexternalhelper lulu mpv gitup \
+    gas-mask syncthing cyberduck syntax-highlight another-redis-desktop-manager \
+    go2shell neovide google-chrome
