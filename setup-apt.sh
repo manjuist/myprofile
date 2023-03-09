@@ -16,7 +16,7 @@ sudo apt install aria2 bat calibre chromium cmake universal-ctags duf vlc npm \
     libxcb-xfixes0-dev libxkbcommon-dev build-essential vim mono-complete nnn \
     libfreetype6-dev libfontconfig1-dev golang rofi fcitx5-chinese-addons gcc \
     python3 python3-dev python3-pip gnupg graphicsmagick simplescreenrecorder \
-    fcitx5-config-qt shellcheck shfmt silversearcher-ag xorg zoxide yamllint \
-    highlight i3 i3-wm i3lock i3status kitty konsole krita meld neovim sigil \
-    fzf tilda fcitx5 scribus pkg-config nodejs openjdk-17-jdk openjdk-17-jre \
-    ripgrep openssl rust-all glodendict neovide git-cola
+    highlight i3 i3-wm i3lock i3status kitty konsole neovide krita meld sigil \
+    fcitx5-config-qt shellcheck shfmt silversearcher-ag xorg ripgrep yamllint \
+    openssl fzf tilda scribus pkg-config nodejs openjdk-17-jdk openjdk-17-jre \
+    rust-all glodendict neovim git-cola gnome-shell-pomodoro zoxide fcitx5

@@ -9,14 +9,12 @@
 set -e
 set -o pipefail
 
-sudo dnf install calibre keepassxc nnn mpv syncthing tilix ctags python3 vlc \
-    fcitx5-qt fzf gcc git-delta glances gnupg GraphicsMagick meld fcitx5 duf \
-    yamllint zoxide zsh krita foliate scribus blender snapd firefox openssl \
-    fcitx5-autostart fcitx5-chinese-addons fcitx5-configtool fcitx5-gtk exa \
-    ripgrep rofi shellcheck shfmt the_silver_searcher tidy guake tmux cmake \
-    wireshark chromium sigil flameshot fd-find ffmpeg-free kitty aria2 bat \
-    highlight i3 i3lock i3status konsole libxml2 lightdm make neovim emacs \
-    lightdm-gtk-greeter lightdm-gtk-greeter-settings simplescreenrecorder \
-    glodendict neovide git-cola
-
-type cargo && cargo install difftastic du-dust
+sudo dnf install calibre keepassxc nnn mpv syncthing tilix ctags python3 tmux \
+    lightdm-gtk-greeter lightdm-gtk-greeter-settings simplescreenrecorder vlc \
+    fcitx5-qt fzf gcc git-delta glances gnupg GraphicsMagick krita fcitx5 duf \
+    yamllint zoxide zsh foliate scribus blender snapd firefox openssl bat exa \
+    fcitx5-autostart fcitx5-chinese-addons fcitx5-configtool fcitx5-gtk cmake \
+    ripgrep rofi shellcheck shfmt the_silver_searcher sigil guake aria2 kitty \
+    highlight i3 i3lock i3status neovide libxml2 meld gnome-pomodoro git-cola \
+    wireshark chromium flameshot fd-find ffmpeg-free lightdm tidy neovim make \
+    glodendict emacs konsole

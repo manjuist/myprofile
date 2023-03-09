@@ -20,5 +20,5 @@ brew install --cask calibre firefox v2rayu he3-app/he3/he3 rectangle kitty xld \
     tencent-lemon thor visual-studio-code charles drawio pencil blender docker \
     handbrake opentoonz robo-3t audacity skim meld inkscape httpie gimp wechat \
     macpass wireshark hiddenbar itsycal keka kekaexternalhelper lulu mpv gitup \
-    gas-mask syncthing cyberduck syntax-highlight another-redis-desktop-manager \
-    go2shell neovide google-chrome
+    neovide syncthing cyberduck syntax-highlight another-redis-desktop-manager \
+    go2shell gas-mask google-chrome
