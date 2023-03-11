@@ -15,10 +15,10 @@ brew install tmux ripgrep shellcheck shfmt the_silver_searcher tidy-html5 dust \
     libxml2 ctags openssl bat rust-analyzer
 
 brew install --cask calibre firefox v2rayu he3-app/he3/he3 rectangle kitty xld \
-    dbeaver-community goldendict losslesscut shotcut emacs flameshot keepassxc \
-    netnewswire obsidian free-download-manager alt-tab nutstore kdenlive clipy \
     tencent-lemon thor visual-studio-code charles drawio pencil blender docker \
     handbrake opentoonz robo-3t audacity skim meld inkscape httpie gimp wechat \
     macpass wireshark hiddenbar itsycal keka kekaexternalhelper lulu mpv gitup \
     neovide syncthing cyberduck syntax-highlight another-redis-desktop-manager \
-    go2shell gas-mask google-chrome
+    dbeaver-community goldendict shotcut emacs flameshot keepassxc netnewswire \
+    obsidian free-download-manager nutstore go2shell gas-mask clipy alt-tab \
+    google-chrome
