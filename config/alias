@@ -1,9 +1,10 @@
 alias -s {jsx,tsx,js,ts,vue,json,html,xml,scss,less}=nvim
 
 # Dir {
-alias ,c='cd ~/Code'
-alias ,v='cd ~/.vim'
-alias ,p='cd ~/.myprofile'
+alias ,c='cd ~/Code/'
+alias ,v='cd ~/.vim/'
+alias ,p='cd ~/.myprofile/'
+alias ,w='cd ~/Code/web-center/'
 # }
 
 # Profile {
