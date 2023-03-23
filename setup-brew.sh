@@ -21,4 +21,4 @@ brew install --cask calibre firefox v2rayu he3-app/he3/he3 rectangle kitty xld \
     neovide syncthing cyberduck syntax-highlight another-redis-desktop-manager \
     dbeaver-community goldendict shotcut emacs flameshot keepassxc netnewswire \
     obsidian free-download-manager nutstore go2shell gas-mask clipy alt-tab \
-    google-chrome
+    google-chrome espanso
