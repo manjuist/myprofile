@@ -17,8 +17,8 @@ brew install tmux ripgrep shellcheck shfmt the_silver_searcher tidy-html5 dust \
 brew install --cask calibre firefox v2rayu he3-app/he3/he3 rectangle kitty xld \
     tencent-lemon thor visual-studio-code charles drawio pencil blender docker \
     handbrake opentoonz robo-3t audacity skim meld inkscape httpie gimp wechat \
-    macpass wireshark hiddenbar itsycal keka kekaexternalhelper lulu mpv gitup \
+    wireshark hiddenbar itsycal keka kekaexternalhelper lulu mpv gitup espanso \
     neovide syncthing cyberduck syntax-highlight another-redis-desktop-manager \
     dbeaver-community goldendict shotcut emacs flameshot keepassxc netnewswire \
-    obsidian free-download-manager nutstore go2shell gas-mask clipy alt-tab \
-    google-chrome espanso kap
+    obsidian nutstore go2shell gas-mask clipy alt-tab google-chrome findergo \
+    free-download-manager kap
