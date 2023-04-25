@@ -1,0 +1,3 @@
+[wlh]
+registry=http://maven-registry.lan:8081/nexus/repository/npm-group/
+is-current=true
