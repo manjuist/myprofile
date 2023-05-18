@@ -21,4 +21,4 @@ brew install --cask he3-app/he3/he3 rectangle kitty gitup visual-studio-code \
     gas-mask clipy google-chrome findergo free-download-manager alt-tab gimp \
     calibre firefox v2rayu nutstore tencent-lemon blender handbrake audacity \
     inkscape wireshark hiddenbar syncthing goldendict shotcut keepassxc lulu \
-    netnewswire obsidian mpv go2shell xld thunderbird
+    netnewswire obsidian mpv go2shell xld thunderbird stretchly

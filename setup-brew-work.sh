@@ -18,4 +18,5 @@ brew install --cask he3-app/he3/he3 rectangle kitty pencil visual-studio-code \
     flameshot itsycal keka kekaexternalhelper espanso neovide cyberduck emacs \
     syntax-highlight another-redis-desktop-manager dbeaver-community findergo \
     httpie kap drawio docker robo-3t skim meld wechat thunderbird clipy gitup \
-    thor gas-mask google-chrome free-download-manager alt-tab charles gimp
+    thor gas-mask google-chrome free-download-manager charles gimp stretchly \
+    alt-tab
