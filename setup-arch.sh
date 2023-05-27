@@ -18,4 +18,4 @@ sudo pacman -S lightdm-gtk-greeter lightdm-gtk-greeter-settings openssl zoxide \
     fcitx5-im fcitx5-qt meld gcc git-delta gpg graphicsmagick tilix glodendict \
     ripgrep rofi shfmt the_silver_searcher tidy guake tmux python3 scribus fzf \
     kitty aria2 calibre cmake ctags difftastic dust shellcheck sigil-git gnupg \
-    keepassxc
+    keepassxc remmina
