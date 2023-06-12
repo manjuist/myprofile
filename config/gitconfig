@@ -1,7 +1,6 @@
 [user]
     name = dewei.ma
     email = xnmageis@outlook.com
-    signingkey = xnmageis@outlook.com
 
 [core]
     pager = delta
@@ -13,7 +12,6 @@
 
 [commit]
     template = ~/.gitmessages
-    gpgsign = true
 
 [merge]
     tool = meld
@@ -21,10 +19,8 @@
 
 [diff]
     tool = meld
-	;external = difft
 
 [delta]
-    ;side-by-side = true
     navigate = true
     line-numbers = true
 
