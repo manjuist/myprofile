@@ -11,7 +11,7 @@ set -o pipefail
 
 sudo pacman -S lightdm-gtk-greeter lightdm-gtk-greeter-settings openssl zoxide \
     emacs fcitx5 fcitx5-chinese-addons fcitx5-configtool fcitx5-gtk ffmpeg bat \
-    highlight i3-wm i3lock i3status konsole libxml2 lightdm make neovim fd mpv \
+    highlight i3-wm i3lock i3status konsole libxml2 lightdm make neovim fd vlc \
     pencil visual-studio-code-bin wps-office-cn dbeaver-ee firefox exa glances \
     simplescreenrecorder wireshark-cli wireshark-qt chromium flameshot keepass \
     xorg yamllint zsh krita foliate blender duf syncthing nnn neovide git-cola \
