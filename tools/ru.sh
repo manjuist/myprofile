@@ -39,7 +39,7 @@ function runCmd() {
 }
 
 handleCmd() {
-    [[ -f "./package.json" ]] || return 1
+    [[ -f "./package.json" ]] || exit 1
     handlerText ./package.json
     runCmd
 }

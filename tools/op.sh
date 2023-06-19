@@ -6,4 +6,5 @@
 # date: 2022-07-25
 # ------
 
-open "$(fzf)"
+cd ~/Code || exit 1
+open "$(fzf)" || exit 1
