@@ -35,19 +35,5 @@ install_pip() {
     success "Install APP(pip) success!"
 }
 
-install_flatpak() {
-    flatpak install flathub com.jgraph.drawio.desktop com.usebottles.bottles
-
-    success "Install APP(pkg) success!"
-}
-
-install_cargo() {
-    cargo install du-dust difftastic alacritty git-delta
-
-    success "Install APP(pkg) success!"
-}
-
 install_npm
 install_pip
-install_flatpak
-install_cargo

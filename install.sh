@@ -14,6 +14,10 @@ TOOL_PATH="${APP_PATH}/tools"
 APP_CONFIG_PATH="${APP_PATH}/config"
 BIN_PATH="$HOME/.local/bin/"
 CONFIG_PATH="$HOME/.config/"
+FONT_PATH="${APP_PATH}/fonts"
+FONT_PATH="${APP_PATH}/fonts"
+
+System="$(uname -s)"
 
 Red='\033[0;31m'
 Green='\033[0;32m'
@@ -32,6 +36,25 @@ success() {
 error() {
     msg "${Red}[✘]${Color_off} ${1}${2}"
     exit 1
+}
+
+install_fonts() {
+    if [[ ! -d "$HOME/.local/share/fonts" ]]; then
+        mkdir -p "$HOME/.local/share/fonts"
+    fi
+
+    if [ "${System}" == "Darwin" ]; then
+        if [ ! -e "$HOME/Library/Fonts" ]; then
+            mkdir "$HOME/Library/Fonts"
+        fi
+        cp "$FONT_PATH/*" "$HOME/Library/Fonts/"
+    else
+        cp "$FONT_PATH/*" "$HOME/.local/share/fonts"
+        fc-cache -fv >/dev/null
+        mkfontdir "$HOME/.local/share/fonts" >/dev/null
+        mkfontscale "$HOME/.local/share/fonts" >/dev/null
+    fi
+    success "font cache done!"
 }
 
 lnif() {
@@ -108,6 +131,8 @@ backup() {
 hash git &>/dev/null && syncRepo "$APP_PATH" "$REPO_URI"
 
 cd "$APP_PATH" || exit
+
+install_fonts
 
 handler "$TOOL_PATH" "${BIN_PATH}"
 handler "$APP_CONFIG_PATH" "$HOME/." "f"
