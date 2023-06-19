@@ -22,4 +22,5 @@ sudo pacman -S lightdm-gtk-greeter lightdm-gtk-greeter-settings openssl zoxide \
     snapd btop filezilla shotcut docker robo3t-bin wechat-uos httpie opentoonz \
     another-redis-desktop-manager-appimage stretchly-bin audacity copyq v2raya \
     microsoft-edge-stable-bin google-chrome inkscape gimp thunderbird obsidian \
-    freedownloadmanager
+    freedownloadmanager localsend-bin yay flying-carpet-bin desktop-naotu-bin \
+    qv2ray v2ray

@@ -9,6 +9,8 @@
 set -e
 set -o pipefail
 
+brew tap localsend/localsend
+
 brew install tmux ripgrep shellcheck shfmt the_silver_searcher tidy-html5 dust \
     btop neofetch zoxide cmake neovim swiftlint swiftformat exa make highlight \
     difftastic duf fd ffmpeg fzf gcc git-delta gpg nnn pandoc yamllint nvm zsh \
@@ -21,4 +23,4 @@ brew install --cask rectangle netnewswire visual-studio-code flameshot itsycal \
     inkscape wireshark hiddenbar syncthing shotcut keepassxc lulu obsidian xld \
     free-download-manager alt-tab audacity another-redis-desktop-manager gitup \
     go2shell thunderbird stretchly syntax-highlight findergo google-chrome kap \
-    clipy microsoft-edge
+    clipy microsoft-edge localsend caffeine flying-carpet
