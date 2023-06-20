@@ -17,5 +17,7 @@
 
     alias sp="export ALL_PROXY=${PROXY_SOCKET}; export http_proxy=${PROXY_HTTP}; export https_proxy=${PROXY_HTTP}"
 
-    export DISPLAY="${name_server}:0"
+    export DISPLAY="${name_server}:0.0"
+
+    export WAYLAND_DISPLAY=$DISPLAY
 # }
