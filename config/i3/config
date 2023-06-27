@@ -1,16 +1,13 @@
 # Mod1 Alt / Mod4 Win
 set $mod Mod1
 
-font pango:SauceCodePro Nerd Font 20
+font pango:SauceCodePro Nerd Font Mono 20
 
 new_float normal
 new_window pixel 1
 hide_edge_borders none
 floating_modifier $mod
 workspace_auto_back_and_forth yes
-
-# exec --no-startup-id
-# exec --release
 
 bindsym $mod+Return exec konsole
 bindsym $mod+Shift+q kill
@@ -88,6 +85,7 @@ mode "$mode_application" {
     bindsym w exec --no-startup-id wps, mode "default"
     bindsym q exec --no-startup-id /home/mdvis/QV2ray/Qv2ray-v2.7.0-linux-x64.AppImage, mode "default"
     bindsym x exec --no-startup-id xfce4-settings-manager, mode "default"
+    bindsym c exec --no-startup-id /opt/weixin/weixin, mode "default"
     # exit system mode: "Enter" or "Escape"
     bindsym Return mode "default"
     bindsym Escape mode "default"
@@ -150,7 +148,7 @@ bar {
     bindsym button5 nop
     strip_workspace_numbers yes
     #mode hide
-    font pango:SauceCodePro Nerd Font 6
+    font pango:SauceCodePro Nerd Font Mono 6
     separator_symbol "::"
     colors {
         background #282A36
@@ -173,30 +171,14 @@ bindsym $mod+m bar mode toggle
   client.placeholder      #000000 #0c0c0c #ffffff #000000
   client.background       #2B2C2B
 
-#方案一 此方案在我这里音量调节无上限，喇叭都要炸了！因此我用方案二
-#set $refresh_i3status killall -SIGUSR1 i3status
-#bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
-#bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
-#bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
-#bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+assign [class="(?i)LocalSend"] $ws7
+assign [class="(?i)Qv2ray"] $ws7
 
-#方案二  经测试后面的值为6550+- 刚好每次加减音量10%，如果有强迫证建议修改
-#bindsym XF86AudioRaiseVolume exec amixer set Master playback 5000+
-#bindsym XF86AudioLowerVolume exec amixer set Master playback 5000-
-#bindsym XF86AudioMute exec amixer set Master toggle
+exec --no-startup-id i3-msg 'workspace 9:dolphin; exec dolphin'
 
-#方案一
-#xorg-xbacklight, acpilight
-#bindsym XF86MonBrightnessUp exec "xbacklight -inc 10; notify-send 'brightness up'"
-#bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness down'"
+bindsym XF86AudioRaiseVolume exec amixer set Master playback 7+
+bindsym XF86AudioLowerVolume exec amixer set Master playback 7-
+bindsym XF86AudioMute exec amixer set Master toggle
 
-#方案二
-#light-git
-#bindsym XF86MonBrightnessUp exec light -A 10
-#bindsym XF86MonBrightnessDown exec light -U 10
-#
-#指定程序启动默认在指定workspace启动
-#assign [class="(?i)Chrome"] $ws1
-#assign [class="vlc"] $ws1
-# 开机启动输入法
-#exec --no-startup-id fcitx
+bindsym XF86MonBrightnessUp exec light -A 10
+bindsym XF86MonBrightnessDown exec light -U 10
