@@ -5,15 +5,16 @@
                https_proxy \
                '
 
-    PROXY_SOCKET_PORT=1080
+    SOCKET_PORT=1080
+    HTTP_PORT=1081
 
     name_server=$(cat /etc/resolv.conf | grep nameserver | cut -d' ' -f2)
 
-    PROXY_SOCKET_ADDRESS="socks5://${name_server}"
-    PROXY_HTTP_ADDRESS="socks5://${name_server}"
+    SOCKET_ADDRESS="socks5://${name_server}"
+    HTTP_ADDRESS="http://${name_server}"
 
-    PROXY_SOCKET="${PROXY_SOCKET_ADDRESS}:${PROXY_SOCKET_PORT}"
-    PROXY_HTTP="${PROXY_SOCKET_ADDRESS}:${PROXY_SOCKET_PORT}"
+    PROXY_SOCKET="${SOCKET_ADDRESS}:${SOCKET_PORT}"
+    PROXY_HTTP="${HTTP_ADDRESS}:${HTTP_PORT}"
 
     alias sp="export ALL_PROXY=${PROXY_SOCKET}; export http_proxy=${PROXY_HTTP}; export https_proxy=${PROXY_HTTP}"
 
