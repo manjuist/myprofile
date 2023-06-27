@@ -1,4 +1,5 @@
-set $mod Mod1 # Mod1 Alt / Mod4 Win
+# Mod1 Alt / Mod4 Win
+set $mod Mod1
 
 font pango:SauceCodePro Nerd Font Mono 20
 
