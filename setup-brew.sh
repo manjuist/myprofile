@@ -17,10 +17,10 @@ brew install tmux ripgrep shellcheck shfmt the_silver_searcher tidy-html5 dust \
     libxml2 ctags openssl bat rust-analyzer
 
 brew install --cask rectangle netnewswire visual-studio-code flameshot itsycal \
-    keka kekaexternalhelper thor espanso neovide cyberduck charles drawio gimp \
+    keka kekaexternalhelper thor espanso neovide charles drawio gimp localsend \
     pencil docker robo-3t skim meld wechat httpie opentoonz gas-mask vlc clipy \
     calibre firefox v2rayu nutstore tencent-lemon blender handbrake goldendict \
     inkscape wireshark hiddenbar syncthing shotcut keepassxc lulu obsidian xld \
     free-download-manager alt-tab audacity another-redis-desktop-manager gitup \
     thunderbird stretchly syntax-highlight findergo google-chrome kap caffeine \
-    microsoft-edge localsend flying-carpet
+    microsoft-edge flying-carpet microsoft-onenote
