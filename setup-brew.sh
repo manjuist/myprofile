@@ -23,4 +23,4 @@ brew install --cask rectangle netnewswire visual-studio-code flameshot itsycal \
     inkscape wireshark hiddenbar syncthing shotcut keepassxc lulu obsidian xld \
     free-download-manager alt-tab audacity another-redis-desktop-manager gitup \
     thunderbird stretchly syntax-highlight findergo google-chrome kap caffeine \
-    microsoft-edge flying-carpet microsoft-onenote mos
+    microsoft-edge flying-carpet microsoft-onenote mos dbeaver-community
