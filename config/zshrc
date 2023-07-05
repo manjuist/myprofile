@@ -1,43 +1,54 @@
 # zsh config
 
 # sys
-    #export LANG=en_US.UTF-8
-    export PATH="${HOME}/.local/bin":$PATH
-    export PATH=/opt/homebrew/bin:$PATH
+export PATH="${HOME}/.local/bin":$PATH
+export PATH=/opt/homebrew/bin:$PATH
 
-    export PATH="/opt/homebrew/opt/make/libexec/gnubin:$PATH"
+export PATH="/opt/homebrew/opt/make/libexec/gnubin:$PATH"
 
-    export GPG_TTY=$(tty)
-    export EDITOR=vim
-    export VISUAL=neovide
+export GPG_TTY=$(tty)
+export EDITOR=vim
+export VISUAL=neovide
 # sys end
 
+# redis
+export PATH="/opt/homebrew/opt/redis@6.2/bin:$PATH"
+# redis end
+
 # go
-    export PATH="${HOME}/go/bin:$PATH"
-    export GO111MODULE=on
+export PATH="${HOME}/go/bin:$PATH"
+export GO111MODULE=on
 # go end
 
-# node
-    export PATH="/opt/homebrew/opt/node@14/bin:$PATH"
+# mariadb
+export PATH="/opt/homebrew/opt/mariadb@10.11/bin:$PATH"
 
-    export LDFLAGS="-L/opt/homebrew/opt/node@14/lib"
-    export CPPFLAGS="-I/opt/homebrew/opt/node@14/include"
+export LDFLAGS="-L/opt/homebrew/opt/mariadb@10.11/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/mariadb@10.11/include"
+export PKG_CONFIG_PATH="/opt/homebrew/opt/mariadb@10.11/lib/pkgconfig"
+# mariadb end
+
+# node
+export PATH="/opt/homebrew/opt/node@14/bin:$PATH"
+
+export LDFLAGS="-L/opt/homebrew/opt/node@14/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/node@14/include"
 # node end
 
 # fzf
-    export FZF_DEFAULT_COMMAND="fd -H -t f -t d --exclude={.git,.idea,.vscode,.sass-cache,node_modules,build}"
-    export FZF_DEFAULT_OPTS="--height 40% --border --preview '(highlight -O ansi {} || cat {}) 2> /dev/null | head -50'"
+export FZF_DEFAULT_COMMAND="fd -H -t f -t d --exclude={.git,.idea,.vscode,.sass-cache,node_modules,build}"
+export FZF_DEFAULT_OPTS="--height 40% --border --preview '(highlight -O ansi {} || cat {}) 2> /dev/null | head -50'"
 # fzf end
 
 # zsh
-    export ZSH=$HOME/.oh-my-zsh
-    export UPDATE_ZSH_DAYS=26
-    export ZSH_THEME="avit"
+export ZSH=$HOME/.oh-my-zsh
+export UPDATE_ZSH_DAYS=26
+export ZSH_THEME="avit"
 
-    source $ZSH/oh-my-zsh.sh
-    [ -f ~/.alias ] && source ~/.alias
+source $ZSH/oh-my-zsh.sh
+[ -f ~/.alias ] && source ~/.alias
 
-    plugins=(git brew gulp man npm macos tmux python sudo yarn)
+plugins=(git brew gulp man npm macos tmux python sudo yarn)
 # zsh end
 
 # pnpm
