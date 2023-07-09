@@ -2,38 +2,16 @@
 
 # sys
 export PATH="${HOME}/.local/bin":$PATH
-export PATH=/opt/homebrew/bin:$PATH
-
-export PATH="/opt/homebrew/opt/make/libexec/gnubin:$PATH"
 
 export GPG_TTY=$(tty)
 export EDITOR=vim
 export VISUAL=neovide
 # sys end
 
-# redis
-export PATH="/opt/homebrew/opt/redis@6.2/bin:$PATH"
-# redis end
-
 # go
 export PATH="${HOME}/go/bin:$PATH"
 export GO111MODULE=on
 # go end
-
-# mariadb
-export PATH="/opt/homebrew/opt/mariadb@10.11/bin:$PATH"
-
-export LDFLAGS="-L/opt/homebrew/opt/mariadb@10.11/lib"
-export CPPFLAGS="-I/opt/homebrew/opt/mariadb@10.11/include"
-export PKG_CONFIG_PATH="/opt/homebrew/opt/mariadb@10.11/lib/pkgconfig"
-# mariadb end
-
-# node
-export PATH="/opt/homebrew/opt/node@14/bin:$PATH"
-
-export LDFLAGS="-L/opt/homebrew/opt/node@14/lib"
-export CPPFLAGS="-I/opt/homebrew/opt/node@14/include"
-# node end
 
 # fzf
 export FZF_DEFAULT_COMMAND="fd -H -t f -t d --exclude={.git,.idea,.vscode,.sass-cache,node_modules,build}"
@@ -52,7 +30,7 @@ plugins=(git brew gulp man npm macos tmux python sudo yarn)
 # zsh end
 
 # pnpm
-export PNPM_HOME="/Users/mdvis/Library/pnpm"
+export PNPM_HOME="${HOME}/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 # pnpm end
 
@@ -63,11 +41,41 @@ export HOMEBREW_BOTTLE_DOMAIN="https://mirrors.ustc.edu.cn/homebrew-bottles"
 export HOMEBREW_API_DOMAIN="https://mirrors.ustc.edu.cn/homebrew-bottles/api"
 # homebrew end
 
+export PATH=/opt/homebrew/bin:$PATH
+export PATH="/opt/homebrew/opt/make/libexec/gnubin:$PATH"
+
+# redis
+export PATH="/opt/homebrew/opt/redis@6.2/bin:$PATH"
+# redis end
+
+# postgresql
+export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
+export LDFLAGS="-L/opt/homebrew/opt/postgresql@15/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/postgresql@15/include"
+export PKG_CONFIG_PATH="/opt/homebrew/opt/postgresql@15/lib/pkgconfig"
+# postgresql end
+
+# mariadb
+export PATH="/opt/homebrew/opt/mariadb@10.11/bin:$PATH"
+
+export LDFLAGS="-L/opt/homebrew/opt/mariadb@10.11/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/mariadb@10.11/include"
+export PKG_CONFIG_PATH="/opt/homebrew/opt/mariadb@10.11/lib/pkgconfig"
+# mariadb end
+
+# node
+export PATH="/opt/homebrew/opt/node@14/bin:$PATH"
+
+export LDFLAGS="-L/opt/homebrew/opt/node@14/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/node@14/include"
+# node end
+
 # java
 export PATH="/usr/local/opt/openjdk@17/bin:$PATH"
 # java end
 
 eval "$(zoxide init zsh)"
+eval "$(thefuck --alias)"
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
