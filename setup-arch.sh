@@ -18,8 +18,7 @@ sudo pacman -S lightdm-gtk-greeter lightdm-gtk-greeter-settings openssl zoxide \
     fcitx5-im fcitx5-qt meld gcc git-delta graphicsmagick tilix v2ray inkscape \
     calibre cmake difftastic dust shellcheck gnupg remmina keepassxc btop gimp \
     firefox glances alacritty aria2 ctags code rust-analyzer pandoc-cli httpie \
-    filezilla shotcut opentoonz thunderbird obsidian exa base-devel nodejs npm \
-    xonsh
+    filezilla shotcut thunderbird obsidian exa base-devel nodejs npm xonsh
 
 sudo yay -S simplescreenrecorder bottles git-cola gpg sigil-git goldendict-git \
     wps-office-cn dbeaver-ee drawio-desktop localsend-bin google-chrome qv2ray \
