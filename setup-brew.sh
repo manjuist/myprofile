@@ -23,4 +23,4 @@ brew install --cask rectangle netnewswire visual-studio-code flameshot itsycal \
     free-download-manager alt-tab audacity another-redis-desktop-manager clipy \
     thunderbird stretchly syntax-highlight findergo google-chrome kap caffeine \
     microsoft-edge flying-carpet microsoft-onenote dbeaver-community skim meld \
-    pencil docker robo-3t wechat httpie gas-mask vlc
+    pencil docker robo-3t wechat httpie gas-mask vlc freeplane
