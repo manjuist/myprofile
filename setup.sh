@@ -35,5 +35,31 @@ install_pip() {
     success "Install APP(pip) success!"
 }
 
+install_cargo() {
+    cargo install du-dust
+
+    success "Install APP(cargo) success!"
+}
+
+install_snap() {
+    flatpak install flathub org.videolan.VLC com.wps.Office com.visualstudio.code \
+        org.localsend.localsend_app com.jgraph.drawio.desktop com.github.Qv2ray \
+        net.hovancik.Stretchly com.microsoft.Edge io.dbeaver.DBeaverCommunity \
+        org.goldendict.GoldenDict com.usebottles.bottles com.google.Chrome \
+        com.sigil_ebook.Sigil md.obsidian.Obsidian org.shotcut.Shotcut \
+        com.github.git_cola.git-cola org.freeplane.App
+
+    success "Install APP(cargo) success!"
+}
+
+install_flatpak() {
+    snap install robo3t-snap another-redis-desktop-manager neovide
+
+    success "Install APP(cargo) success!"
+}
+
 install_npm
 install_pip
+install_cargo
+install_snap
+install_flatpak
