@@ -41,6 +41,8 @@ bindsym $mod+space focus mode_toggle
 bindsym $mod+Shift+s sticky toggle
 bindsym $mod+a focus parent
 
+#set $ws1 '1: <icon> Term'
+
 set $ws1 1
 set $ws2 2
 set $ws3 3
@@ -140,6 +142,8 @@ client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
 client.background       #F8F8F2
 
 bar {
+    #i3bar_command i3bar --transparency
+    #tray_output none
     i3bar_command i3bar
     status_command i3status
     #position bottom
@@ -173,6 +177,7 @@ bindsym $mod+m bar mode toggle
 
 assign [class="(?i)LocalSend"] $ws7
 assign [class="(?i)Qv2ray"] $ws7
+#for_window [class="firefox"] move to workspace $ws1
 
 exec --no-startup-id i3-msg 'workspace 9:dolphin; exec dolphin'
 
@@ -182,3 +187,15 @@ bindsym XF86AudioMute exec amixer set Master toggle
 
 bindsym XF86MonBrightnessUp exec light -A 10
 bindsym XF86MonBrightnessDown exec light -U 10
+
+#exec_always feh --bg-fill /path/to/wallpaper/*.jpg
+#exec_always xrandr --output V --mode 1920x1080
+#exec_always picom -f
+#set $bgcolor #523d64
+#    bgcolor 表示背景色。
+#    in-bgcolor 表示非活动窗口的背景色。
+#    text 是文本颜色。
+#    u-bgcolor 表示紧急操作的背景色。
+#    indicator 是标示下一个窗口位置的线条的颜色。
+#    in-text 是非活动窗口的文本颜色。
+#i3blocks
