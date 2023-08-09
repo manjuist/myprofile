@@ -14,7 +14,7 @@ brew tap localsend/localsend
 brew install tmux ripgrep shellcheck shfmt the_silver_searcher tidy-html5 dust \
     btop neofetch zoxide cmake neovim swiftlint swiftformat exa make highlight \
     difftastic duf fd ffmpeg fzf gcc git-delta gpg nnn pandoc yamllint nvm zsh \
-    libxml2 ctags openssl bat rust-analyzer xonsh
+    libxml2 ctags openssl bat rust-analyzer xonsh cowsay fortune
 
 brew install --cask rectangle netnewswire visual-studio-code flameshot itsycal \
     keka kekaexternalhelper thor espanso neovide charles drawio gimp localsend \
