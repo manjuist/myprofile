@@ -18,6 +18,6 @@ sudo pacman -S lightdm-gtk-greeter lightdm-gtk-greeter-settings openssl zoxide \
     fcitx5-im fcitx5-qt meld gcc git-delta graphicsmagick tilix v2ray inkscape \
     firefox glances alacritty aria2 ctags rust-analyzer pandoc-cli picom xonsh \
     calibre cmake difftastic shellcheck gnupg remmina keepassxc btop gimp exa \
-    thunderbird base-devel httpie npm
+    thunderbird base-devel httpie npm fontforge
 
 sudo yay -S wechat-uos simplescreenrecorder
