@@ -20,6 +20,7 @@ sudo yum install lightdm-gtk-greeter lightdm-gtk-greeter-settings openssl make \
     python3 scribus bat fzf nnn tidy fcitx5 fcitx5-qt meld gcc git-delta picom \
     emacs calibre cmake difftastic shellcheck gnupg remmina keepassxc btop npm \
     GraphicsMagick tilix inkscape filezilla alacritty thunderbird nodejs ctags \
-    firefox glances aria2 rust-analyzer httpie exa xonsh feh pandoc simplescreenrecorder
+    firefox glances aria2 rust-analyzer httpie exa xonsh feh pandoc fontforge \
+    simplescreenrecorder
 
 # wechat-uos
