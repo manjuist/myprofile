@@ -9,15 +9,15 @@
 set -e
 set -o pipefail
 
-sudo pacman -S lightdm-gtk-greeter lightdm-gtk-greeter-settings openssl zoxide \
-    emacs fcitx5 fcitx5-chinese-addons fcitx5-configtool fcitx5-gtk ffmpeg bat \
-    highlight i3-wm i3lock i3status konsole libxml2 lightdm make neovim fd feh \
-    wireshark-cli wireshark-qt flameshot audacity copyq krita nodejs filezilla \
-    xorg yamllint zsh foliate blender duf syncthing nnn flatpak docker keepass \
-    ripgrep rofi shfmt the_silver_searcher tidy guake tmux python3 scribus fzf \
-    fcitx5-im fcitx5-qt meld gcc git-delta graphicsmagick tilix v2ray inkscape \
-    firefox glances alacritty aria2 ctags rust-analyzer pandoc-cli picom xonsh \
-    calibre cmake difftastic shellcheck gnupg remmina keepassxc btop gimp exa \
-    thunderbird base-devel httpie npm fontforge
+sudo pacman -S fd bat feh zsh duf nnn fzf gcc exa npm make xorg rofi tidy tmux \
+    meld btop gimp emacs i3-wm copyq krita shfmt guake tilix v2ray aria2 ctags \
+    picom xonsh cmake gnupg zoxide fcitx5 ffmpeg i3lock neovim nodejs docker \
+    httpie openssl konsole libxml2 lightdm foliate blender flatpak keepass \
+    ripgrep python3 scribus firefox glances calibre remmina i3status audacity \
+    yamllint inkscape highlight flameshot filezilla syncthing fcitx5-im \
+    fcitx5-qt git-delta alacritty keepassxc fontforge fcitx5-gtk pandoc-cli \
+    difftastic shellcheck base-devel thunderbird wireshark-qt wireshark-cli \
+    rust-analyzer graphicsmagick fcitx5-configtool lightdm-gtk-greeter \
+    the_silver_searcher fcitx5-chinese-addons lightdm-gtk-greeter-settings
 
 sudo yay -S wechat-uos simplescreenrecorder
