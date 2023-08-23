@@ -70,6 +70,7 @@ alias gss='git stash save'
 alias gpl='git pull'
 alias gpu='git push'
 alias gplu='git pull && git push'
+alias gco='git checkout -- '
 
 shotCommitHash='%C(yellow)%h'
 dataStr='%C(red)%ad'
