@@ -11,16 +11,17 @@ set -o pipefail
 
 brew tap localsend/localsend
 
-brew install tmux ripgrep shellcheck shfmt the_silver_searcher tidy-html5 dust \
-    btop neofetch zoxide cmake neovim swiftlint swiftformat exa make highlight \
-    difftastic duf fd ffmpeg fzf gcc git-delta gpg nnn pandoc yamllint nvm zsh \
-    libxml2 ctags openssl bat rust-analyzer xonsh cowsay fortune
+brew install fd exa duf fzf gcc gpg nnn nvm zsh bat dust btop make tmux shfmt \
+    cmake ctags xonsh zoxide neovim ffmpeg pandoc cowsay ripgrep libxml2 \
+    openssl fortune neofetch yamllint swiftlint highlight git-delta shellcheck \
+    tidy-html5 difftastic swiftformat rust-analyzer the_silver_searcher
 
-brew install --cask rectangle netnewswire visual-studio-code flameshot itsycal \
-    keka kekaexternalhelper thor espanso neovide charles drawio gimp localsend \
-    calibre firefox v2rayu nutstore tencent-lemon blender handbrake goldendict \
-    inkscape wireshark hiddenbar syncthing shotcut keepassxc lulu obsidian xld \
-    free-download-manager alt-tab audacity another-redis-desktop-manager clipy \
-    thunderbird stretchly syntax-highlight findergo google-chrome kap caffeine \
-    microsoft-edge flying-carpet microsoft-onenote dbeaver-community skim meld \
-    pencil docker robo-3t wechat httpie gas-mask vlc freeplane fontforge
+brew install --cask vlc kap xld lulu gimp thor keka skim meld clipy v2rayu \
+    drawio pencil docker wechat httpie itsycal blender calibre shotcut espanso \
+    charles robo-3t alt-tab nutstore inkscape obsidian audacity caffeine \
+    findergo gas-mask flameshot rectangle handbrake wireshark hiddenbar \
+    syncthing keepassxc localsend freeplane fontforge stretchly goldendict \
+    netnewswire thunderbird tencent-lemon flying-carpet google-chrome \
+    microsoft-edge syntax-highlight microsoft-onenote dbeaver-community \
+    visual-studio-code kekaexternalhelper free-download-manager \
+    another-redis-desktop-manager
