@@ -17,7 +17,7 @@ sudo pacman -S fd bat feh zsh duf nnn fzf gcc exa npm make xorg rofi tidy tmux \
     yamllint inkscape highlight flameshot filezilla syncthing fcitx5-im \
     fcitx5-qt git-delta alacritty keepassxc fontforge fcitx5-gtk pandoc-cli \
     difftastic shellcheck base-devel thunderbird wireshark-qt wireshark-cli \
-    rust-analyzer graphicsmagick fcitx5-configtool lightdm-gtk-greeter \
+    rust-analyzer graphicsmagick fcitx5-configtool lightdm-gtk-greeter scrcpy \
     the_silver_searcher fcitx5-chinese-addons lightdm-gtk-greeter-settings
 
 sudo yay -S wechat-uos simplescreenrecorder

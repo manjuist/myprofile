@@ -14,7 +14,8 @@ brew tap localsend/localsend
 brew install fd exa duf fzf gcc gpg nnn nvm zsh bat dust btop make tmux shfmt \
     cmake ctags xonsh zoxide neovim ffmpeg pandoc cowsay ripgrep libxml2 \
     openssl fortune neofetch yamllint swiftlint highlight git-delta shellcheck \
-    tidy-html5 difftastic swiftformat rust-analyzer the_silver_searcher
+    tidy-html5 difftastic swiftformat rust-analyzer the_silver_searcher scrcpy \
+    android-platform-tools
 
 brew install --cask vlc kap xld lulu gimp thor keka skim meld clipy v2rayu \
     drawio pencil docker wechat httpie itsycal blender calibre shotcut espanso \
