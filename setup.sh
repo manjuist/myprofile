@@ -47,7 +47,7 @@ install_snap() {
         net.hovancik.Stretchly com.microsoft.Edge io.dbeaver.DBeaverCommunity \
         org.goldendict.GoldenDict com.usebottles.bottles com.google.Chrome \
         com.sigil_ebook.Sigil md.obsidian.Obsidian org.shotcut.Shotcut \
-        com.github.git_cola.git-cola org.freeplane.App
+        com.github.git_cola.git-cola org.freeplane.App org.nickvision.tagger
 
     success "Install APP(cargo) success!"
 }
