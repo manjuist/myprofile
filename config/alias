@@ -83,3 +83,5 @@ alias glg="git log \
   --date=format:${dateFmtStr} \
   --pretty='${prettyStr}'"
 # }
+
+alias gsfc="git status --short | awk '{print \$2}' | xargs rg console"
