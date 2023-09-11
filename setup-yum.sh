@@ -20,7 +20,7 @@ sudo yum install i3 zsh duf bat fzf nnn gcc npm exa feh make gimp tmux rofi \
     scribus calibre remmina firefox glances i3status chromium audacity \
     yamllint inkscape highlight wireshark flameshot syncthing fcitx5-qt \
     git-delta keepassxc filezilla alacritty fontforge fcitx5-gtk difftastic \
-    shellcheck ffmpeg-free thunderbird rust-analyzer GraphicsMagick \
+    shellcheck ffmpeg-free thunderbird rust-analyzer GraphicsMagick lazygit \
     fcitx5-configtool lightdm-gtk-greeter the_silver_searcher scrcpy \
     simplescreenrecorder fcitx5-chinese-addons lightdm-gtk-greeter-settings
 
