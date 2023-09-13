@@ -22,6 +22,7 @@ sudo yum install i3 zsh duf bat fzf nnn gcc npm exa feh make gimp tmux rofi \
     git-delta keepassxc filezilla alacritty fontforge fcitx5-gtk difftastic \
     shellcheck ffmpeg-free thunderbird rust-analyzer GraphicsMagick lazygit \
     fcitx5-configtool lightdm-gtk-greeter the_silver_searcher scrcpy \
-    simplescreenrecorder fcitx5-chinese-addons lightdm-gtk-greeter-settings
+    simplescreenrecorder fcitx5-chinese-addons lightdm-gtk-greeter-settings \
+    pdfarranger
 
 # wechat-uos
