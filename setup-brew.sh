@@ -26,4 +26,4 @@ brew install --cask vlc kap xld lulu gimp thor keka skim meld clipy v2rayu \
     microsoft-edge syntax-highlight microsoft-onenote dbeaver-community \
     visual-studio-code kekaexternalhelper free-download-manager \
     another-redis-desktop-manager zotero pika only-switch balenaetcher \
-    mongodb-compass tencent-meeting fedora-media-writer
+    mongodb-compass tencent-meeting fedora-media-writer temurin
