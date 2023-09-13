@@ -25,4 +25,4 @@ brew install --cask vlc kap xld lulu gimp thor keka skim meld clipy v2rayu \
     netnewswire thunderbird tencent-lemon flying-carpet google-chrome \
     microsoft-edge syntax-highlight microsoft-onenote dbeaver-community \
     visual-studio-code kekaexternalhelper free-download-manager \
-    another-redis-desktop-manager zotero
+    another-redis-desktop-manager zotero pika
