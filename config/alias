@@ -5,7 +5,8 @@ alias ,c='cd ~/Code/'
 alias ,v='cd ~/.vim/'
 alias ,p='cd ~/.myprofile/'
 alias ,w='cd ~/Code/web-center/'
-alias ,d='cd ~/Sync_Documents/'
+alias ,sa='cd ~/Sync_Applications/'
+alias ,sdf='cd ~/Sync_Documents/Files'
 # }
 
 # Profile {
