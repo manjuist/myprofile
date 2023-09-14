@@ -48,7 +48,7 @@ install_snap() {
         org.goldendict.GoldenDict com.usebottles.bottles com.google.Chrome \
         com.sigil_ebook.Sigil md.obsidian.Obsidian org.shotcut.Shotcut \
         com.github.git_cola.git-cola org.freeplane.App org.nickvision.tagger \
-        net.agalwood.Motrix
+        net.agalwood.Motrix org.cryptomator.Cryptomator
 
     success "Install APP(cargo) success!"
 }

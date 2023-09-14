@@ -10,6 +10,7 @@ set -e
 set -o pipefail
 
 brew tap localsend/localsend
+brew tap macos-fuse-t/homebrew-cask
 
 brew install fd exa duf fzf gcc gpg nnn nvm zsh bat dust btop make tmux shfmt \
     cmake ctags xonsh zoxide neovim ffmpeg pandoc cowsay ripgrep libxml2 \
@@ -27,3 +28,6 @@ brew install --cask vlc kap xld lulu gimp thor keka skim meld clipy v2rayu \
     visual-studio-code kekaexternalhelper another-redis-desktop-manager \
     only-switch balenaetcher mongodb-compass tencent-meeting temurin \
     fedora-media-writer
+
+brew install --cask cryptomator
+brew install fuse-t fuse-t-sshfs
