@@ -10,6 +10,7 @@ set -e
 set -o pipefail
 
 brew tap localsend/localsend
+brew tap macos-fuse-t/homebrew-cask
 
 brew install fd exa duf fzf gcc gpg nnn nvm zsh bat dust btop make tmux shfmt \
     cmake ctags xonsh zoxide neovim ffmpeg pandoc cowsay ripgrep libxml2 \
@@ -19,10 +20,14 @@ brew install fd exa duf fzf gcc gpg nnn nvm zsh bat dust btop make tmux shfmt \
 
 brew install --cask vlc kap xld lulu gimp thor keka skim meld clipy v2rayu \
     drawio pencil docker wechat httpie itsycal blender calibre shotcut espanso \
-    charles robo-3t alt-tab nutstore inkscape obsidian audacity caffeine \
-    findergo gas-mask flameshot rectangle handbrake wireshark hiddenbar \
+    charles robo-3t alt-tab nutstore inkscape obsidian audacity caffeine pika \
+    motrix findergo gas-mask flameshot rectangle handbrake wireshark hiddenbar \
     syncthing keepassxc localsend freeplane fontforge stretchly goldendict \
-    netnewswire thunderbird tencent-lemon flying-carpet google-chrome \
+    netnewswire thunderbird tencent-lemon flying-carpet google-chrome zotero \
     microsoft-edge syntax-highlight microsoft-onenote dbeaver-community \
-    visual-studio-code kekaexternalhelper free-download-manager \
-    another-redis-desktop-manager zotero
+    visual-studio-code kekaexternalhelper another-redis-desktop-manager \
+    only-switch balenaetcher mongodb-compass tencent-meeting temurin \
+    fedora-media-writer
+
+brew install --cask cryptomator
+brew install fuse-t fuse-t-sshfs
