@@ -27,7 +27,7 @@ brew install --cask vlc kap xld lulu gimp thor keka skim meld clipy v2rayu \
     microsoft-edge syntax-highlight microsoft-onenote dbeaver-community \
     visual-studio-code kekaexternalhelper another-redis-desktop-manager \
     only-switch balenaetcher mongodb-compass tencent-meeting temurin \
-    fedora-media-writer
+    fedora-media-writer intellij-idea-ce
 
 brew install --cask cryptomator
 brew install fuse-t fuse-t-sshfs
