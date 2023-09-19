@@ -19,7 +19,7 @@ brew install fd exa duf fzf gcc gpg nnn nvm zsh bat dust btop make tmux shfmt \
     android-platform-tools lazygit
 
 brew install --cask vlc kap xld lulu gimp thor keka skim meld clipy v2rayu \
-    drawio pencil docker wechat httpie itsycal blender calibre shotcut espanso \
+    drawio pencil docker wechat httpie itsycal blender calibre espanso \
     charles robo-3t alt-tab nutstore inkscape obsidian audacity caffeine pika \
     motrix findergo gas-mask flameshot rectangle handbrake wireshark hiddenbar \
     syncthing keepassxc localsend freeplane fontforge stretchly goldendict \
@@ -27,7 +27,7 @@ brew install --cask vlc kap xld lulu gimp thor keka skim meld clipy v2rayu \
     microsoft-edge syntax-highlight microsoft-onenote dbeaver-community \
     visual-studio-code kekaexternalhelper another-redis-desktop-manager \
     only-switch balenaetcher mongodb-compass tencent-meeting temurin \
-    fedora-media-writer intellij-idea-ce
+    fedora-media-writer intellij-idea-ce kdenlive olive
 
 brew install --cask cryptomator
 brew install fuse-t fuse-t-sshfs

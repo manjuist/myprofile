@@ -46,7 +46,7 @@ install_snap() {
         org.localsend.localsend_app com.jgraph.drawio.desktop com.github.Qv2ray \
         net.hovancik.Stretchly com.microsoft.Edge io.dbeaver.DBeaverCommunity \
         org.goldendict.GoldenDict com.usebottles.bottles com.google.Chrome \
-        com.sigil_ebook.Sigil md.obsidian.Obsidian org.shotcut.Shotcut \
+        com.sigil_ebook.Sigil md.obsidian.Obsidian org.olivevideoeditor.Olive \
         com.github.git_cola.git-cola org.freeplane.App org.nickvision.tagger \
         net.agalwood.Motrix org.cryptomator.Cryptomator
 
