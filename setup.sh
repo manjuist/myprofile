@@ -42,19 +42,27 @@ install_cargo() {
 }
 
 install_snap() {
-    flatpak install flathub org.videolan.VLC com.wps.Office com.visualstudio.code \
-        org.localsend.localsend_app com.jgraph.drawio.desktop com.github.Qv2ray \
-        net.hovancik.Stretchly com.microsoft.Edge io.dbeaver.DBeaverCommunity \
-        org.goldendict.GoldenDict com.usebottles.bottles com.google.Chrome \
-        com.sigil_ebook.Sigil md.obsidian.Obsidian org.olivevideoeditor.Olive \
-        com.github.git_cola.git-cola org.freeplane.App org.nickvision.tagger \
-        net.agalwood.Motrix org.cryptomator.Cryptomator
-
-    success "Install APP(cargo) success!"
-}
-
-install_flatpak() {
-    snap install robo3t-snap another-redis-desktop-manager neovide
+    flatpak install flathub \
+        com.wps.Office \
+        org.videolan.VLC \
+        com.github.Qv2ray \
+        org.freeplane.App \
+        com.google.Chrome \
+        com.microsoft.Edge \
+        net.agalwood.Motrix \
+        md.obsidian.Obsidian \
+        com.sigil_ebook.Sigil \
+        com.visualstudio.code \
+        org.nickvision.tagger \
+        com.usebottles.bottles \
+        net.hovancik.Stretchly \
+        org.goldendict.GoldenDict \
+        com.jgraph.drawio.desktop \
+        org.olivevideoeditor.Olive \
+        org.localsend.localsend_app \
+        io.dbeaver.DBeaverCommunity \
+        org.cryptomator.Cryptomator \
+        com.github.git_cola.git-cola
 
     success "Install APP(cargo) success!"
 }
@@ -63,4 +71,3 @@ install_npm
 install_pip
 install_cargo
 install_snap
-install_flatpak
