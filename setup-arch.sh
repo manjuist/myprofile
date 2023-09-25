@@ -19,7 +19,8 @@ sudo pacman -S fd bat feh zsh duf nnn fzf gcc exa npm make xorg rofi tidy tmux \
     difftastic shellcheck base-devel thunderbird wireshark-qt wireshark-cli \
     rust-analyzer graphicsmagick fcitx5-configtool lightdm-gtk-greeter scrcpy \
     the_silver_searcher fcitx5-chinese-addons lightdm-gtk-greeter-settings \
-    lazygit pdfarranger kdenlive switchhosts neovide
+    lazygit pdfarranger kdenlive switchhosts neovide xournalpp freeplane
 
 sudo yay -S wechat-uos robo3t-bin another-redis-desktop-manager-appimage \
-    simplescreenrecorder
+    simplescreenrecorder balena-etcher flying-carpet-bin cryptomator pencil \
+    freefilesync-bin
