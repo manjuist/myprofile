@@ -10,10 +10,10 @@
 # it gets replaced by the "replace" string.
 ---
 matches:
-  - trigger: ":disl"
+  - trigger: ":esdisln"
     replace: "/* eslint-disable-next-line */"
 
-  - trigger: ":disb"
+  - trigger: ":esdisblk"
     replace: "/* eslint-disable */\n/* eslint-enable */"
 
   # NOTE: espanso uses YAML to define matches, so pay attention to the
@@ -22,7 +22,7 @@ matches:
   # But matches can also be dynamic:
 
   # worlds file name
-  - trigger: ":wfn"
+  - trigger: ":wn"
     replace: "Words{{mydate}}"
     vars:
       - name: mydate
@@ -31,7 +31,7 @@ matches:
           format: "%Y%m%d"
 
   # Calibre library name
-  - trigger: ":cln"
+  - trigger: ":bn"
     replace: "Calibre{{mydate}}"
     vars:
       - name: mydate
@@ -57,7 +57,7 @@ matches:
           format: "%Y%m%d"
 
   # Print the output of a shell command
-  - trigger: ":omy"
+  - trigger: ":op"
     replace: "{{output}}"
     vars:
       - name: output
