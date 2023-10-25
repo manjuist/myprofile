@@ -27,4 +27,4 @@ brew install --cask vlc kap xld lulu gimp thor keka skim meld clipy v2rayu \
     microsoft-edge syntax-highlight microsoft-onenote dbeaver-community \
     visual-studio-code kekaexternalhelper another-redis-desktop-manager \
     only-switch balenaetcher mongodb-compass tencent-meeting temurin olive \
-    intellij-idea-ce kdenlive switchhosts
+    intellij-idea-ce kdenlive switchhosts iina
