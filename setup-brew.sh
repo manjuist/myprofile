@@ -10,21 +10,25 @@ set -e
 set -o pipefail
 
 brew tap localsend/localsend
+brew install localsend
+
 brew tap macos-fuse-t/homebrew-cask
+brew install fuse-t
+brew install fuse-t-sshfs
 
-brew install fd exa duf fzf gcc gpg nnn nvm zsh bat dust btop make tmux shfmt \
-    cmake ctags xonsh zoxide neovim ffmpeg pandoc cowsay ripgrep libxml2 \
-    openssl fortune neofetch yamllint swiftlint highlight git-delta shellcheck \
+brew install fd exa duf fzf gcc gpg nnn nvm zsh bat dust btop make tmux cowsay \
+    openssl neofetch yamllint swiftlint highlight git-delta shellcheck lazygit \
     tidy-html5 difftastic swiftformat rust-analyzer the_silver_searcher scrcpy \
-    android-platform-tools lazygit fuse-t fuse-t-sshfs
+    cmake ctags xonsh zoxide neovim ffmpeg pandoc ripgrep libxml2 shfmt ranger \
+    jsonlint prettier stylelint yapf isort flake8 pylint autopep8 thefuck tldr \
+    node
 
-brew install --cask vlc kap xld lulu gimp thor keka skim meld clipy v2rayu \
-    drawio pencil docker wechat httpie itsycal blender calibre espanso \
-    charles robo-3t alt-tab nutstore inkscape obsidian audacity caffeine pika \
-    motrix findergo flameshot rectangle handbrake wireshark hiddenbar \
-    syncthing keepassxc localsend freeplane fontforge stretchly goldendict \
-    netnewswire thunderbird tencent-lemon google-chrome zotero cryptomator \
-    microsoft-edge syntax-highlight microsoft-onenote dbeaver-community \
-    visual-studio-code kekaexternalhelper another-redis-desktop-manager \
-    only-switch balenaetcher mongodb-compass tencent-meeting temurin olive \
-    intellij-idea-ce kdenlive switchhosts iina
+brew install --cask docker kap xld lulu gimp thor keka skim meld espanso olive \
+    motrix findergo flameshot rectangle handbrake wireshark hiddenbar inkscape \
+    microsoft-edge syntax-highlight microsoft-onenote dbeaver-community drawio \
+    visual-studio-code kekaexternalhelper another-redis-desktop-manager wechat \
+    only-switch balenaetcher mongodb-compass tencent-meeting switchhosts clipy \
+    charles robo-3t alt-tab nutstore obsidian audacity caffeine iina syncthing \
+    netnewswire thunderbird tencent-lemon google-chrome cryptomator goldendict \
+    calibre stretchly httpie itsycal blender kdenlive freeplane fontforge pika \
+    keepassxc intellij-idea-ce pencil alacritty kitty

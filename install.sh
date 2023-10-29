@@ -128,11 +128,25 @@ backup() {
     done
 }
 
+install_npm() {
+    npm i -g neovim stylelint-config-standard tern
+
+    success "Install APP(npm) success!"
+}
+
+install_pip() {
+    pip3 install pynvim neovim jedi vim-vint
+
+    success "Install APP(pip) success!"
+}
+
 hash git &>/dev/null && syncRepo "$APP_PATH" "$REPO_URI"
 
 cd "$APP_PATH" || exit
 
 install_fonts
+install_npm
+install_pip
 
 handler "$TOOL_PATH" "${BIN_PATH}"
 handler "$APP_CONFIG_PATH" "$HOME/." "f"
