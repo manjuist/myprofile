@@ -19,7 +19,7 @@ sudo pacman -S --needed fd bat feh zsh duf nnn fzf gcc exa npm make xorg rofi ti
     difftastic shellcheck base-devel thunderbird wireshark-qt wireshark-cli code \
     rust-analyzer graphicsmagick fcitx5-configtool lightdm-gtk-greeter scrcpy \
     the_silver_searcher fcitx5-chinese-addons lightdm-gtk-greeter-settings sigil \
-    lazygit pdfarranger kdenlive switchhosts neovide xournalpp freeplane obsidian \
+    lazygit pdfarranger kdenlive neovide xournalpp freeplane obsidian \
     autopep8 flake8 python-isort python-jedi python-pylint python-pynvim tldr thefuck \
-    yapf python-locust stylelint stylelint-config-recommended stylelint-config-standard \
-    prettier yarn python-pip
+    yapf stylelint stylelint-config-recommended stylelint-config-standard \
+    prettier yarn python-pip yay
