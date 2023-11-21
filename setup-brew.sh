@@ -31,4 +31,4 @@ brew install --cask docker kap xld lulu gimp thor keka skim meld espanso olive \
     charles robo-3t alt-tab nutstore obsidian audacity caffeine iina syncthing \
     netnewswire thunderbird tencent-lemon google-chrome cryptomator goldendict \
     calibre stretchly httpie itsycal blender kdenlive freeplane fontforge pika \
-    keepassxc intellij-idea-ce pencil alacritty kitty firefox macpass macdown adapter
+    keepassxc intellij-idea-ce pencil alacritty kitty firefox macpass macdown adapter kid3

@@ -22,4 +22,4 @@ sudo pacman -S --needed fd bat feh zsh duf nnn fzf gcc exa npm make xorg rofi ti
     lazygit pdfarranger kdenlive neovide xournalpp freeplane obsidian \
     autopep8 flake8 python-isort python-jedi python-pylint python-pynvim tldr thefuck \
     yapf stylelint stylelint-config-recommended stylelint-config-standard \
-    prettier yarn python-pip yay
+    prettier yarn python-pip yay kid3
