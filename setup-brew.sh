@@ -31,4 +31,4 @@ brew install --cask docker kap xld lulu gimp thor keka skim meld espanso olive \
     visual-studio-code kekaexternalhelper another-redis-desktop-manager drawio \
     intellij-idea-ce syntax-highlight microsoft-onenote clipy freac goldendict \
     cryptomator balenaetcher mongodb-compass switchhosts adapter google-chrome \
-    kid3 netnewswire thunderbird musicbrainz-picard squirrel
+    kid3 netnewswire thunderbird musicbrainz-picard squirrel duplicati
