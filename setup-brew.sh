@@ -30,5 +30,5 @@ brew install --cask docker kap xld lulu gimp thor keka skim meld espanso olive \
     keepassxc pencil alacritty kitty firefox macpass macdown dbeaver-community \
     visual-studio-code kekaexternalhelper another-redis-desktop-manager drawio \
     intellij-idea-ce syntax-highlight microsoft-onenote clipy freac goldendict \
-    only-switch balenaetcher mongodb-compass switchhosts adapter google-chrome \
-    cryptomator kid3 netnewswire thunderbird musicbrainz-picard squirrel
+    cryptomator balenaetcher mongodb-compass switchhosts adapter google-chrome \
+    kid3 netnewswire thunderbird musicbrainz-picard squirrel
