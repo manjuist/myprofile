@@ -25,10 +25,10 @@ brew install fd exa duf fzf gcc gpg nnn nvm zsh bat dust btop make tmux cowsay \
 
 brew install --cask docker kap xld lulu gimp thor keka skim meld espanso olive \
     motrix findergo flameshot rectangle handbrake wireshark hiddenbar inkscape \
-    microsoft-edge syntax-highlight microsoft-onenote dbeaver-community drawio \
-    visual-studio-code kekaexternalhelper another-redis-desktop-manager wechat \
-    only-switch balenaetcher mongodb-compass tencent-meeting switchhosts clipy \
     charles robo-3t alt-tab nutstore obsidian audacity caffeine iina syncthing \
-    netnewswire thunderbird tencent-lemon google-chrome cryptomator goldendict \
     calibre stretchly httpie itsycal blender kdenlive freeplane fontforge pika \
-    keepassxc intellij-idea-ce pencil alacritty kitty firefox
+    keepassxc pencil alacritty kitty firefox macpass macdown dbeaver-community \
+    visual-studio-code kekaexternalhelper another-redis-desktop-manager drawio \
+    intellij-idea-ce syntax-highlight microsoft-onenote clipy freac goldendict \
+    only-switch balenaetcher mongodb-compass switchhosts adapter google-chrome \
+    cryptomator kid3 netnewswire thunderbird
