@@ -23,13 +23,14 @@ brew install fd exa duf fzf gcc gpg nnn nvm zsh bat dust btop make tmux cowsay \
     jsonlint prettier stylelint yapf isort flake8 pylint autopep8 thefuck tldr \
     node
 
-brew install --cask docker kap xld lulu gimp thor keka skim meld espanso olive \
-    motrix findergo flameshot rectangle handbrake wireshark hiddenbar inkscape \
-    charles robo-3t alt-tab nutstore obsidian audacity caffeine iina syncthing \
-    calibre stretchly httpie itsycal blender kdenlive freeplane fontforge pika \
+brew install --cask docker blender lulu gimp thor keka skim meld espanso olive \
+    motrix findergo flameshot rectangle hiddenbar inkscape fontforge stretchly \
+    robo-3t alt-tab nutstore obsidian audacity caffeine iina syncthing itsycal \
     keepassxc pencil alacritty kitty firefox macpass macdown dbeaver-community \
     visual-studio-code kekaexternalhelper another-redis-desktop-manager drawio \
-    intellij-idea-ce syntax-highlight microsoft-onenote clipy freac goldendict \
+    intellij-idea-ce syntax-highlight microsoft-onenote goldendict httpie pika \
     cryptomator balenaetcher mongodb-compass switchhosts adapter google-chrome \
-    kid3 netnewswire thunderbird musicbrainz-picard squirrel duplicati zotero \
-    textmate
+    netnewswire thunderbird musicbrainz-picard textmate squirrel kap freeplane \
+    calibre duplicati zotero clipy
+
+# xld wireshark kdenlive kid3 charles freac handbrake
