@@ -31,6 +31,6 @@ brew install --cask docker blender lulu gimp thor keka skim meld espanso olive \
     intellij-idea-ce syntax-highlight microsoft-onenote goldendict httpie pika \
     cryptomator balenaetcher mongodb-compass switchhosts adapter google-chrome \
     netnewswire thunderbird musicbrainz-picard textmate squirrel kap freeplane \
-    calibre duplicati zotero clipy
+    calibre duplicati zotero clipy gitx
 
 # xld wireshark kdenlive kid3 charles freac handbrake
