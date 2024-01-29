@@ -17,13 +17,12 @@ alias rmf='rm -rf'
 alias md='mkdir -p'
 alias rd='rmdir'
 
-alias vi='nvim'
-alias vim='nvim'
+alias nvi='nvim'
 
-alias ls='exa -F'
-alias la='exa -aF'
-alias l1='exa -1F'
-alias ll='exa -lhF'
+alias ls='ls -F'
+alias la='ls -aF'
+alias l1='ls -1F'
+alias ll='ls -lhF'
 alias l='ls -lahF'
 # }
 
@@ -51,6 +50,8 @@ alias tka='tmux kill-session -a'
 # }
 
 # Git {
+alias lg='lazygit'
+
 alias gb='echo "$(git branch)"'
 alias gba='echo "$(git branch -a)"'
 
