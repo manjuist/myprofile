@@ -19,11 +19,11 @@ alias rd='rmdir'
 
 alias nvi='nvim'
 
-alias ls='ls -F'
-alias la='ls -aF'
-alias l1='ls -1F'
-alias ll='ls -lhF'
-alias l='ls -lahF'
+alias ls='ls -F --color'
+alias la='ls -aF --color'
+alias l1='ls -1F --color'
+alias ll='ls -lhF --color'
+alias l='ls -lahF --color'
 # }
 
 # Proxy {
