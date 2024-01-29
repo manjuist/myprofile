@@ -1,49 +1,42 @@
 [user]
     name = dewei.ma
     email = xnmageis@outlook.com
-
 [core]
     pager = delta
     editor = nvim
     excludesfile = /Users/mdvis/.gitignore_global
-
 [interactive]
     diffFilter = delta --color-only
-
 [commit]
     template = ~/.gitmessages
-
 [merge]
-    tool = meld
+    tool = code
     ff = true
-
 [diff]
-    tool = meld
-
+    tool = code
 [delta]
     navigate = true
     line-numbers = true
-
 [mergetool]
     keepBackup = false
-
 [difftool]
     prompt = false
-
 [pull]
     rebase = false
     ff = false
-
 [alias]
     a = add
     c = commit
     m = merge
     co = checkout
-
 [init]
-	defaultBranch = main
+    defaultBranch = main
 [filter "lfs"]
-	required = true
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
+    required = true
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+[difftool "code"]
+    cmd = "code --wait --diff  $LOCAL $REMOTE"
+[mergetool "code"]
+    cmd = "code --wait $MERGED"
