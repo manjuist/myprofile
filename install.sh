@@ -7,15 +7,19 @@
 # ------
 
 APP_NAME="myprofile"
-REPO_URI="https://github.com/mdvis/${APP_NAME}.git"
-
+APP_REPO_URI="https://github.com/mdvis/${APP_NAME}.git"
 APP_PATH="${HOME}/.${APP_NAME}"
-TOOL_PATH="${APP_PATH}/tools"
-APP_CONFIG_PATH="${APP_PATH}/config"
-BIN_PATH="$HOME/.local/bin/"
+APP_TOOL_PATH="${APP_PATH}/tools"
+APP_CONFIGFILE_PATH="${APP_PATH}/config_file"
+APP_CONFIGDIR_PATH="${APP_PATH}/config_dir"
+APP_FONT_PATH="${APP_PATH}/fonts"
+APP_SSH_PATH="${APP_PATH}/ssh"
+
 CONFIG_PATH="$HOME/.config/"
-FONT_PATH="${APP_PATH}/fonts"
-FONT_PATH="${APP_PATH}/fonts"
+LOCAL_BIN_PATH="$HOME/.local/bin/"
+LOCAL_FONTS_PATH="$HOME/.local/share/fonts/"
+SSH_PATH="$HOME/.ssh/"
+MAC_FONTS_PATH="$HOME/Library/Fonts/"
 
 System="$(uname -s)"
 
@@ -23,7 +27,9 @@ Red='\033[0;31m'
 Green='\033[0;32m'
 Color_off='\033[0m'
 
-[ ! -e "${BIN_PATH}" ] && mkdir -p "${BIN_PATH}"
+[ ! -e "${LOCAL_BIN_PATH}" ] && mkdir -p "${LOCAL_BIN_PATH}"
+[ ! -e "${CONFIG_PATH}" ] && mkdir -p "${CONFIG_PATH}"
+[ ! -e "${SSH_PATH}" ] && mkdir -p "${SSH_PATH}"
 
 msg() {
     printf '%b\n' "$1" >&2
@@ -39,20 +45,16 @@ error() {
 }
 
 install_fonts() {
-    if [[ ! -d "$HOME/.local/share/fonts" ]]; then
-        mkdir -p "$HOME/.local/share/fonts"
-    fi
-
     if [ "${System}" == "Darwin" ]; then
-        if [ ! -e "$HOME/Library/Fonts" ]; then
-            mkdir "$HOME/Library/Fonts"
-        fi
-        cp "$FONT_PATH/*" "$HOME/Library/Fonts/"
+        [[ ! -d "$MAC_FONTS_PATH" ]] && mkdir -p "$MAC_FONTS_PATH"
+        
+        cp "$APP_FONT_PATH/*" "$MAC_FONTS_PATH"
     else
-        cp "$FONT_PATH/*" "$HOME/.local/share/fonts"
+        [[ ! -d "$LOCAL_FONTS_PATH" ]] && mkdir -p "$LOCAL_FONTS_PATH"
+        cp "$APP_FONT_PATH/*" "$LOCAL_FONTS_PATH"
         fc-cache -fv >/dev/null
-        mkfontdir "$HOME/.local/share/fonts" >/dev/null
-        mkfontscale "$HOME/.local/share/fonts" >/dev/null
+        mkfontdir "$LOCAL_FONTS_PATH" >/dev/null
+        mkfontscale "$LOCAL_FONTS_PATH" >/dev/null
     fi
     success "font cache done!"
 }
@@ -122,7 +124,7 @@ backup() {
     list="$*"
     time=$(date +%s)
     for i in $list; do
-        [[ -d "${i}" ]] && mv "${i}" "${i}"."${time}"
+        mv "${i}" "${i}"."${time}"
 
         success "Buckup $i success!"
     done
@@ -140,7 +142,7 @@ install_pip() {
     success "Install APP(pip) success!"
 }
 
-hash git &>/dev/null && syncRepo "$APP_PATH" "$REPO_URI"
+hash git &>/dev/null && syncRepo "$APP_PATH" "$APP_REPO_URI"
 
 cd "$APP_PATH" || exit
 
@@ -148,6 +150,7 @@ install_fonts
 install_npm
 install_pip
 
-handler "$TOOL_PATH" "${BIN_PATH}"
-handler "$APP_CONFIG_PATH" "$HOME/." "f"
-handler "$APP_CONFIG_PATH" "$CONFIG_PATH" "d"
+handler "$APP_SSH_PATH" "$SSH_PATH" "f"
+handler "$APP_TOOL_PATH" "${LOCAL_BIN_PATH}" "f"
+handler "$APP_CONFIGFILE_PATH" "$HOME/." "f"
+handler "$APP_CONFIGDIR_PATH" "$CONFIG_PATH" "d"
