@@ -119,3 +119,4 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 [ -f ~/.inshellisense/key-bindings.zsh ] && source ~/.inshellisense/key-bindings.zsh
 export PATH="/opt/homebrew/opt/sphinx-doc/bin:$PATH"
+[[ -s "/Users/mdvis/.gvm/scripts/gvm" ]] && source "/Users/mdvis/.gvm/scripts/gvm"
