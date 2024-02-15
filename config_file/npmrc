@@ -1,1 +1,1 @@
-registry=http://maven-registry.lan:8081/nexus/repository/npm-group/
+registry=https://registry.npmmirror.com/
