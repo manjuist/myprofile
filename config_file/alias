@@ -1,11 +1,5 @@
 alias -s {jsx,tsx,js,ts,vue,json,html,xml,scss,less}=nvim
 
-# Dir {
-alias ,c='cd ~/Code/'
-alias ,v='cd ~/.vim/'
-alias ,p='cd ~/.myprofile/'
-# }
-
 # Profile {
 alias ex='exit'
 
@@ -13,6 +7,7 @@ alias cls='clear'
 
 alias rm='rm -i'
 alias rmf='rm -rf'
+alias cp='cp -r'
 
 alias md='mkdir -p'
 alias rd='rmdir'
