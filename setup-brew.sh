@@ -29,6 +29,7 @@ brew install --cask docker blender lulu gimp thor keka skim espanso olive gitx \
     visual-studio-code kekaexternalhelper another-redis-desktop-manager drawio \
     intellij-idea-ce syntax-highlight microsoft-onenote goldendict httpie pika \
     cryptomator mongodb-compass switchhosts adapter google-chrome textmate kap \
-    calibre zotero clipy keepingyouawake netnewswire musicbrainz-picard
+    calibre clipy keepingyouawake musicbrainz-picard trilium-notes netnewswire \
+    zotero
 
 # xld wireshark kid3 charles freac handbrake
