@@ -1,6 +1,7 @@
 [user]
     name = dewei.ma
     email = xnmageis@outlook.com
+	signingkey = 23B68B6F20399002
 [core]
     pager = delta
     editor = nvim
@@ -11,6 +12,7 @@
     diffFilter = delta --color-only
 [commit]
     template = ~/.gitmessages
+	gpgsign = true
 [merge]
     tool = code
     ff = true
