@@ -20,7 +20,7 @@ brew install fd fzf gcc gpg nnn nvm zsh btop isort pylint autopep8 swiftformat \
     openssl neofetch yamllint swiftlint highlight git-delta shellcheck lazygit \
     cmake ctags xonsh zoxide neovim ffmpeg pandoc ripgrep libxml2 shfmt scrcpy \
     jsonlint prettier stylelint yapf flake8 node tmux tidy-html5 rust-analyzer \
-    the_silver_searcher make
+    the_silver_searcher make pinentry-mac
 
 brew install --cask docker blender lulu gimp thor keka skim espanso olive gitx \
     motrix findergo flameshot rectangle inkscape fontforge stretchly freeplane \
