@@ -5,6 +5,8 @@
     pager = delta
     editor = nvim
     excludesfile = /Users/mdvis/.gitignore_global
+	autocrlf = input
+	safecrlf = true
 [interactive]
     diffFilter = delta --color-only
 [commit]
@@ -40,3 +42,5 @@
     cmd = "code --wait --diff  $LOCAL $REMOTE"
 [mergetool "code"]
     cmd = "code --wait $MERGED"
+[includeIf "gitdir:~/Code/work/"]
+    path = ~/.gitconfig_work
