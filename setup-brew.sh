@@ -22,14 +22,14 @@ brew install fd fzf gcc gpg nnn nvm zsh btop isort pylint autopep8 swiftformat \
     jsonlint prettier stylelint yapf flake8 node tmux tidy-html5 rust-analyzer \
     the_silver_searcher make pinentry-mac
 
-brew install --cask docker blender lulu gimp thor keka skim espanso olive gitx \
-    motrix findergo flameshot rectangle inkscape fontforge stretchly freeplane \
-    robo-3t alt-tab nutstore obsidian audacity iina syncthing itsycal squirrel \
-    keepassxc pencil alacritty kitty firefox macpass macdown dbeaver-community \
+brew install --cask docker blender lulu thor keka skim espanso olive gitx iina \
+    motrix findergo flameshot rectangle stretchly robo-3t alt-tab nutstore \
+    obsidian syncthing itsycal keepassxc alacritty macdown dbeaver-community \
     visual-studio-code kekaexternalhelper another-redis-desktop-manager drawio \
-    intellij-idea-ce syntax-highlight microsoft-onenote goldendict httpie pika \
-    cryptomator mongodb-compass switchhosts adapter google-chrome textmate kap \
-    calibre clipy keepingyouawake musicbrainz-picard trilium-notes netnewswire \
-    zotero
+    syntax-highlight microsoft-onenote goldendict httpie pika cryptomator kap \
+    calibre clipy keepingyouawake mongodb-compass switchhosts google-chrome \
+    textmate
 
-# xld wireshark kid3 charles freac handbrake
+# xld wireshark kid3 charles freac handbrake squirrel audacity freeplane
+# zotero musicbrainz-picard netnewswire adapter intellij-idea-ce pencil macpass
+# fontforge inkscape gimp
