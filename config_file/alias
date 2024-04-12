@@ -1,24 +1,18 @@
 alias -s {jsx,tsx,js,ts,vue,json,html,xml,scss,less}=nvim
 
 # Profile {
-alias ex='exit'
-
 alias cls='clear'
 
 alias rm='rm -i'
-alias rmf='rm -rf'
 alias cp='cp -r'
+alias rmf='rm -rf'
 
-alias md='mkdir -p'
-alias rd='rmdir'
+alias mkdir='mkdir -p'
 
-alias nvi='nvim'
-
+alias la='ls -lahF --color'
 alias ls='ls -F --color'
-alias la='ls -aF --color'
-alias l1='ls -1F --color'
 alias ll='ls -lhF --color'
-alias l='ls -lahF --color'
+alias l1='ls -1F --color'
 # }
 
 # Proxy {
@@ -40,43 +34,10 @@ PROXY_HTTP="${PROXY_HTTP_ADDRESS}:${PROXY_HTTP_PORT}"
 alias sp="export ALL_PROXY=${PROXY_SOCKET}; export http_proxy=${PROXY_HTTP}; export https_proxy=${PROXY_HTTP}"
 # }
 
-# Tmux {
-alias tka='tmux kill-session -a'
-# }
-
 # Git {
-alias lg='lazygit'
+alias lgit='lazygit'
 
-alias gb='echo "$(git branch)"'
-alias gba='echo "$(git branch -a)"'
-
-alias gd='git diff'
-alias gdt='git difftool'
-
-alias gco='git checkout '
-alias gmt='git mergetool'
-alias grh='git reset --hard HEAD'
-alias gs='git status --short'
-alias gc='git clone '
-
-alias gsl='git stash list'
-alias gsp='git stash pop'
-alias gss='git stash save'
-alias gsc='git stash clear'
-
-alias gaa='git add -A'
-alias gap='git add -p'
-
-alias gca='git commit -a'
-alias gcp='git commit -p'
-
-alias gb='echo "$(git branch)"'
-alias gba='echo "$(git branch -a)"'
-
-alias gf='git fetch'
-alias gl='git pull'
-alias gu='git push'
-alias glu='git pull && git push'
+alias gfc="git status --short | awk '{print \$2}' | xargs rg console"
 
 shotCommitHash='%C(yellow)%h'
 dataStr='%C(red)%ad'
@@ -86,5 +47,4 @@ prettyStr="${shotCommitHash} ${dataStr} ${commitName} ${commitMsg}"
 dateFmtStr='%m/%d-%H:%M'
 
 alias glg="git log --date=format:${dateFmtStr} --pretty='${prettyStr}'"
-alias gfc="git status --short | awk '{print \$2}' | xargs rg console"
 # }

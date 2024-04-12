@@ -30,9 +30,17 @@
     ff = false
 [alias]
     a = add
-    c = commit
+    d = diff
+    l = pull
+    p = push
     m = merge
+    r = reset
+    b = branch
+    c = commit
+    s = status
+    rb = rebase
     co = checkout
+    ss = status --short
 [init]
     defaultBranch = main
 [filter "lfs"]
