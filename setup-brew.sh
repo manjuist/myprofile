@@ -29,4 +29,4 @@ brew install --cask docker blender lulu thor keka skim espanso olive gitx iina \
     syntax-highlight microsoft-onenote goldendict httpie cryptomator kap hyper \
     calibre keepingyouawake mongodb-compass switchhosts google-chrome textmate \
     pika fontforge inkscape netnewswire musicbrainz-picard handbrake wireshark \
-    xld gimp audacity charles macpass
+    xld gimp audacity charles macpass flux
