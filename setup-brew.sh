@@ -16,17 +16,17 @@ brew tap macos-fuse-t/homebrew-cask
 brew install fuse-t
 brew install fuse-t-sshfs
 
-brew install fd fzf gcc gpg nnn nvm zsh btop isort pylint autopep8 swiftformat \
-    openssl neofetch yamllint swiftlint highlight git-delta shellcheck lazygit \
-    cmake ctags xonsh zoxide neovim ffmpeg pandoc ripgrep libxml2 shfmt scrcpy \
-    jsonlint prettier stylelint yapf flake8 node tmux tidy-html5 rust-analyzer \
-    the_silver_searcher make pinentry-mac grex
+brew install fd fzf gcc gpg nnn nvm zsh btop pylint autopep8 pinentry-mac make \
+    openssl neofetch yamllint highlight git-delta shellcheck lazygit stylelint \
+    cmake ctags zoxide neovim ffmpeg pandoc ripgrep libxml2 shfmt scrcpy isort \
+    the_silver_searcher yapf flake8 jsonlint tidy-html5 rust-analyzer prettier \
+    grex node tmux
 
 brew install --cask docker blender lulu thor keka skim espanso olive gitx iina \
-    obsidian findergo flameshot rectangle alacritty stretchly alt-tab nutstore \
+    obsidian findergo flameshot rectangle stretchly alt-tab nutstore flux gimp \
     syncthing motrix itsycal keepassxc macdown dbeaver-community robo-3t clipy \
     visual-studio-code kekaexternalhelper another-redis-desktop-manager drawio \
-    syntax-highlight microsoft-onenote goldendict httpie cryptomator kap hyper \
+    syntax-highlight microsoft-onenote goldendict cryptomator audacity macpass \
     calibre keepingyouawake mongodb-compass switchhosts google-chrome textmate \
     pika fontforge inkscape netnewswire musicbrainz-picard handbrake wireshark \
-    xld gimp audacity charles macpass flux
+    xld charles kap httpie
