@@ -1,90 +1,37 @@
 
-
-# +-----------------------------------------------------------------+
-# |                            MESSAGE                              |
-# +-----------------------------------------------------------------+
-# Header: <type>(<scope 影响范围>):<subject 简短描述>
-#
-#   Type
-#     - feat
-#     - fix
-#     - docs
-#     - style: 不影响代码的格式变更
-#     - refactor
-#     - test
-#     - chore: 构建或辅助工具的变更
-#     - revert
-#
-# Body: 详细描述
-#
-# Footer: 仅用于一下两种情况
-#   - BREAKING CHANGE: 不兼容变动
-#   - ISSUES CLOSED: 关闭ISSUE
-
-# +-----------------------------------------------------------------+
-# |                            EMOJI                                |
-# +-----------------------------------------------------------------+
-# (调色板)                                 :art: 改进代码
-# (闪电)                                   :zap: 提升性能
-# (赛马)                             :racehorse: 提升性能
-# (火焰)                                  :fire: 移除代码/文件
-# (bug)                                    :bug: 修复bug
-# (急救车)                           :ambulance: 重要补丁
-# (火花)                              :sparkles: 新功能
-# (备忘录)                                :memo: 文档
-# (消息气泡)                    :speech_balloon: 更新文档
-# (火箭)                                :rocket: 部署
-# (口红)                              :lipstick: UI/样式
-# (庆祝)                                  :tada: 初始化
-# (白色复选框)                :white_check_mark: 更新测试
-# (锁)                                    :lock: 问题修复(安全)
-# (苹果)                                 :apple: 问题修复(macOS)
-# (企鹅)                               :penguin: 问题修复(Linux)
-# (旗帜)                        :checkered_flag: 问题修复(Windows)
-# (机器人)                               :robot: 问题修复(Android)
-# (绿苹果)                         :green_apple: 问题修复(iOS)
-# (书签)                              :bookmark: 发行/版本标签
-# (警车灯)                      :rotating_light: 移除linter警告
-# (施工)                          :construction: 工作进行中
-# (工人)                   :construction_worker: 添加CI构建系统
-# (绿心)                           :green_heart: 修复CI构建问题
-# (上升箭头)                          :arrow_up: 升级依赖
-# (下降箭头)                        :arrow_down: 降级依赖
-# (加号)                       :heavy_plus_sign: 增加依赖
-# (减号)                      :heavy_minus_sign: 减少依赖
-# (图钉)                               :pushpin: 固定依赖(特定版本)
-# (上升趋势图)        :chart_with_upwards_trend: 分析/跟踪代码
-# (回收)                               :recycle: 重构
-# (锤子)                                :hammer: 重大重构
-# (鲸鱼)                                 :whale: Docker
-# (带子午线的地球仪)      :globe_with_meridians: 国际化
-# (扳手)                                :wrench: 配置文件
-# (铅笔)                               :pencil2: 修复typo(错字)
-# (粑粑)                                  :poop: 代码需要优化
-# (倒带)                                :rewind: 恢复更改
-# (交叉向右的箭头)   :twisted_rightwards_arrows: 合并分支
-# (包裹)                               :package: 更新编译的文件或包
-# (外星人)                               :alien: 因外部API更改代码
-# (货车)                                 :truck: 移动/重命名
-# (正面朝上的页面)              :page_facing_up: 证书
-# (爆炸)                                  :boom: 突破性变化
-# (铅笔)                                 :bento: 资源
-# (OK手势)                             :ok_hand: 代码审查更新代码
-# (轮椅)                            :wheelchair: 无障碍交互
-# (灯泡)                                  :bulb: 添加注释
-# (啤酒)                                 :beers: 醉醺醺地写代码
-# (卡片文件盒)                   :card_file_box: 数据库
-# (音量大)                          :loud_sound: 增加日志
-# (静音)                                  :mute: 移除日志
-# (轮廓中的半身像)         :busts_in_silhouette: 增加贡献者
-# (孩童通行)                 :children_crossing: 用户体验/可用性
-# (建筑建造)             :building_construction: 结构变动
-# (iPhone)                              :iphone: 响应式设计
-# (小丑脸)                          :clown_face: 嘲弄事物
-# (鸡蛋)                                   :egg: 彩蛋
-# (看不见邪恶)                     :see_no_evil: gitignore
-# (照相机闪光灯)                  :camera_flash: 截图
-# (蒸馏器)                             :alembic: 尝试新东西
-# (放大镜)                                 :mag: SEO
-# (船的方向盘)                 :wheel_of_dharma: Kubernetes
-# (标签)                                 :label: 增加类型（FLow、Typescript）
+########################################################################################################################################################
+#                                                                                                                                                      #
+# +-----------------------------------------+  # (锁)               :lock: 问题修复(安全)      # (标签)                    :label: 增加类型（FLow、Ts）#
+# |                MESSAGE                  |  # (苹果)            :apple: 问题修复(macOS)     # (调色板)                    :art: 改进代码            #
+# +-----------------------------------------+  # (企鹅)          :penguin: 问题修复(Linux)     # (闪电)                      :zap: 提升性能            #
+#                                              # (旗帜)   :checkered_flag: 问题修复(Windows)   # (赛马)                :racehorse: 提升性能            #
+# Header: <type>(<scope>):<subject>            # (机器人)          :robot: 问题修复(Android)   # (火焰)                     :fire: 移除代码/文件       #
+#                                              # (绿苹果)    :green_apple: 问题修复(iOS)       # (bug)                       :bug: 修复bug             #
+#   Type                                       # (绿心)      :green_heart: 问题修复(CI构建)    # (急救车)              :ambulance: 重要补丁            #
+#     - feat                                   # (警车灯) :rotating_light: 移除linter警告      # (火花)                 :sparkles: 新功能              #
+#     - fix                                    # (施工)     :construction: 工作进行中          # (备忘录)                   :memo: 文档                #
+#     - docs                                   # (回收)          :recycle: 重构                # (消息气泡)       :speech_balloon: 文档更新            #
+#     - style: 不影响代码的格式变更            # (图钉)          :pushpin: 固定依赖(特定版本)  # (蒸馏器)                :alembic: 尝试新东西          #
+#     - refactor                               # (上升箭头)     :arrow_up: 升级依赖            # (火箭)                   :rocket: 部署                #
+#     - test                                   # (下降箭头)   :arrow_down: 降级依赖            # (口红)                 :lipstick: UI/样式             #
+#     - chore: 构建或辅助工具的变更            # (加号)  :heavy_plus_sign: 增加依赖            # (庆祝)                     :tada: 初始化              #
+#     - revert                                 # (减号) :heavy_minus_sign: 减少依赖            # (放大镜)                    :mag: SEO                 #
+#                                              # (货车)            :truck: 移动/重命名         # (音量大)             :loud_sound: 增加日志            #
+# Body: 详细描述                               # (爆炸)             :boom: 突破性变化          # (静音)                     :mute: 移除日志            #
+#                                              # (铅笔)            :bento: 资源                # (静音)                     :mute: 移除日志            #
+# Footer: 仅用于一下两种情况                   # (OK手势)        :ok_hand: 代码审查更新代码    # (书签)                 :bookmark: 发行/版本标签       #
+#   - BREAKING CHANGE: 不兼容变动              # (轮椅)       :wheelchair: 无障碍交互          # (扳手)                   :wrench: 配置文件            #
+#   - ISSUES CLOSED: 关闭ISSUE                 # (灯泡)             :bulb: 添加注释            # (铅笔)                  :pencil2: 修复typo(错字)      #
+#                                              # (倒带)           :rewind: 恢复更改            # (粑粑)                     :poop: 代码需要优化        #
+# +-----------------------------------------+  # (锤子)           :hammer: 重大重构            # (包裹)                  :package: 更新编译的文件或包  #
+# |                EMOJI                    |  # (iPhone)         :iphone: 响应式设计          # (看不见邪恶)        :see_no_evil: gitignore           #
+# +-----------------------------------------+  # (鲸鱼)            :whale: Docker              # (正面朝上的页面) :page_facing_up: 证书                #
+#                                                                                                                                                      #
+#                           # (交叉向右的箭头) :twisted_rightwards_arrows: 合并分支            # (白色复选框)   :white_check_mark: 更新测试            #
+#                           # (上升趋势图)      :chart_with_upwards_trend: 分析/跟踪代码       # (外星人)                  :alien: 因外部API更改代码   #
+#                           # (带子午线的地球仪)    :globe_with_meridians: 国际化              # (孩童通行)    :children_crossing: 用户体验/可用性     #
+#                           # (工人)                 :construction_worker: 添加CI构建系统      # (船的方向盘)    :wheel_of_dharma: Kubernetes          #
+#                           # (建筑建造)           :building_construction: 结构变动            # (卡片文件盒)      :card_file_box: 数据库              #
+#                           # (轮廓中的半身像)       :busts_in_silhouette: 增加贡献者          # (照相机闪光灯)     :camera_flash: 截图                #
+#                                                                                                                                                      #
+########################################################################################################################################################
