@@ -5,14 +5,12 @@ alias cls='clear'
 
 alias rm='rm -i'
 alias cp='cp -r'
-alias rmf='rm -rf'
+alias rmf='rm -irf'
 
-alias mkdir='mkdir -p'
-
-alias la='ls -lahF --color'
-alias ls='ls -F --color'
-alias ll='ls -lhF --color'
-alias l1='ls -1F --color'
+alias la='ls --color -lhFa'
+alias ll='ls --color -lhF'
+alias l1='ls --color -F1'
+alias ls='ls --color -F'
 # }
 
 # Proxy {
