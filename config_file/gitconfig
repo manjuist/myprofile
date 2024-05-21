@@ -38,8 +38,10 @@
     b = branch
     c = commit
     s = status
+    f = fetch
     rb = rebase
     co = checkout
+    fo = fetch origin
     ss = status --short
 [init]
     defaultBranch = main
