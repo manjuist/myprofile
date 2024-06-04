@@ -24,9 +24,9 @@ brew install fd fzf gcc gpg nnn nvm zsh btop pylint autopep8 pinentry-mac make \
 
 brew install --cask docker blender lulu thor keka skim espanso olive gitx iina \
     obsidian findergo flameshot rectangle stretchly alt-tab nutstore flux gimp \
-    syncthing motrix itsycal keepassxc macdown dbeaver-community robo-3t clipy \
+    syncthing motrix keepassxc macdown dbeaver-community robo-3t clipy charles \
     visual-studio-code kekaexternalhelper another-redis-desktop-manager drawio \
     syntax-highlight microsoft-onenote goldendict cryptomator audacity macpass \
     calibre keepingyouawake mongodb-compass switchhosts google-chrome textmate \
     pika fontforge inkscape netnewswire musicbrainz-picard handbrake wireshark \
-    xld charles kap httpie alacritty freeplane kitty sfm orbstack raycast
+    xld kap httpie alacritty freeplane kitty sfm orbstack raycast
