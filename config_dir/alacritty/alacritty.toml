@@ -1,11 +1,11 @@
-import = ["gruvbox.yml"]
+import = ["gruvbox.toml"]
 #working_directory = "/Users/mdvis/Code"
 
 [env]
 TERM = "xterm-256color"
 
 [font]
-size = 18.0
+size = 14.0
 
 [font.bold]
 family = "SauceCodePro Nerd Font"
@@ -21,7 +21,7 @@ style = "Italic"
 
 [font.normal]
 family = "SauceCodePro Nerd Font"
-style = "Medium"
+style = "Regular"
 
 [shell]
 program = "/Users/mdvis/.local/bin/tmux"
