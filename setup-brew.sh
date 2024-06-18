@@ -27,6 +27,6 @@ brew install --cask docker blender lulu thor keka skim espanso olive gitx iina \
     syncthing motrix keepassxc macdown dbeaver-community robo-3t clipy charles \
     visual-studio-code kekaexternalhelper another-redis-desktop-manager drawio \
     syntax-highlight microsoft-onenote goldendict cryptomator audacity macpass \
-    calibre keepingyouawake mongodb-compass switchhosts google-chrome textmate \
+    calibre keepingyouawake mongodb-compass switchhosts google-chrome orbstack \
     pika fontforge inkscape netnewswire musicbrainz-picard handbrake wireshark \
-    xld kap httpie alacritty freeplane kitty sfm orbstack raycast
+    xld kap httpie alacritty freeplane kitty sfm raycast zed
