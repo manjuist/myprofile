@@ -46,3 +46,21 @@ dateFmtStr='%m/%d-%H:%M'
 
 alias glg="git log --date=format:${dateFmtStr} --pretty='${prettyStr}'"
 # }
+
+fnv(){
+    nvim $(fzf)
+}
+
+alias fnv=fnv
+
+fop(){
+    open $(fzf)
+}
+
+alias fop=fop
+
+fcode(){
+    code $(fzf)
+}
+
+alias  fcode=fcode
