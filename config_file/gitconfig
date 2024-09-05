@@ -43,6 +43,7 @@
     co = checkout
     fo = fetch origin
     ss = status --short
+    cn = commit --no-verify
 [init]
     defaultBranch = main
 [filter "lfs"]
