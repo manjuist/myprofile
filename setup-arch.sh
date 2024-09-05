@@ -19,8 +19,8 @@ sudo pacman -S --needed fd feh zsh nnn fzf gcc npm make xorg picom emacs i3-wm \
     pdfarranger base-devel lightdm-gtk-greeter-settings aria2 ctags fcitx5-gtk \
     v2ray thunderbird prettier wireshark-qt picard syncthing audacity inkscape \
     highlight flameshot filezilla stylelint stylelint-config-standard vlc rofi \
-    yamllint python-jedi keepassxc fcitx5 ffmpeg i3lock neovim nodejs yarn \
-    stylelint-config-recommended
+    yamllint python-jedi keepassxc fcitx5 ffmpeg i3lock neovim nodejs kitty \
+    stylelint-config-recommended yarn
 
 sudo yay -S wechat-uos robo3t-bin another-redis-desktop-manager-appimage olive \
     wps-office-cn qv2ray google-chrome cryptomator nrm-git motrix tagger freac \
