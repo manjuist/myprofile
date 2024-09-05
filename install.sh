@@ -47,7 +47,7 @@ error() {
 install_fonts() {
     if [ "${System}" == "Darwin" ]; then
         [[ ! -d "$MAC_FONTS_PATH" ]] && mkdir -p "$MAC_FONTS_PATH"
-        
+
         cp "$APP_FONT_PATH/*" "$MAC_FONTS_PATH"
     else
         [[ ! -d "$LOCAL_FONTS_PATH" ]] && mkdir -p "$LOCAL_FONTS_PATH"
@@ -131,13 +131,13 @@ backup() {
 }
 
 install_npm() {
-    npm i -g neovim stylelint-config-standard tern
+    npm i -g neovim stylelint-config-standard tern cspell alex
 
     success "Install APP(npm) success!"
 }
 
 install_pip() {
-    pip3 install pynvim neovim jedi vim-vint
+    pip3 install pynvim neovim jedi vim-vint ruff sqlfluff
 
     success "Install APP(pip) success!"
 }
