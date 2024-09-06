@@ -105,3 +105,4 @@ plugins=(git brew gulp man npm macos tmux python sudo yarn zoxide archlinux ag \
     systemd rust python redis-cli ripgrep pm2 pip nvm node history httpie gulp \
     grunt golang fzf fd docker yum dnf cp )
 # zsh end
+export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
