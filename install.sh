@@ -131,7 +131,7 @@ backup() {
 }
 
 install_npm() {
-    npm i -g neovim stylelint-config-standard tern cspell alex
+    npm i -g neovim stylelint-config-standard tern cspell alex vls
 
     success "Install APP(npm) success!"
 }
@@ -142,6 +142,12 @@ install_pip() {
     success "Install APP(pip) success!"
 }
 
+install_cargo() {
+    cargo install stylua
+
+    success "Install APP(cargo) success!"
+}
+
 hash git &>/dev/null && syncRepo "$APP_PATH" "$APP_REPO_URI"
 
 cd "$APP_PATH" || exit
@@ -149,6 +155,7 @@ cd "$APP_PATH" || exit
 install_fonts
 install_npm
 install_pip
+install_cargo
 
 handler "$APP_SSH_PATH" "$SSH_PATH" "f"
 handler "$APP_TOOL_PATH" "${LOCAL_BIN_PATH}" "f"
