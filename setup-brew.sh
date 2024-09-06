@@ -19,7 +19,7 @@ brew install fuse-t-sshfs
 brew install fd fzf gcc gpg nnn nvm zsh btop pinentry-mac make grex shellcheck \
     openssl yamllint highlight git-delta lazygit stylelint fastfetch node tmux \
     the_silver_searcher rust-analyzer pandoc ripgrep libxml2 shfmt scrcpy tree \
-    cmake ctags zoxide neovim ffmpeg prettier
+    cmake ctags zoxide neovim ffmpeg prettier hadolint dprint
 
 brew install --cask docker blender lulu thor keka skim espanso olive gitx iina \
     obsidian findergo flameshot rectangle stretchly alt-tab nutstore flux gimp \

@@ -27,4 +27,4 @@ sudo yay -S wechat-uos robo3t-bin another-redis-desktop-manager-appimage olive \
     stretchly-bin goldendict-git drawio-desktop-bin localsend-bin freefilesync \
     git-cola simplescreenrecorder balena-etcher pencil-git bottles switchhosts \
     alacritty-colorscheme python-locust pandoc-bin shellcheck-bin obsidian-bin \
-    visual-studio-code-bin dbeaver-ee
+    visual-studio-code-bin dbeaver-ee hadolint-bin dprint
