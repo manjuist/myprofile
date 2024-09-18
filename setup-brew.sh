@@ -28,4 +28,4 @@ brew install --cask docker blender lulu thor keka skim espanso olive gitx iina \
     syntax-highlight microsoft-onenote goldendict cryptomator audacity macpass \
     calibre keepingyouawake mongodb-compass switchhosts google-chrome orbstack \
     pika fontforge inkscape netnewswire musicbrainz-picard handbrake wireshark \
-    xld kap httpie alacritty freeplane kitty sfm raycast zed shotcut
+    xld kap httpie alacritty freeplane kitty sfm raycast shotcut textmate
