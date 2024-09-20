@@ -9,24 +9,23 @@
 set -e
 set -o pipefail
 
-sudo pacman -S --needed fd feh zsh nnn fzf gcc npm make xorg picom emacs i3-wm \
-    httpie openssl konsole libxml2 lightdm foliate blender flatpak keepass git \
-    ripgrep python3 scribus firefox glances calibre remmina i3status tmux gimp \
-    fcitx5-qt git-delta fontforge scrcpy sigil xonsh cmake gnupg zoxide docker \
+sudo pacman -S --needed fd feh zsh nnn fzf gcc npm make xorg picom i3-wm kitty \
+    httpie openssl libxml2 lightdm blender keepass git vifm yarn pnpm yamllint \
+    ripgrep python3 firefox glances calibre i3status tmux gimp guake keepassxc \
+    fcitx5-qt git-delta scrcpy xonsh cmake gnupg zoxide docker neovim audacity \
     the_silver_searcher fcitx5-chinese-addons python-pynvim wireshark-cli btop \
     rust-analyzer graphicsmagick fcitx5-configtool lightdm-gtk-greeter lazygit \
-    fcitx5-im python-pip alacritty xournalpp copyq shfmt guake tilix freeplane \
+    fcitx5-im copyq shfmt fcitx5 freeplane nodejs stylelint-config-recommended \
     pdfarranger base-devel lightdm-gtk-greeter-settings aria2 ctags fcitx5-gtk \
-    v2ray thunderbird prettier wireshark-qt picard syncthing audacity inkscape \
+    thunderbird prettier wireshark-qt picard inkscape ffmpeg i3lock python-pip \
     highlight flameshot filezilla stylelint stylelint-config-standard vlc rofi \
-    yamllint python-jedi keepassxc fcitx5 ffmpeg i3lock neovim nodejs kitty \
-    stylelint-config-recommended yarn
+    python-jedi tilix remmina
 
-sudo pamac install wechat-uos robo3t-bin another-redis-desktop-manager-appimage olive \
-    wps-office-cn qv2ray google-chrome cryptomator nrm-git motrix tagger freac \
+yay -S wechat-uos robo3t-bin another-redis-desktop-manager-appimage dbeaver-ee \
+    wps-office-cn google-chrome cryptomator nrm-git motrix tagger freac dprint \
     stretchly-bin goldendict-git drawio-desktop-bin localsend-bin freefilesync \
-    git-cola simplescreenrecorder balena-etcher pencil-git bottles switchhosts \
-    alacritty-colorscheme python-locust pandoc-bin shellcheck-bin obsidian-bin \
-    visual-studio-code-bin dbeaver-ee hadolint-bin dprint
+    pandoc-bin shellcheck-bin obsidian-bin clash-verge-rev-bin nekoray bottles \
+    switchhosts visual-studio-code-bin hadolint-bin hiddify-next balena-etcher \
+    simplescreenrecorder git-cola
 
-# shotcut
+flatpak install flathub org.shotcut.Shotcut
