@@ -21,11 +21,11 @@ brew install fd fzf gcc gpg nnn nvm zsh btop make grex shellcheck ctags zoxide \
     the_silver_searcher rust-analyzer pandoc ripgrep libxml2 shfmt scrcpy tree \
     cmake neovim ffmpeg prettier hadolint dprint vifm
 
-brew install --cask docker blender lulu thor keka skim espanso gitx gimp maccy \
+brew install --cask httpie blender lulu thor keka skim espanso gitx gimp maccy \
     obsidian findergo flameshot rectangle stretchly alt-tab flux motrix shottr \
     keepassxc macdown dbeaver-community robo-3t charles kitty postman textmate \
     visual-studio-code kekaexternalhelper another-redis-desktop-manager drawio \
     syntax-highlight microsoft-onenote goldendict cryptomator audacity macpass \
     calibre keepingyouawake mongodb-compass switchhosts google-chrome orbstack \
     pika inkscape netnewswire musicbrainz-picard handbrake wireshark freeplane \
-    xld kap httpie sfm shotcut vlc balenaetcher
+    xld kap sfm shotcut vlc balenaetcher
