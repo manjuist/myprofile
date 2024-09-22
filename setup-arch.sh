@@ -23,9 +23,10 @@ sudo pacman -S --needed fd feh zsh nnn fzf gcc npm make xorg picom i3-wm kitty \
 
 yay -S wechat-uos robo3t-bin another-redis-desktop-manager-appimage dbeaver-ee \
     wps-office-cn google-chrome cryptomator nrm-git motrix tagger freac dprint \
-    stretchly-bin goldendict-git drawio-desktop-bin localsend-bin freefilesync \
-    pandoc-bin shellcheck-bin obsidian-bin clash-verge-rev-bin nekoray bottles \
+    stretchly-bin goldendict-git localsend-bin bottles drawio-desktop-appimage \
+    pandoc-bin shellcheck-bin clash-verge-rev-bin nekoray simplescreenrecorder \
     switchhosts visual-studio-code-bin hadolint-bin hiddify-next balena-etcher \
-    simplescreenrecorder git-cola
+    freefilesync git-cola
 
 flatpak install flathub org.shotcut.Shotcut
+flatpak install flathub md.obsidian.Obsidian
