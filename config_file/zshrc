@@ -1,6 +1,6 @@
 # sys
 export GPG_TTY=$(tty)
-export EDITOR=vim
+export EDITOR=nvim
 export VISUAL=neovide
 
 export LANG="zh_CN.UTF-8"
