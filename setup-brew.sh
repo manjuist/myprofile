@@ -16,10 +16,13 @@ brew tap macos-fuse-t/homebrew-cask
 brew install fuse-t
 brew install fuse-t-sshfs
 
-brew install fd fzf gcc gpg nnn nvm zsh btop make grex shellcheck ctags zoxide \
+brew install yazi sevenzip jq poppler imagemagick ffmpegthumbnailer fd ripgrep \
+    fzf zoxide font-symbols-only-nerd-font
+
+brew install gcc gpg nnn nvm zsh btop make grex shellcheck ctags neovim ffmpeg \
     openssl yamllint highlight git-delta lazygit stylelint fastfetch node tmux \
-    the_silver_searcher rust-analyzer pandoc ripgrep libxml2 shfmt scrcpy tree \
-    cmake neovim ffmpeg prettier hadolint dprint vifm
+    the_silver_searcher rust-analyzer pandoc libxml2 shfmt scrcpy dprint cmake \
+    prettier hadolint vifm tree
 
 brew install --cask httpie blender lulu thor keka skim espanso gitx gimp maccy \
     obsidian findergo flameshot rectangle stretchly alt-tab flux motrix shottr \
