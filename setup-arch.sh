@@ -28,7 +28,7 @@ yay -S wechat-uos robo3t-bin another-redis-desktop-manager-appimage dbeaver-ee \
     stretchly-bin goldendict-git localsend-bin bottles drawio-desktop-appimage \
     pandoc-bin shellcheck-bin clash-verge-rev-bin nekoray simplescreenrecorder \
     switchhosts visual-studio-code-bin hadolint-bin hiddify-next balena-etcher \
-    freefilesync git-cola
+    freefilesync git-cola siyuan-note-bin
 
 flatpak install flathub org.shotcut.Shotcut
 flatpak install flathub md.obsidian.Obsidian
