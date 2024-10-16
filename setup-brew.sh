@@ -31,4 +31,4 @@ brew install --cask httpie blender lulu thor keka skim espanso gitx gimp maccy \
     syntax-highlight microsoft-onenote goldendict cryptomator audacity macpass \
     calibre keepingyouawake mongodb-compass switchhosts google-chrome orbstack \
     pika inkscape netnewswire musicbrainz-picard handbrake wireshark freeplane \
-    xld kap sfm shotcut vlc balenaetcher jordanbaird-ice siyuan
+    xld kap sfm shotcut vlc balenaetcher jordanbaird-ice trilium-notes
