@@ -143,7 +143,7 @@ install_pip() {
 }
 
 install_cargo() {
-    cargo install stylua
+    cargo install stylua zellij
 
     success "Install APP(cargo) success!"
 }
