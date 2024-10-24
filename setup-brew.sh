@@ -29,6 +29,6 @@ brew install --cask httpie blender lulu thor keka skim espanso gitx gimp maccy \
     keepassxc macdown dbeaver-community robo-3t charles kitty postman textmate \
     visual-studio-code kekaexternalhelper another-redis-desktop-manager drawio \
     syntax-highlight microsoft-onenote goldendict cryptomator audacity macpass \
-    calibre keepingyouawake mongodb-compass switchhosts google-chrome orbstack \
+    balenaetcher keepingyouawake mongodb-compass switchhosts google-chrome kap \
     pika inkscape netnewswire musicbrainz-picard handbrake wireshark freeplane \
-    xld kap sfm shotcut vlc balenaetcher jordanbaird-ice trilium-notes
+    sfm shotcut vlc jordanbaird-ice trilium-notes calibre xld docker
