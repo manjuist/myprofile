@@ -74,6 +74,8 @@ export PATH="/usr/local/opt/openjdk@17/bin:$PATH"
 
 eval "$(zoxide init zsh)"
 
+eval "$(thefuck --alias)"
+
 # nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
