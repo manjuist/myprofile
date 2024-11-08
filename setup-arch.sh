@@ -9,26 +9,15 @@
 set -e
 set -o pipefail
 
-sudo pacman -S --needed yazi ffmpegthumbnailer jq poppler imagemagick fd p7zip \
-    fzf ripgrep zoxide
+sudo pacman -S --needed aria2 audacity base-devel blender btop calibre cmake copyq ctags docker \
+    fcitx5 fcitx5-chinese-addons fcitx5-configtool fcitx5-gtk fcitx5-im fcitx5-qt fd \
+    feh ffmpeg ffmpegthumbnailer filezilla flameshot fzf gcc gimp git glances gnupg \
+    graphicsmagick guake highlight httpie i3-wm i3lock i3status imagemagick inkscape \
+    jq keepass keepassxc kitty lazygit libxml2 make neovim nnn nodejs npm openssl p7zip \
+    pdfarranger picard picom pnpm poppler python-jedi python-pip python3 remmina ripgrep \
+    rofi rust-analyzer scrcpy shfmt the_silver_searcher thunderbird tilix tmux vifm \
+    vlc wireshark-cli wireshark-qt xonsh xorg yamllint yarn zoxide zsh
 
-sudo pacman -S --needed feh zsh nnn gcc npm make xorg picom i3-wm kitty neovim \
-    httpie openssl libxml2 lightdm blender keepass git vifm yarn pnpm yamllint \
-    fcitx5-qt git-delta scrcpy xonsh cmake gnupg docker audacity glances guake \
-    the_silver_searcher fcitx5-chinese-addons python-pynvim wireshark-cli btop \
-    rust-analyzer graphicsmagick fcitx5-configtool lightdm-gtk-greeter lazygit \
-    fcitx5-im copyq shfmt fcitx5 freeplane nodejs stylelint-config-recommended \
-    pdfarranger base-devel lightdm-gtk-greeter-settings aria2 ctags fcitx5-gtk \
-    thunderbird prettier wireshark-qt picard inkscape ffmpeg i3lock python-pip \
-    highlight flameshot filezilla stylelint stylelint-config-standard vlc rofi \
-    python3 i3status tmux gimp keepassxc calibre python-jedi tilix remmina
-
-yay -S wechat-uos robo3t-bin another-redis-desktop-manager-appimage dbeaver-ee \
-    wps-office-cn google-chrome cryptomator nrm-git motrix tagger freac dprint \
-    stretchly-bin goldendict-git localsend-bin bottles drawio-desktop-appimage \
-    pandoc-bin shellcheck-bin clash-verge-rev-bin nekoray simplescreenrecorder \
-    switchhosts visual-studio-code-bin hadolint-bin hiddify-next balena-etcher \
-    freefilesync git-cola siyuan-note-bin trilium-bin
-
-flatpak install flathub org.shotcut.Shotcut
-flatpak install flathub md.obsidian.Obsidian
+yay -S another-redis-desktop-manager-appimage balena-etcher clash-verge-rev-bin \
+    git-cola goldendict-git hadolint-bin nekoray pandoc-bin robo3t-bin shellcheck-bin \
+    simplescreenrecorder switchhosts

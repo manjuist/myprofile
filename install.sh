@@ -131,7 +131,8 @@ backup() {
 }
 
 install_npm() {
-    npm i -g neovim stylelint-config-standard tern cspell alex vls
+    npm i -g stylelint stylelint-config-standard tern cspell prettier vls alex \
+        stylelint-config-standard-scss postcss-lit neovim nrm
 
     success "Install APP(npm) success!"
 }
@@ -143,7 +144,7 @@ install_pip() {
 }
 
 install_cargo() {
-    cargo install stylua zellij
+    cargo install --locked yazi-fm yazi-cli stylua zellij dprint git-delta
 
     success "Install APP(cargo) success!"
 }
