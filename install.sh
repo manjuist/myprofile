@@ -162,3 +162,5 @@ handler "$APP_SSH_PATH" "$SSH_PATH" "f"
 handler "$APP_TOOL_PATH" "${LOCAL_BIN_PATH}" "f"
 handler "$APP_CONFIGFILE_PATH" "$HOME/." "f"
 handler "$APP_CONFIGDIR_PATH" "$CONFIG_PATH" "d"
+
+curl -LsSf https://astral.sh/uv/install.sh | sh
