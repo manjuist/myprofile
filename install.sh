@@ -131,20 +131,20 @@ backup() {
 }
 
 install_npm() {
-    npm i -g stylelint stylelint-config-standard tern cspell prettier vls alex \
-        stylelint-config-standard-scss postcss-lit neovim nrm
+    npm i -g alex cspell neovim nrm pnpm postcss-lit prettier stylelint \
+        stylelint-config-standard stylelint-config-standard-scss tern vls
 
     success "Install APP(npm) success!"
 }
 
 install_pip() {
-    pip3 install pynvim neovim jedi vim-vint ruff sqlfluff
+    pip3 install jedi neovim pynvim ruff sqlfluff vim-vint
 
     success "Install APP(pip) success!"
 }
 
 install_cargo() {
-    cargo install --locked yazi-fm yazi-cli stylua zellij dprint git-delta
+    cargo install --locked dprint git-delta stylua yazi-cli yazi-fm zellij
 
     success "Install APP(cargo) success!"
 }
