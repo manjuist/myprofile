@@ -144,7 +144,8 @@ install_pip() {
 }
 
 install_cargo() {
-    cargo install --locked dprint git-delta stylua yazi-cli yazi-fm zellij
+    cargo install --locked dprint git-delta stylua yazi-cli yazi-fm zellij \
+        starship
 
     success "Install APP(cargo) success!"
 }
