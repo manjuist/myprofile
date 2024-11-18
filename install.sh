@@ -144,8 +144,7 @@ install_pip() {
 }
 
 install_cargo() {
-    cargo install --locked dprint git-delta stylua yazi-cli yazi-fm zellij \
-        starship
+    cargo install --locked dprint git-delta stylua yazi-cli yazi-fm zellij
 
     success "Install APP(cargo) success!"
 }
@@ -165,3 +164,5 @@ handler "$APP_CONFIGFILE_PATH" "$HOME/." "f"
 handler "$APP_CONFIGDIR_PATH" "$CONFIG_PATH" "d"
 
 curl -LsSf https://astral.sh/uv/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/zimfw/install/master/install.zsh | zsh
+curl -sS https://starship.rs/install.sh | sh
