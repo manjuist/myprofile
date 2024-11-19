@@ -14,8 +14,8 @@ brew tap macos-fuse-t/homebrew-cask
 
 brew install btop cmake ctags fastfetch fd ffmpeg ffmpegthumbnailer \
     font-symbols-only-nerd-font fuse-t fuse-t-sshfs fzf gcc gpg grex hadolint \
-    highlight imagemagick jq lazygit libxml2 localsend make mkcert neovim nnn \
-    node nss nvm openssl pandoc poppler ripgrep rust-analyzer scrcpy sevenzip \
+    highlight htop imagemagick jq lazygit libxml2 localsend make mkcert neovim \
+    nnn node nss nvm openssl pandoc poppler ripgrep rust-analyzer scrcpy sevenzip \
     shellcheck shfmt the_silver_searcher tmux tree vifm yamllint zoxide zsh
 
 brew install --cask alt-tab another-redis-desktop-manager audacity \
@@ -25,5 +25,5 @@ brew install --cask alt-tab another-redis-desktop-manager audacity \
     keepingyouawake keka kekaexternalhelper kitty lulu maccy macdown macpass \
     microsoft-onenote mongodb-compass motrix musicbrainz-picard netnewswire \
     obsidian pika postman rectangle robo-3t sfm shotcut shottr skim stretchly \
-    switchhosts syntax-highlight textmate thor trilium-notes \
-    visual-studio-code vlc wireshark xld
+    switchhosts syntax-highlight textmate thor trilium-notes visual-studio-code \
+    vlc wireshark xld
