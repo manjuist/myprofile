@@ -17,10 +17,13 @@
 # simplescreenrecorder
 # switchhosts
 
+# com.github.zadam.trilium
+# com.google.Chrome
+# com.wps.Office
+# com.tencent.WeChat
+
 set -e
 set -o pipefail
-
-flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 sudo dnf install -y aria2 audacity blender btop calibre cmake copyq ctags docker \
     fcitx5 fcitx5-chinese-addons fcitx5-configtool fd-find feh ffmpeg-free ffmpegthumbs \
@@ -32,7 +35,7 @@ sudo dnf install -y aria2 audacity blender btop calibre cmake copyq ctags docker
     the_silver_searcher nss-tools hadolint rust-analyzer NetworkManager rxvt-unicode \
     azote dunst htop thunar
 
-flatpak install flathub md.obsidian.Obsidian com.github.zadam.trilium com.visualstudio.code \
-    com.jgraph.drawio.desktop org.localsend.localsend_app com.google.Chrome net.hovancik.Stretchly \
-    org.freac.freac net.agalwood.Motrix com.wps.Office org.cryptomator.Cryptomator \
-    io.dbeaver.DBeaverCommunity com.tencent.WeChat org.freeplane.App org.freefilesync.FreeFileSync
+flatpak install flathub md.obsidian.Obsidian com.visualstudio.code com.jgraph.drawio.desktop \
+    org.localsend.localsend_app net.hovancik.Stretchly org.freac.freac net.agalwood.Motrix \
+    org.cryptomator.Cryptomator io.dbeaver.DBeaverCommunity org.freefilesync.FreeFileSync \
+    org.freeplane.App
