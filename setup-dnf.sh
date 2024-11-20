@@ -20,10 +20,7 @@
 set -e
 set -o pipefail
 
-rpm -Uvh http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-stable.noarch.rpm
-
-flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 sudo dnf install -y aria2 audacity blender btop calibre cmake copyq ctags docker \
     fcitx5 fcitx5-chinese-addons fcitx5-configtool fd-find feh ffmpeg-free ffmpegthumbs \
