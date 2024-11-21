@@ -15,14 +15,13 @@ AMD64="x86_64"
 sudo dnf copr enable atim/lazygit -y
 
 sudo dnf install -y aria2 audacity blender btop calibre cmake copyq ctags docker \
-    fcitx5 fcitx5-chinese-addons fcitx5-configtool fd-find feh ffmpeg-free ffmpegthumbs \
-    filezilla flameshot fzf gcc gimp git git-cola gnupg goldendict guake highlight \
-    httpie i3 i3lock i3status inkscape jq keepass keepassxc kitty lazygit libxml2 make \
-    mousepad neovim nnn nodejs npm openssl p7zip pandoc pdfarranger picard picom \
-    poppler remmina ripgrep rofi shellcheck shfmt shotcut thunderbird tilix tmux \
-    vifm vlc wireshark yamllint yarnpkg zoxide zsh GraphicsMagick ImageMagick fcitx5-qt \
-    the_silver_searcher nss-tools hadolint rust-analyzer NetworkManager rxvt-unicode \
-    azote dunst htop thunar snapd
+    fd-find feh ffmpeg-free ffmpegthumbs filezilla flameshot fzf gcc gimp git git-cola \
+    gnupg goldendict guake highlight httpie i3 i3lock i3status inkscape jq keepass \
+    keepassxc kitty lazygit libxml2 make mousepad neovim nnn nodejs npm openssl p7zip \
+    pandoc pdfarranger picard picom poppler remmina ripgrep rofi shellcheck shfmt \
+    shotcut thunderbird tilix tmux vifm vlc wireshark yamllint yarnpkg zoxide zsh \
+    GraphicsMagick ImageMagick the_silver_searcher nss-tools hadolint rust-analyzer \
+    NetworkManager rxvt-unicode azote dunst htop thunar snapd
 
 flatpak install flathub md.obsidian.Obsidian com.visualstudio.code com.jgraph.drawio.desktop \
     org.localsend.localsend_app net.hovancik.Stretchly org.freac.freac net.agalwood.Motrix \
@@ -39,3 +38,7 @@ sudo snap install another-redis-desktop-manager robo3t-snap scrcpy simplescreenr
 
 # deps clash
 sudo dnf install -y libayatana-appindicator-gtk3 webkit2gtk4.0
+
+# fcitx5
+sudo dnf install -y imsettings fcitx5-table-extra fcitx5 fcitx5-chinese-addons \
+    fcitx5-configtool fcitx5-qt
