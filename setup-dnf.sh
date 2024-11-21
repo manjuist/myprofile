@@ -20,7 +20,7 @@ sudo dnf install -y aria2 audacity blender btop calibre cmake copyq ctags docker
     httpie i3 i3lock i3status inkscape jq keepass keepassxc kitty lazygit libxml2 make \
     mousepad neovim nnn nodejs npm openssl p7zip pandoc pdfarranger picard picom \
     poppler remmina ripgrep rofi shellcheck shfmt shotcut thunderbird tilix tmux \
-    vifm vlc wireshark yamllint yarnpkg zoxide zsh GraphicsMagick ImageMagick fcitx5-qt6 \
+    vifm vlc wireshark yamllint yarnpkg zoxide zsh GraphicsMagick ImageMagick fcitx5-qt \
     the_silver_searcher nss-tools hadolint rust-analyzer NetworkManager rxvt-unicode \
     azote dunst htop thunar snapd
 
@@ -36,3 +36,6 @@ fi
 
 sudo ln -s /var/lib/snapd/snap /snap
 sudo snap install another-redis-desktop-manager robo3t-snap scrcpy simplescreenrecorder
+
+# deps clash
+sudo dnf install -y libayatana-appindicator-gtk3 webkit2gtk4.0
