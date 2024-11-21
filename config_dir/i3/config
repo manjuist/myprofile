@@ -9,14 +9,15 @@ hide_edge_borders none
 floating_modifier $mod
 workspace_auto_back_and_forth yes
 
-bindsym $mod+Return exec konsole
+bindsym F12 exec tilix -q
+
+bindsym $mod+Return exec tilix
 bindsym $mod+Shift+q kill
 bindsym $mod+d exec --no-startup-id rofi -show drun
 
 bindsym $mod+F1 exec --no-startup-id thunar
 bindsym $mod+F2 exec --no-startup-id firefox
-bindsym $mod+F3 exec --no-startup-id /home/mdvis/QV2ray/Qv2ray-v2.7.0-linux-x64.AppImage
-bindsym $mod+F4 exec --no-startup-id xfce4-settings-manager
+bindsym $mod+F3 exec --no-startup-id clash-verge
 
 bindsym $mod+j focus left
 bindsym $mod+k focus down
@@ -80,14 +81,14 @@ bindsym $mod+Shift+7 move container to workspace $ws7; workspace $ws7
 bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
 
 bindsym $mod+9 mode "$mode_application"
-set $mode_application (t)hunar, (f)irefox, (w)ps, (q)v2ray, (x)face_setting
+set $mode_application (t)hunar, (f)irefox, (w)ehat, (c)lash, (o)ffice, (b)ooks
 mode "$mode_application" {
     bindsym t exec --no-startup-id thunar, mode "default"
     bindsym f exec --no-startup-id firefox, mode "default"
-    bindsym w exec --no-startup-id wps, mode "default"
-    bindsym q exec --no-startup-id /home/mdvis/QV2ray/Qv2ray-v2.7.0-linux-x64.AppImage, mode "default"
-    bindsym x exec --no-startup-id xfce4-settings-manager, mode "default"
-    bindsym c exec --no-startup-id /opt/weixin/weixin, mode "default"
+    bindsym w exec --no-startup-id wechat, mode "default"
+    bindsym c exec --no-startup-id clash-verge, mode "default"
+    bindsym o exec --no-startup-id wps, mode "default"
+    bindsym b exec --no-startup-id calibre, mode "default"
     # exit system mode: "Enter" or "Escape"
     bindsym Return mode "default"
     bindsym Escape mode "default"
@@ -175,11 +176,12 @@ bindsym $mod+m bar mode toggle
   client.placeholder      #000000 #0c0c0c #ffffff #000000
   client.background       #2B2C2B
 
-assign [class="(?i)LocalSend"] $ws7
-assign [class="(?i)Qv2ray"] $ws7
-#for_window [class="firefox"] move to workspace $ws1
+assign [class="(?i)LocalSend"] $ws8
+assign [class="(?i)clash-verge"] $ws8
 
-exec --no-startup-id i3-msg 'workspace 9:dolphin; exec dolphin'
+for_window [class="firefox"] move to workspace $ws1
+
+exec --no-startup-id i3-msg 'workspace 9:nvim; exec nvim'
 
 bindsym XF86AudioRaiseVolume exec amixer set Master playback 7+
 bindsym XF86AudioLowerVolume exec amixer set Master playback 7-
