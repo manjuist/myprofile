@@ -12,7 +12,11 @@ set -o pipefail
 ARCH="$(uname -m)"
 AMD64="x86_64"
 
+# dependencies
+# lazygit
 sudo dnf copr enable atim/lazygit -y
+# clash
+sudo dnf install -y libayatana-appindicator-gtk3 webkit2gtk4.0
 
 sudo dnf install -y aria2 audacity blender btop calibre cmake copyq ctags docker \
     fd-find feh ffmpeg-free ffmpegthumbs filezilla flameshot fzf gcc gimp git git-cola \
@@ -23,22 +27,21 @@ sudo dnf install -y aria2 audacity blender btop calibre cmake copyq ctags docker
     GraphicsMagick ImageMagick the_silver_searcher nss-tools hadolint rust-analyzer \
     NetworkManager rxvt-unicode azote dunst htop thunar snapd
 
-flatpak install flathub md.obsidian.Obsidian com.visualstudio.code com.jgraph.drawio.desktop \
-    org.localsend.localsend_app net.hovancik.Stretchly org.freac.freac net.agalwood.Motrix \
-    org.cryptomator.Cryptomator io.dbeaver.DBeaverCommunity org.freefilesync.FreeFileSync \
-    org.freeplane.App
-
-if [ "$ARCH" = "$AMD64" ]; then
-    flatpak install flathub com.usebottles.bottles com.github.zadam.trilium com.google.Chrome com.wps.Office \
-        com.tencent.WeChat
-fi
-
-sudo ln -s /var/lib/snapd/snap /snap
-sudo snap install another-redis-desktop-manager robo3t-snap scrcpy simplescreenrecorder
-
-# deps clash
-sudo dnf install -y libayatana-appindicator-gtk3 webkit2gtk4.0
-
 # fcitx5
 sudo dnf install -y imsettings fcitx5-table-extra fcitx5 fcitx5-chinese-addons \
     fcitx5-configtool fcitx5-qt
+
+# flathub
+flatpak install flathub md.obsidian.Obsidian com.visualstudio.code com.jgraph.drawio.desktop \
+    org.localsend.localsend_app net.hovancik.Stretchly org.freac.freac net.agalwood.Motrix \
+    org.cryptomator.Cryptomator io.dbeaver.DBeaverCommunity org.freefilesync.FreeFileSync \
+    org.freeplane.App org.freecad.FreeCAD
+
+if [ "$ARCH" = "$AMD64" ]; then
+    flatpak install flathub com.usebottles.bottles com.github.zadam.trilium com.google.Chrome \
+        com.wps.Office com.tencent.WeChat
+fi
+
+# snapcraft
+sudo ln -s /var/lib/snapd/snap /snap
+sudo snap install another-redis-desktop-manager robo3t-snap scrcpy simplescreenrecorder
