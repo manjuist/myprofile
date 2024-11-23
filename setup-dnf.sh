@@ -12,11 +12,8 @@ set -o pipefail
 ARCH="$(uname -m)"
 AMD64="x86_64"
 
-# dependencies
 # lazygit
 sudo dnf copr enable atim/lazygit -y
-# clash
-sudo dnf install -y libayatana-appindicator-gtk3 webkit2gtk4.0
 
 sudo dnf install -y aria2 audacity blender btop calibre cmake copyq ctags docker \
     fd-find feh ffmpeg-free ffmpegthumbs filezilla flameshot fzf gcc gimp git git-cola \
@@ -31,7 +28,13 @@ sudo dnf install -y aria2 audacity blender btop calibre cmake copyq ctags docker
 sudo dnf install -y imsettings fcitx5-table-extra fcitx5 fcitx5-chinese-addons \
     fcitx5-configtool fcitx5-qt
 
+# dependencies
+# clash
+sudo dnf install -y libayatana-appindicator-gtk3 webkit2gtk4.0
+
 # flathub
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+
 flatpak install flathub md.obsidian.Obsidian com.visualstudio.code com.jgraph.drawio.desktop \
     org.localsend.localsend_app net.hovancik.Stretchly org.freac.freac net.agalwood.Motrix \
     org.cryptomator.Cryptomator io.dbeaver.DBeaverCommunity org.freefilesync.FreeFileSync \
@@ -44,4 +47,10 @@ fi
 
 # snapcraft
 sudo ln -s /var/lib/snapd/snap /snap
-sudo snap install another-redis-desktop-manager robo3t-snap scrcpy simplescreenrecorder
+sudo snap install scrcpy
+
+if [ "$ARCH" = "$AMD64" ]; then
+    sudo snap install another-redis-desktop-manager
+    sudo snap install simplescreenrecorder
+    sudo snap install robo3t-snap
+fi
