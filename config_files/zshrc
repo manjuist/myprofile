@@ -1,3 +1,5 @@
+. "$HOME/.local/bin/env"
+
 # Start configuration added by Zim install {{{
 #
 # User configuration sourced by interactive shells
