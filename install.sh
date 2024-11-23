@@ -172,7 +172,3 @@ handler "$APP_SSH_PATH" "$SSH_PATH" "f" || error "Failed to link ssh!"
 handler "$APP_TOOL_PATH" "${LOCAL_BIN_PATH}" "f" || error "Failed to link tools!"
 handler "$APP_CONFIG_FILE_PATH" "$HOME/." "f" || error "Failed to link config!"
 handler "$APP_CONFIG_DIR_PATH" "$CONFIG_PATH" "d" || error "Failed to link config dir!"
-
-curl -LsSf https://astral.sh/uv/install.sh | sh || error "Failed to install uv"
-curl -fsSL https://raw.githubusercontent.com/zimfw/install/master/install.zsh | zsh || error "Failed to install zim"
-curl -sS https://starship.rs/install.sh | sh || error "Failed to install starship"
