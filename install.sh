@@ -134,7 +134,7 @@ backup() {
 }
 
 install_npm() {
-    npm i --force -g alex cspell neovim nrm pnpm postcss-lit prettier stylelint \
+    sudo npm i --force -g alex cspell neovim nrm pnpm postcss-lit prettier stylelint \
         stylelint-config-standard stylelint-config-standard-scss tern vls
 
     success "Npm done!"
