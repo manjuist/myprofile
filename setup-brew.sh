@@ -16,7 +16,7 @@ brew install btop cmake ctags fastfetch fd ffmpeg ffmpegthumbnailer \
     font-symbols-only-nerd-font fuse-t fuse-t-sshfs fzf gcc gpg grex hadolint \
     highlight htop imagemagick jq lazygit libxml2 localsend make mkcert neovim \
     nnn node nss nvm openssl pandoc poppler ripgrep rust-analyzer scrcpy sevenzip \
-    shellcheck shfmt the_silver_searcher tmux tree vifm yamllint zoxide zsh
+    shellcheck shfmt the_silver_searcher tmux tree vifm yamllint zoxide zsh wabt
 
 brew install --cask alt-tab another-redis-desktop-manager audacity \
     balenaetcher blender calibre charles cryptomator dbeaver-community docker \
