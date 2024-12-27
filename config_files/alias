@@ -42,9 +42,9 @@ dataStr='%C(red)%ad'
 commitName='%<(9,trunc)%C(blue)%cn'
 commitMsg='%<(40,trunc)%C(reset)%s'
 prettyStr="${shotCommitHash} ${dataStr} ${commitName} ${commitMsg}"
-dateFmtStr='%m/%d-%H:%M'
+dateFmtStr='%m/%d %H:%M'
 
-alias glg="git log --date=format:${dateFmtStr} --pretty='${prettyStr}'"
+alias glg="git log --date=format:\"${dateFmtStr}\" --pretty='${prettyStr}'"
 # }
 
 fnv(){
