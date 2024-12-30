@@ -7,5 +7,3 @@ font-family = "Source Han Sans SC"
 font-size = 14
 
 command = "$HOME/.local/bin/tmux"
-
-quit-after-last-window-closed=true
