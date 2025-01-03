@@ -1,6 +1,14 @@
+# theme = light:carbonfox,dark:carbonfox
+# theme = light:catppuccin-mocha,dark:catppuccin-mocha
+# theme = light:duskfox,dark:duskfox
+# theme = light:GruvboxDark,dark:GruvboxDark
+# theme = light:GruvboxDarkHard,dark:GruvboxDarkHard
+# theme = light:Kanagawa Dragon,dark:Kanagawa Dragon
+# theme = light:nightfox,dark:nightfox
 theme = light:terafox,dark:terafox
+# theme = light:tokyonight,dark:tokyonight
 
-# "SauceCodePro Nerd Font"
+# font-family = "SauceCodePro Nerd Font"
 font-family = "CartographCF Nerd Font Mono"
 font-family = "Source Han Sans SC"
 
