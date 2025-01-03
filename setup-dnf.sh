@@ -23,7 +23,7 @@ sudo dnf install -y aria2 audacity blender btop calibre cmake copyq ctags docker
     shotcut thunderbird tilix tmux vifm vlc wireshark yamllint yarnpkg zoxide zsh \
     GraphicsMagick ImageMagick the_silver_searcher nss-tools hadolint rust-analyzer \
     NetworkManager rxvt-unicode azote dunst htop thunar snapd hyprland hyprland-devel \
-    fio hdparm wabt
+    fio hdparm wabt wike secrets foliate apostrophe
 
 # fcitx5
 sudo dnf install -y imsettings fcitx5-table-extra fcitx5 fcitx5-chinese-addons \
@@ -39,11 +39,12 @@ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.f
 flatpak install flathub md.obsidian.Obsidian com.visualstudio.code com.jgraph.drawio.desktop \
     org.localsend.localsend_app net.hovancik.Stretchly org.freac.freac net.agalwood.Motrix \
     org.cryptomator.Cryptomator io.dbeaver.DBeaverCommunity org.freefilesync.FreeFileSync \
-    org.freeplane.App org.freecad.FreeCAD
+    org.freeplane.App org.freecad.FreeCAD com.tencent.WeChat io.github.alainm23.planify \
+    io.gitlab.news_flash.NewsFlash
 
 if [ "$ARCH" = "$AMD64" ]; then
     flatpak install flathub com.usebottles.bottles com.github.zadam.trilium com.google.Chrome \
-        com.wps.Office com.tencent.WeChat
+        com.wps.Office
 fi
 
 # snapcraft
