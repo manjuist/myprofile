@@ -18,7 +18,7 @@ sudo pacman -S --needed aria2 audacity blender btop calibre cmake copyq ctags \
     yamllint yarn zoxide zsh graphicsmagick imagemagick fcitx5-qt networkmanager \
     the_silver_searcher nss rust-analyzer shotcut mkcert base-devel lazygit scrcpy \
     nama rxvt-unicode azote dunst htop thunar hyprland hdparm fio wabt keyviz ghostty \
-    secrets newsflash foliate apostrophe sway wezterm
+    secrets newsflash foliate apostrophe sway wezterm foot
 
 yay -S another-redis-desktop-manager-appimage bottles clash-verge-rev-bin \
     cryptomator dbeaver-ee drawio freac freefilesync freeplane-git git-cola \
