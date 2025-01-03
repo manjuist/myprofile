@@ -14,6 +14,7 @@ AMD64="x86_64"
 
 # lazygit
 sudo dnf copr enable atim/lazygit -y
+sudo dnf copr enable pgdev/ghostty -y
 
 sudo dnf install -y aria2 audacity blender btop calibre cmake copyq ctags docker \
     fd-find feh ffmpeg-free ffmpegthumbs filezilla flameshot fzf gcc gimp git git-cola \
@@ -23,7 +24,7 @@ sudo dnf install -y aria2 audacity blender btop calibre cmake copyq ctags docker
     shotcut thunderbird tilix tmux vifm vlc wireshark yamllint yarnpkg zoxide zsh \
     GraphicsMagick ImageMagick the_silver_searcher nss-tools hadolint rust-analyzer \
     NetworkManager rxvt-unicode azote dunst htop thunar snapd hyprland hyprland-devel \
-    fio hdparm wabt wike secrets foliate apostrophe sway
+    fio hdparm wabt wike secrets foliate apostrophe sway ghostty
 
 # fcitx5
 sudo dnf install -y imsettings fcitx5-table-extra fcitx5 fcitx5-chinese-addons \
@@ -40,7 +41,7 @@ flatpak install flathub md.obsidian.Obsidian com.visualstudio.code com.jgraph.dr
     org.localsend.localsend_app net.hovancik.Stretchly org.freac.freac net.agalwood.Motrix \
     org.cryptomator.Cryptomator io.dbeaver.DBeaverCommunity org.freefilesync.FreeFileSync \
     org.freeplane.App org.freecad.FreeCAD com.tencent.WeChat io.github.alainm23.planify \
-    io.gitlab.news_flash.NewsFlash
+    io.gitlab.news_flash.NewsFlash org.wezfurlong.wezterm
 
 if [ "$ARCH" = "$AMD64" ]; then
     flatpak install flathub com.usebottles.bottles com.github.zadam.trilium com.google.Chrome \
