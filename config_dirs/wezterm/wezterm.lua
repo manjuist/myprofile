@@ -1,4 +1,5 @@
 local wezterm = require("wezterm")
+local home = os.getenv("HOME")
 
 return {
     -- color_scheme = "carbonfox"
@@ -19,7 +20,7 @@ return {
 
     font_size = 14.0,
 
-    default_prog = { "/Users/mdvis/.local/bin/tmux" },
+    default_prog = { home .. "/.local/bin/tmux" },
 
     enable_tab_bar = false,
 }
