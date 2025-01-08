@@ -26,4 +26,4 @@ yay -S another-redis-desktop-manager-appimage bottles clash-verge-rev-bin \
     stretchly simplescreenrecorder switchhosts trilium visual-studio-code-bin \
     wechat-bin wps-office-cn wike planify
 
-flatpak install flathub md.obsidian.Obsidian
+flatpak install flathub md.obsidian.Obsidian io.github.troyeguo.koodo-reader

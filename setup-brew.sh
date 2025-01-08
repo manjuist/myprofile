@@ -26,4 +26,4 @@ brew install --cask alt-tab another-redis-desktop-manager audacity \
     microsoft-onenote mongodb-compass motrix musicbrainz-picard netnewswire \
     obsidian pika postman rectangle robo-3t sfm shotcut shottr skim stretchly \
     switchhosts syntax-highlight textmate thor trilium-notes visual-studio-code \
-    vlc wireshark xld windterm ghostty wezterm skim
+    vlc wireshark xld windterm ghostty wezterm skim koodo-reader

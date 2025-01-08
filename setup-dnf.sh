@@ -41,7 +41,8 @@ flatpak install flathub md.obsidian.Obsidian com.visualstudio.code com.jgraph.dr
     org.localsend.localsend_app net.hovancik.Stretchly org.freac.freac net.agalwood.Motrix \
     org.cryptomator.Cryptomator io.dbeaver.DBeaverCommunity org.freefilesync.FreeFileSync \
     org.freeplane.App org.freecad.FreeCAD com.tencent.WeChat io.github.alainm23.planify \
-    io.gitlab.news_flash.NewsFlash org.wezfurlong.wezterm org.gnome.gitlab.somas.Apostrophe
+    io.gitlab.news_flash.NewsFlash org.wezfurlong.wezterm org.gnome.gitlab.somas.Apostrophe \
+    io.github.troyeguo.koodo-reader
 
 if [ "$ARCH" = "$AMD64" ]; then
     flatpak install flathub com.usebottles.bottles com.github.zadam.trilium com.google.Chrome \
