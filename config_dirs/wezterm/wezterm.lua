@@ -2,15 +2,13 @@ local wezterm = require("wezterm")
 local home = os.getenv("HOME")
 
 return {
-    -- color_scheme = "carbonfox"
-    -- color_scheme = "Catppuccin Mocha"
-    -- color_scheme = "duskfox"
-    -- color_scheme = "GruvboxDark"
-    -- color_scheme = "GruvboxDarkHard"
-    -- color_scheme = "Kanagawa Dragon (Gogh)"
-    -- color_scheme = "nightfox"
-    color_scheme = "terafox",
-    -- color_scheme = "tokyonight"
+    -- color_scheme = "carbonfox",
+    -- color_scheme = "Catppuccin Mocha",
+    -- color_scheme = "duskfox",
+    -- color_scheme = "GruvboxDark",
+    color_scheme = "Kanagawa Dragon (Gogh)",
+    -- color_scheme = "nightfox",
+    -- color_scheme = "terafox",
 
     font = wezterm.font_with_fallback({
         -- "SauceCodePro Nerd Font",

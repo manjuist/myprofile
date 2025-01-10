@@ -1,5 +1,5 @@
 [general]
-import = ["gruvbox.toml"]
+import = ["./theme/Kanagawa_dragon.toml"]
 working_directory = "/Users/mdvis/Code"
 
 [env]
