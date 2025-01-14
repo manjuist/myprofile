@@ -42,7 +42,7 @@ flatpak install flathub md.obsidian.Obsidian com.visualstudio.code com.jgraph.dr
     org.cryptomator.Cryptomator io.dbeaver.DBeaverCommunity org.freefilesync.FreeFileSync \
     org.freeplane.App org.freecad.FreeCAD com.tencent.WeChat io.github.alainm23.planify \
     io.gitlab.news_flash.NewsFlash org.wezfurlong.wezterm org.gnome.gitlab.somas.Apostrophe \
-    io.github.troyeguo.koodo-reader
+    com.mongodb.Compass
 
 if [ "$ARCH" = "$AMD64" ]; then
     flatpak install flathub com.usebottles.bottles com.github.zadam.trilium com.google.Chrome \
@@ -56,5 +56,4 @@ sudo snap install scrcpy
 if [ "$ARCH" = "$AMD64" ]; then
     sudo snap install another-redis-desktop-manager
     sudo snap install simplescreenrecorder
-    sudo snap install robo3t-snap
 fi

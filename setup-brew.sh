@@ -24,6 +24,6 @@ brew install --cask alt-tab another-redis-desktop-manager audacity \
     google-chrome handbrake httpie inkscape jordanbaird-ice kap keepassxc \
     keepingyouawake keka kekaexternalhelper kitty lulu maccy macdown macpass \
     microsoft-onenote mongodb-compass motrix musicbrainz-picard netnewswire \
-    obsidian pika postman rectangle robo-3t sfm shotcut shottr skim stretchly \
+    obsidian pika postman rectangle sfm shotcut shottr skim stretchly skim \
     switchhosts syntax-highlight textmate thor trilium-notes visual-studio-code \
-    vlc wireshark xld windterm ghostty wezterm skim koodo-reader
+    vlc wireshark xld windterm ghostty wezterm
