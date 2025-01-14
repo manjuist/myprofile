@@ -16,3 +16,6 @@ size = 14.0
 
 [terminal.shell]
 program = "/Users/mdvis/.local/bin/tmux"
+
+[cursor]
+style = "Beam"
