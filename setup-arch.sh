@@ -12,7 +12,7 @@ set -o pipefail
 sudo pacman -S --needed aria2 audacity blender btop calibre cmake copyq ctags \
     docker fcitx5 fcitx5-chinese-addons fcitx5-configtool fd feh ffmpeg apostrophe \
     filezilla flameshot fzf gcc gimp git gnupg guake highlight httpie i3-wm sway \
-    i3lock i3status inkscape jq keepass keepassxc kitty libxml2 make mousepad foot \
+    i3lock i3status inkscape jq keepass keepassxc libxml2 make mousepad foot \
     neovim nnn nodejs npm openssl p7zip pandoc-bin pdfarranger picard picom poppler \
     remmina ripgrep rofi shellcheck shfmt thunderbird tilix tmux vifm vlc wireshark-qt \
     yamllint yarn zoxide zsh graphicsmagick imagemagick fcitx5-qt networkmanager obsidian \

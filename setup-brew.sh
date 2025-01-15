@@ -22,7 +22,7 @@ brew install --cask alt-tab another-redis-desktop-manager audacity ghostty windt
     balenaetcher blender calibre charles cryptomator dbeaver-community docker \
     drawio espanso findergo flameshot flux freeplane gimp gitx goldendict xld \
     google-chrome handbrake httpie inkscape jordanbaird-ice kap keepassxc vlc \
-    keepingyouawake keka kekaexternalhelper kitty lulu maccy macdown macpass \
+    keepingyouawake keka kekaexternalhelper lulu maccy macdown macpass \
     microsoft-onenote mongodb-compass motrix musicbrainz-picard netnewswire thor \
     obsidian pika postman rectangle sfm shotcut shottr skim stretchly wireshark \
     switchhosts syntax-highlight textmate visual-studio-code wezterm
