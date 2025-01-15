@@ -3,10 +3,9 @@ local home = os.getenv("HOME")
 
 return {
     -- color_scheme = "carbonfox",
-    -- color_scheme = "Catppuccin Mocha",
-    -- color_scheme = "duskfox",
+    color_scheme = "duskfox",
     -- color_scheme = "GruvboxDark",
-    color_scheme = "Kanagawa Dragon (Gogh)",
+    -- color_scheme = "Kanagawa Dragon (Gogh)",
     -- color_scheme = "nightfox",
     -- color_scheme = "terafox",
 
