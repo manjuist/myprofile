@@ -57,6 +57,8 @@
     cmd = "code --wait $MERGED"
 [includeIf "gitdir:~/Code/work/"]
     path = ~/.gitconfig_work
+[includeIf "gitdir:~/MyDocuments/Notes/"]
+    path = ~/.gitconfig_notes
 [gpg]
 	program = /opt/homebrew/bin/gpg
 [http]
