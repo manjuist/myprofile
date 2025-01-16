@@ -1,8 +1,8 @@
 # theme = light:carbonfox,dark:carbonfox
-# theme = light:duskfox,dark:duskfox
+theme = light:duskfox,dark:duskfox
 # theme = light:GruvboxDark,dark:GruvboxDark
 # theme = light:Kanagawa Dragon,dark:Kanagawa Dragon
-theme = light:nightfox,dark:nightfox
+# theme = light:nightfox,dark:nightfox
 # theme = light:terafox,dark:terafox
 
 # font-family = "SauceCodePro Nerd Font"

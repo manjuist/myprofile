@@ -1,5 +1,5 @@
 [general]
-import = ["./theme/Kanagawa_dragon.toml"]
+import = ["./theme/Duskfox.toml"]
 working_directory = "/Users/mdvis/Code"
 
 [env]
